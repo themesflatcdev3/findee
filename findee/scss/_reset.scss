@@ -234,15 +234,15 @@ label {
 
 body {
     font-family: $font-main-family;
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 500;
-    background-color: var(--white);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 00;
+    background-color: var(--White);
     width: 100%;
     height: 100%;
     font-style: normal;
     font-optical-sizing: auto;
-    color: var(--rgba-black-2);
+    color: var(--Secondary);
 
     // margin: 0 auto;
     // overflow-x: hidden;
@@ -280,39 +280,39 @@ strong {
 
 h1,
 .h1 {
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
 h2,
 .h2 {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
 h3,
 .h3 {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
     margin-bottom: 0;
 }
 h4,
 .h4 {
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
     margin-bottom: 0;
 }
 h5,
 .h5 {
     font-size: 18px;
     line-height: 26px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
@@ -320,23 +320,23 @@ h6,
 .h6 {
     font-size: 16px;
     line-height: 19px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 0;
-}
-.h7 {
-    font-size: 15px;
-    line-height: 18px;
-    font-weight: 600;
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6,
-.h7 {
-    color: var(--black);
+.h5,
+h6
+.h6 {
+    color: var(--On-Surface);
 }
 
 button,
@@ -473,8 +473,8 @@ select {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
 }
 .container-2 {
@@ -526,45 +526,36 @@ select {
 }
 
 // text
-.body-1 {
+.text-body {
     font-size: 16px;
-    line-height: 28px;
-    font-weight: 500;
-}
-.body-2 {
-    font-size: 14px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
-.body-3 {
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 500;
-}
-.body-4 {
-    font-size: 12px;
+.text-caption-1 {
+    font-size: 14px;
     line-height: 20px;
+    font-weight: 400;
+}
+.text-caption-2 {
+    font-size: 12px;
+    line-height: 16px;
     font-weight: 500;
 }
-.body-5 {
-    font-size: 11px;
-    line-height: 20px;
-    font-weight: 500;
-}
-.body-6 {
+.text-caption-3 {
     font-size: 10px;
-    line-height: 12px;
+    line-height: 13px;
     font-weight: 500;
 }
-.button-1 {
-    font-size: 14px;
-    line-height: 24px;
+
+.text-button {
+    font-size: 16px;
+    line-height: 21px;
     font-weight: 600;
 }
-.button-2 {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 600;
+.text-button-small {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
 }
 
 .fs-12 {
@@ -588,112 +579,43 @@ select {
 }
 
 // color
-.bg-primary-pest {
-    background-color: var(--pest-1) !important;
+.text-Primary {
+    color: var(--Primary) !important;
 }
-.bg-secondary-violet {
-    background-color: var(--violet) !important;
+.text-OnSurface {
+    color: var(--On-Surface) !important;
 }
-.bg-white {
-    background: var(--white) !important;
+.text-Secondary {
+    color: var(--Secondary) !important;
 }
-.bg-rgba-white-default {
-    background-color: rgba(255, 255, 255, 0.2);
+.text-line {
+    color: var(--line) !important;
 }
-
-.bg-dark {
-    background-color: var(--black);
+.text-surface {
+    color: var(--surface) !important;
 }
-.bg-blue {
-    background-color: var(--blue);
+.text-White {
+    color: var(--White) !important;
 }
-.bg-rgba-primary {
-    background-color: var(--rgba-primary-2);
+.text-Warning {
+    color: var(--Warning) !important;
 }
-.bg-rgba-orange {
-    background-color: var(--rgba-orange-2);
+.text-Red {
+    color: var(--Red) !important;
 }
-.bg-rgba-blue {
-    background-color: var(--rgba-sky-blue);
+.text-Placehoder {
+    color: var(--Placehoder) !important;
 }
-.bg-rgba-violet {
-    background-color: var(--rgba-violet);
+.text-Green {
+    color: var(--Green) !important;
 }
-.bg-rgba-pink {
-    background-color: var(--rgba-pink);
-}
-.bg-rgba-green-2 {
-    background-color: var(--rgba-green-2);
-}
-.bg-gradient-1 {
-    background: var(--gradient);
+.text-Success {
+    color: var(--Success) !important;
 }
 
-.text-primary {
-    color: var(--blue) !important;
-}
-.text-primary-violet {
-    color: var(--pest-1) !important;
-}
-.text-white-default {
-    color: $white;
-}
-.text-white-default2 {
-    color: rgba(255, 255, 255, 0.6);
-}
 
-.text-white {
-    color: var(--white) !important;
-}
-.text-white-2 {
-    color: var(--rgba-white) !important;
-}
-.text-dark {
-    color: var(--black) !important;
-}
-.text-dark-2 {
-    color: var(--black-2) !important;
-}
-.text-dark-3 {
-    color: var(--rgba-black) !important;
-}
-.text-dark-4 {
-    color: var(--rgba-black-2) !important;
-}
-.text-dark-5 {
-    color: var(--rgba-black-3) !important;
-}
-.text-dark-6 {
-    color: var(--rgba-black-5) !important;
-}
-.text-primary {
-    color: var(--blue) !important;
-}
-.text-secondary-violet {
-    color: var(--violet) !important;
-}
-.text-secondary-pink {
-    color: var(--pink) !important;
-}
-.text-secondary-green {
-    color: var(--green) !important;
-}
-.text-secondary-yellow {
-    color: var(--yellow) !important;
-}
 
-.text-red {
-    color: var(--red) !important;
-}
-.text-green {
-    color: var(--green) !important;
-}
-.text-blue {
-    color: var(--blue) !important;
-}
-.text-orange {
-    color: var(--orange) !important;
-}
+
 
 .mt-2 {
     margin-top: 2px !important;
@@ -888,6 +810,9 @@ select {
 .gap-25 {
     gap: 25px !important;
 }
+.round-4 {
+    border-radius: 4px;
+}
 .round-10 {
     border-radius: 10px;
 }
@@ -896,6 +821,9 @@ select {
 }
 .round-20 {
     border-radius: 20px;
+}
+.round-full {
+    border-radius: 9999px !important;
 }
 .hidden {
     overflow: hidden;

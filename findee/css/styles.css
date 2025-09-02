@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -35,76 +35,22 @@
 
 /*--------- Abstracts variable ---------- */
 :root {
-  --blue: #2869fe;
-  --blue-2: #5387fe;
-  --blue-3: #7ea5fe;
-  --blue-4: #a9c3ff;
-  --blue-5: #d4e1ff;
-  --pest-1: #7c66ff;
-  --pest-2: #9685ff;
-  --pest-3: #b0a3ff;
-  --pest-4: #cac2ff;
-  --pest-5: #e5e0ff;
-  --violet: #a55fff;
-  --bright-green: #5fcf80;
-  --green: #00cc9a;
-  --pink: #ff5fbf;
-  --yellow: #ffc24a;
-  --red: #fa4848;
-  --gray: #d2d2d2;
-  --dark-blue: #063ebc;
-  --info: #2f80ed;
-  --success: #27ae60;
-  --warning: #e2b93b;
-  --error: #eb5757;
-  --black: #121927;
-  --black-2: #111d39;
-  --white: #ffffff;
-  --pest-6: #cbc2fd;
-  --rgba-blue: rgba(40, 105, 254, 0.08);
-  --rgba-blue-2: rgba(40, 105, 254, 0.9);
-  --rgba-blue-3: rgba(40, 105, 254, 0.1);
-  --rgba-blue-4: rgba(40, 105, 254, 0.04);
-  --rgba-blue-5: rgba(40, 105, 254, 0.05);
-  --rgba-black: rgba(18, 25, 39, 0.8);
-  --rgba-black-2: rgba(18, 25, 39, 0.6);
-  --rgba-black-3: rgba(18, 25, 39, 0.5);
-  --rgba-black-4: rgba(18, 25, 39, 0.1);
-  --rgba-black-5: rgba(18, 25, 39, 0.7);
-  --rgba-black-6: rgba(18, 25, 39, 0.08);
-  --rgba-black-7: rgba(18, 25, 39, 0.06);
-  --rgba-black-8: rgba(18, 25, 39, 0.25);
-  --rgba-black-9: rgba(18, 25, 39, 0.02);
-  --rgba-black-10: rgba(18, 25, 39, 0.2);
-  --rgba-black-11: rgba(18, 25, 39, 0.04);
-  --rgba-black-12: rgba(18, 25, 39, 0.32);
-  --rgba-black-13: rgba(18, 25, 39, 0.92);
-  --rgba-violet: rgba(165, 95, 255, 0.1);
-  --rgba-pink: rgba(255, 95, 191, 0.1);
-  --rgba-red: rgba(250, 72, 72, 0.06);
-  --rgba-white: rgba(255, 255, 255, 0.6);
-  --rgba-white-2: rgba(255, 255, 255, 0.16);
-  --rgba-white-3: rgba(255, 255, 255, 0.9);
-  --rgba-white-4: rgba(255, 255, 255, 0.4);
-  --line: rgba(18, 25, 39, 0.12);
-  --rgba-green: rgba(26, 21, 40, 0.32);
-  --rgba-green-2: rgb(0, 204, 154, 0.1);
-  --bg-black: rgba(18, 25, 39, 0.04);
-  --shadow-1: 0px 6px 44px 0px rgba(18, 25, 39, 0.05);
-  --shadow-2: 0px 6px 36px 0px rgba(18, 25, 39, 0.05);
-  --shadow-3: 0px 6px 42px 0px rgba(18, 25, 39, 0.06);
-  --shadow-4: 0px 5px 40px 0px rgba(18, 25, 39, 0.05);
-  --shadow-5: 0px 2px 32px 0px rgba(18, 25, 39, 0.05);
-  --shadow-6: 0px 5px 40px 0px rgba(18, 25, 39, 0.04);
-  --shadow-7: 0px 8px 44px 0px rgba(18, 25, 39, 0.05);
-  --shadow-8: 0px 6px 22px 0px rgba(18, 25, 39, 0.04);
-  --gradient: linear-gradient(180deg, #7c66ff 0%, rgba(124, 102, 255, 0) 444.05%);
-  --backdrop: rgba(18, 25, 39, 0.2);
+  --Primary: #2748DB;
+  --On-Surface: #121212;
+  --Secondary: #64666C;
+  --line: #E5E5E5;
+  --surface: #EFEFEF;
+  --White: #FFFFFF;
+  --Warning: #FFB321;
+  --Red: #E74141;
+  --Placehoder: #B1B1B1;
+  --Green: #16BA9C;
+  --Success: #3DAB25;
 }
 
 /*---------- Reset css styles ----------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -371,16 +317,16 @@ input::-moz-focus-inner {
 }
 
 body {
-  font-family: "Urbanist", serif;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 500;
-  background-color: var(--white);
+  font-family: "Inter", serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 0;
+  background-color: var(--White);
   width: 100%;
   height: 100%;
   font-style: normal;
   font-optical-sizing: auto;
-  color: var(--rgba-black-2);
+  color: var(--Secondary);
 }
 
 a {
@@ -417,33 +363,33 @@ strong {
 
 h1,
 .h1 {
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
 h2,
 .h2 {
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
 h3,
 .h3 {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
 h4,
 .h4 {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
@@ -451,7 +397,7 @@ h5,
 .h5 {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
@@ -459,24 +405,22 @@ h6,
 .h6 {
   font-size: 16px;
   line-height: 19px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
-.h7 {
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 600;
-}
-
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6,
-.h7 {
-  color: var(--black);
+.h5,
+h6 .h6 {
+  color: var(--On-Surface);
 }
 
 button,
@@ -621,8 +565,8 @@ select {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
 }
 
@@ -681,52 +625,40 @@ select {
   padding-bottom: 60px;
 }
 
-.body-1 {
+.text-body {
   font-size: 16px;
-  line-height: 28px;
-  font-weight: 500;
-}
-
-.body-2 {
-  font-size: 14px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-.body-3 {
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 500;
-}
-
-.body-4 {
-  font-size: 12px;
+.text-caption-1 {
+  font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
+}
+
+.text-caption-2 {
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 500;
 }
 
-.body-5 {
-  font-size: 11px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-.body-6 {
+.text-caption-3 {
   font-size: 10px;
-  line-height: 12px;
+  line-height: 13px;
   font-weight: 500;
 }
 
-.button-1 {
-  font-size: 14px;
-  line-height: 24px;
+.text-button {
+  font-size: 16px;
+  line-height: 21px;
   font-weight: 600;
 }
 
-.button-2 {
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 600;
+.text-button-small {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .fs-12 {
@@ -753,140 +685,48 @@ select {
   font-weight: 700;
 }
 
-.bg-primary-pest {
-  background-color: var(--pest-1) !important;
+.text-Primary {
+  color: var(--Primary) !important;
 }
 
-.bg-secondary-violet {
-  background-color: var(--violet) !important;
+.text-OnSurface {
+  color: var(--On-Surface) !important;
 }
 
-.bg-white {
-  background: var(--white) !important;
+.text-Secondary {
+  color: var(--Secondary) !important;
 }
 
-.bg-rgba-white-default {
-  background-color: rgba(255, 255, 255, 0.2);
+.text-line {
+  color: var(--line) !important;
 }
 
-.bg-dark {
-  background-color: var(--black);
+.text-surface {
+  color: var(--surface) !important;
 }
 
-.bg-blue {
-  background-color: var(--blue);
+.text-White {
+  color: var(--White) !important;
 }
 
-.bg-rgba-primary {
-  background-color: var(--rgba-primary-2);
+.text-Warning {
+  color: var(--Warning) !important;
 }
 
-.bg-rgba-orange {
-  background-color: var(--rgba-orange-2);
+.text-Red {
+  color: var(--Red) !important;
 }
 
-.bg-rgba-blue {
-  background-color: var(--rgba-sky-blue);
+.text-Placehoder {
+  color: var(--Placehoder) !important;
 }
 
-.bg-rgba-violet {
-  background-color: var(--rgba-violet);
+.text-Green {
+  color: var(--Green) !important;
 }
 
-.bg-rgba-pink {
-  background-color: var(--rgba-pink);
-}
-
-.bg-rgba-green-2 {
-  background-color: var(--rgba-green-2);
-}
-
-.bg-gradient-1 {
-  background: var(--gradient);
-}
-
-.text-primary {
-  color: var(--blue) !important;
-}
-
-.text-primary-violet {
-  color: var(--pest-1) !important;
-}
-
-.text-white-default {
-  color: #ffffff;
-}
-
-.text-white-default2 {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.text-white {
-  color: var(--white) !important;
-}
-
-.text-white-2 {
-  color: var(--rgba-white) !important;
-}
-
-.text-dark {
-  color: var(--black) !important;
-}
-
-.text-dark-2 {
-  color: var(--black-2) !important;
-}
-
-.text-dark-3 {
-  color: var(--rgba-black) !important;
-}
-
-.text-dark-4 {
-  color: var(--rgba-black-2) !important;
-}
-
-.text-dark-5 {
-  color: var(--rgba-black-3) !important;
-}
-
-.text-dark-6 {
-  color: var(--rgba-black-5) !important;
-}
-
-.text-primary {
-  color: var(--blue) !important;
-}
-
-.text-secondary-violet {
-  color: var(--violet) !important;
-}
-
-.text-secondary-pink {
-  color: var(--pink) !important;
-}
-
-.text-secondary-green {
-  color: var(--green) !important;
-}
-
-.text-secondary-yellow {
-  color: var(--yellow) !important;
-}
-
-.text-red {
-  color: var(--red) !important;
-}
-
-.text-green {
-  color: var(--green) !important;
-}
-
-.text-blue {
-  color: var(--blue) !important;
-}
-
-.text-orange {
-  color: var(--orange) !important;
+.text-Success {
+  color: var(--Success) !important;
 }
 
 .mt-2 {
@@ -1132,6 +972,10 @@ select {
   gap: 25px !important;
 }
 
+.round-4 {
+  border-radius: 4px;
+}
+
 .round-10 {
   border-radius: 10px;
 }
@@ -1142,6 +986,10 @@ select {
 
 .round-20 {
   border-radius: 20px;
+}
+
+.round-full {
+  border-radius: 9999px !important;
 }
 
 .hidden {
@@ -1196,7 +1044,7 @@ select {
 
 /*------------ Settings ----------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -1411,7 +1259,7 @@ select {
 }
 
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -1719,7 +1567,7 @@ select {
 /*------------ Components ---------------- */
 /*------------ header ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2046,7 +1894,7 @@ select {
 
 /*------------ tabs ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2106,7 +1954,7 @@ select {
 
 /*------------ button ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2142,302 +1990,52 @@ select {
 
 /*--------- Abstracts variable ---------- */
 .tf-btn {
-  padding: 16px;
-  border-radius: 16px;
+  padding: 12px 32px;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 700;
-  border: 1px solid transparent;
+  gap: 10px;
+  color: var(--White);
+  border: 2px solid var(--Primary);
+  background-color: var(--Primary);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-transform: capitalize;
-  box-shadow: 0px 6px 22px 0px rgba(40, 105, 254, 0.4);
 }
-.tf-btn.inline {
-  width: auto;
-}
-.tf-btn.btn-lg {
-  border-radius: 18px;
-}
-.tf-btn.btn-md {
-  padding: 14px;
-}
-.tf-btn.btn-sm {
-  font-size: 14px;
-  line-height: 24px;
-  padding: 8px;
-  border-radius: 12px;
-}
-.tf-btn.primary {
-  background-color: var(--blue);
-  color: #ffffff;
-  box-shadow: none;
-}
-.tf-btn.primary:hover {
-  background-color: var(--blue-2);
-}
-.tf-btn.disabled-primary {
-  background-color: rgba(40, 105, 254, 0.15);
-  color: var(--blue);
-}
-.tf-btn.disabled-primary:hover {
-  background-color: var(--blue);
-  color: #ffffff;
-}
-.tf-btn.disabled-primary2 {
-  background-color: rgba(40, 105, 254, 0.1);
-  color: var(--blue);
-  box-shadow: var(--shadow-8);
-}
-.tf-btn.disabled-primary2:hover {
-  background-color: var(--blue);
-  color: var(--white);
-}
-.tf-btn.secondary {
-  background: var(--violet);
-  border: 1px solid var(--violet);
-  color: #ffffff;
-  box-shadow: none;
-}
-.tf-btn.secondary:hover {
-  background: var(--pest-1);
-  border-color: var(--pest-1);
-}
-.tf-btn.success {
-  background: var(--success);
-  border: 1px solid var(--success);
-  color: #ffffff;
-  box-shadow: none;
-}
-.tf-btn.success:hover {
-  background: var(--bright-green);
-  border-color: var(--bright-green);
-}
-.tf-btn.danger {
-  background: var(--error);
-  border: 1px solid var(--error);
-  color: #ffffff;
-  box-shadow: none;
-}
-.tf-btn.danger:hover {
-  background: var(--red);
-}
-.tf-btn.warning {
-  background: var(--warning);
-  border: 1px solid var(--warning);
-  color: #ffffff;
-  box-shadow: none;
-}
-.tf-btn.warning:hover {
-  background: var(--yellow);
-}
-.tf-btn.info {
-  background: var(--info);
-  border: 1px solid var(--info);
-  color: #ffffff;
-  box-shadow: none;
-}
-.tf-btn.info:hover {
-  background: var(--info);
-}
-.tf-btn.light-btn-primary {
-  background: rgba(40, 105, 254, 0.3);
-  border: 1px solid transparent;
-  color: var(--blue);
-  box-shadow: none;
-}
-.tf-btn.light-btn-primary:hover {
-  background: var(--blue);
-  color: var(--white);
-}
-.tf-btn.light-btn-secondary {
-  background: rgba(165, 95, 255, 0.3);
-  border: 1px solid transparent;
-  color: var(--violet);
-  box-shadow: none;
-}
-.tf-btn.light-btn-secondary:hover {
-  background: var(--violet);
-  color: var(--white);
-}
-.tf-btn.light-btn-success {
-  background: rgba(39, 174, 96, 0.3);
-  border: 1px solid transparent;
-  color: var(--success);
-  box-shadow: none;
-}
-.tf-btn.light-btn-success:hover {
-  background: var(--success);
-  color: var(--white);
-}
-.tf-btn.light-btn-danger {
-  background: rgba(235, 87, 87, 0.3);
-  border: 1px solid transparent;
-  color: var(--error);
-  box-shadow: none;
-}
-.tf-btn.light-btn-danger:hover {
-  background: var(--error);
-  color: var(--white);
-}
-.tf-btn.light-btn-warning {
-  background: rgba(226, 185, 59, 0.3);
-  border: 1px solid transparent;
-  color: var(--warning);
-  box-shadow: none;
-}
-.tf-btn.light-btn-warning:hover {
-  background: var(--warning);
-  color: var(--white);
-}
-.tf-btn.light-btn-info {
-  background: rgba(47, 128, 237, 0.3);
-  border: 1px solid transparent;
-  color: var(--info);
-  box-shadow: none;
-}
-.tf-btn.light-btn-info:hover {
-  background: var(--info);
-  color: var(--white);
-}
-.tf-btn.outline-btn-primary {
-  background: var(--white);
-  border: 1px solid var(--blue);
-  color: var(--blue);
-  box-shadow: none;
-}
-.tf-btn.outline-btn-primary:hover {
-  background: var(--blue);
-  color: var(--white);
-}
-.tf-btn.outline-btn-primary:hover svg path {
-  fill: var(--white);
-}
-.tf-btn.outline-btn-secondary {
-  background: var(--white);
-  border: 1px solid var(--violet);
-  color: var(--violet);
-  box-shadow: none;
-}
-.tf-btn.outline-btn-secondary:hover {
-  background: var(--violet);
-  color: var(--white);
-}
-.tf-btn.outline-btn-secondary:hover svg path {
-  fill: var(--white);
-}
-.tf-btn.outline-btn-success {
-  background: var(--white);
-  border: 1px solid var(--success);
-  color: var(--success);
-  box-shadow: none;
-}
-.tf-btn.outline-btn-success:hover {
-  background: var(--success);
-  color: var(--white);
-}
-.tf-btn.outline-btn-danger {
-  background: var(--white);
-  border: 1px solid var(--error);
-  color: var(--error);
-  box-shadow: none;
-}
-.tf-btn.outline-btn-danger:hover {
-  background: var(--danger);
-  color: var(--white);
-}
-.tf-btn.outline-btn-warning {
-  background: var(--white);
-  border: 1px solid var(--warning);
-  color: var(--warning);
-  box-shadow: none;
-}
-.tf-btn.outline-btn-warning:hover {
-  background: var(--warning);
-  color: var(--white);
-}
-.tf-btn.outline-btn-info {
-  background: var(--white);
-  border: 1px solid var(--info);
-  color: var(--info);
-  box-shadow: none;
-}
-.tf-btn.outline-btn-info:hover {
-  background: var(--info);
-  color: var(--white);
-}
-.tf-btn.btn-square {
-  border-radius: 0;
-}
-.tf-btn.line {
-  border: 1px solid var(--line);
-}
-.tf-btn.btn-icon {
-  gap: 8px;
-}
-.tf-btn.btn-icon .icon {
-  font-size: 20px;
+.tf-btn:hover {
+  color: var(--On-Surface);
+  background-color: transparent;
 }
 .tf-btn.style-1 {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 6px 31px;
+  color: var(--On-Surface);
+  background-color: transparent;
 }
-
-.lg-zoom-in {
-  display: none;
+.tf-btn.style-1:hover {
+  color: var(--White);
+  background-color: var(--Primary);
 }
-
-.btn-social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
+.tf-btn.style-2 {
+  padding: 10px 22px;
+  color: var(--On-Surface);
+  background-color: transparent;
 }
-.btn-social:hover {
-  color: var(--white);
+.tf-btn.style-2:hover {
+  color: var(--White);
+  background-color: var(--Primary);
 }
-.btn-social.twitter {
-  background: #03a9f4;
+.tf-btn.style-2 .icon {
+  font-size: 24px;
 }
-.btn-social.x-social {
-  background: var(--main);
-}
-.btn-social.instagram {
-  background: linear-gradient(45deg, #fee411 11.93%, #fedb16 15.62%, #fec125 21.73%, #fe983d 29.55%, #fe5f5e 38.65%, #fe2181 47.46%, #9000dc 82.98%), #03a9f4;
-}
-.btn-social.telegram {
-  background: #039be5;
-}
-.btn-social.line {
-  background: #00c200;
-}
-.btn-social.sm {
-  width: 34px;
-  height: 34px;
-  font-size: 16px;
-}
-.btn-social.md {
-  width: 38px;
-  height: 38px;
-  font-size: 16px;
-}
-.btn-social.lg {
-  width: 42px;
-  height: 42px;
-  font-size: 20px;
-}
-.btn-social.rounded {
-  border-radius: 10px !important;
-}
-.btn-social.circle {
-  border-radius: 999px !important;
+.tf-btn.disable {
+  padding: 12px 24px;
+  background-color: var(--line);
+  color: var(--On-Surface);
+  border: 0;
 }
 
 .tf-loading {
@@ -2506,7 +2104,7 @@ select {
 
 /*------------ dropdown ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2588,7 +2186,7 @@ select {
 }
 .dropdown.style-2 .dropdown-menu .dropdown-header {
   font-size: 16px;
-  font-weight: "Urbanist", serif;
+  font-weight: "Inter", serif;
   color: var(--black);
   font-weight: 700;
 }
@@ -2683,7 +2281,7 @@ select {
 
 /*------------ range slider ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2770,7 +2368,7 @@ select {
   font-weight: 400;
   line-height: 18px;
   color: var(--black);
-  font-family: "Urbanist", serif;
+  font-family: "Inter", serif;
   top: 100%;
   left: 0;
   margin-top: 2px;
@@ -2830,7 +2428,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ form ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2891,9 +2489,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   position: relative;
 }
 .input-icon .form-control {
-  padding-left: 52px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 11px 15px;
 }
 .input-icon .icon {
   position: absolute;
@@ -3108,18 +2704,19 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   display: inline-flex;
   cursor: pointer;
 }
-.box-view-hide .show-pass .icon-view,
-.box-view-hide .show-pass2 .icon-view,
-.box-view-hide .show-pass3 .icon-view,
-.box-view-hide .show-pass4 .icon-view {
-  display: none;
-}
 .box-view-hide .show-pass .icon-pass,
 .box-view-hide .show-pass2 .icon-pass,
 .box-view-hide .show-pass3 .icon-pass,
 .box-view-hide .show-pass4 .icon-pass {
   font-size: 20px;
   opacity: 0.5;
+  display: flex;
+}
+.box-view-hide .show-pass .icon-view,
+.box-view-hide .show-pass2 .icon-view,
+.box-view-hide .show-pass3 .icon-view,
+.box-view-hide .show-pass4 .icon-view {
+  display: none;
 }
 .box-view-hide .show-pass.active .icon-view,
 .box-view-hide .show-pass2.active .icon-view,
@@ -3156,7 +2753,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 
 .form-select {
-  font-family: "Urbanist", serif;
+  font-family: "Inter", serif;
   color: var(--black);
   font-size: 14px;
   line-height: 19.6px;
@@ -3424,20 +3021,13 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 
 .btn-social-icon {
-  width: 80px;
-  height: 52px;
-  border-radius: 14px;
+  padding: 12px;
+  border-radius: 99px;
   border: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.btn-social-icon .img-icon {
-  width: 24px;
-  height: 24px;
-}
-.btn-social-icon svg path {
-  fill: var(--black);
+  gap: 12px;
 }
 
 .cb-signup {
@@ -3484,7 +3074,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ footer ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -3609,7 +3199,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ carousel ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -3721,7 +3311,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ alert ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -3882,7 +3472,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ avatar ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4131,7 +3721,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ switch ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4168,42 +3758,34 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 /*--------- Abstracts variable ---------- */
 .tf-switch-check {
   position: relative;
-  width: 17px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   -webkit-appearance: none;
-  background-color: var(--rgba-black-10);
-  border-radius: 4px;
+  border: 1px solid var(--Secondary);
+  border-radius: 2px;
   transition: 0.2s;
   margin-right: 0;
 }
 .tf-switch-check::before {
-  content: "";
-  border-radius: 2px;
-  width: 7px;
-  height: 7px;
   position: absolute;
-  top: 3px;
-  left: 3px;
-  background: var(--white);
+  font-family: "icomoon";
+  content: "\e916";
+  font-size: 15px;
+  color: var(--White);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: 0.2s;
+  opacity: 0;
+  visibility: hidden;
 }
 .tf-switch-check:checked {
-  background: var(--blue);
+  background: var(--Primary);
+  border-color: var(--Primary);
 }
 .tf-switch-check:checked::before {
-  left: 6px;
-}
-.tf-switch-check.lg {
-  width: 24px;
-  height: 17px;
-}
-.tf-switch-check.lg::before {
-  width: 10px;
-  height: 10px;
-  left: 4px;
-}
-.tf-switch-check.lg:checked::before {
-  left: 10px;
+  opacity: 1;
+  visibility: visible;
 }
 
 .fieldset-sw {
@@ -4221,7 +3803,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ radio button ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4429,7 +4011,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ card ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4489,7 +4071,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ badge ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4695,7 +4277,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ modal ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4812,7 +4394,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ off canvas ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4991,7 +4573,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ progressbar ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5094,7 +4676,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 /*------------ stepper ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5222,7 +4804,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ spinner ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5535,7 +5117,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ chart ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5760,7 +5342,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ box icon ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5953,7 +5535,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ nice select ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -6243,7 +5825,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ preloader ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -6377,7 +5959,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*--------------- widget ---------------- */
 /* ---------------------------------------------------------
-    * Name: Jobko
+    * Name: Findee - Job Finding App Figma UI Template Avitex
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -7612,10 +7194,6 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   margin-top: 36px;
   display: grid;
   gap: 12px;
-}
-.content-boarding .desc {
-  font-size: 16px;
-  line-height: 28px;
 }
 
 .group-btn-boarding .tf-btn:not(:last-child) {

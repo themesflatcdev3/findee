@@ -25,9 +25,7 @@
     position: relative;
 
     .form-control {
-        padding-left: 52px;
-        padding-top: 14px;
-        padding-bottom: 14px;
+        padding: 11px 15px;
     }
     .icon {
         position: absolute;
@@ -269,12 +267,13 @@
         transform: translateY(-50%);
         display: inline-flex;
         cursor: pointer;
-        .icon-view {
-            display: none;
-        }
         .icon-pass {
             font-size: 20px;
             opacity: 0.5;
+            display: flex;
+        }
+        .icon-view {
+            display: none;
         }
         &.active {
             .icon-view {
@@ -583,18 +582,11 @@
 }
 
 .btn-social-icon {
-    width: 80px;
-    height: 52px;
-    border-radius: 14px;
+    padding: 12px;
+    border-radius: 99px;
     border: 1px solid var(--line);
     @include flex(center, center);
-    .img-icon {
-        width: 24px;
-        height: 24px;
-    }
-    svg path{
-        fill: var(--black);
-    }
+    gap: 12px;
 }
 .cb-signup {
     display: flex;
