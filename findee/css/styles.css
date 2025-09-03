@@ -5864,15 +5864,15 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   overflow: hidden;
 }
 .preload .logo-img {
-  width: 140px;
-  height: 40px;
+  width: 173px;
+  height: 59px;
 }
 
 .preload-container {
   position: relative;
   width: 100%;
   height: 100%;
-  background: var(--pest-1);
+  background: var(--Primary);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -5883,17 +5883,6 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-.preload-container .spinner-circle {
-  position: fixed;
-  left: 50%;
-  bottom: 50px;
-  transform: translateX(-50%);
-  width: 52px;
-  height: 52px;
-}
-.preload-container .spinner-circle .spinner-child::before {
-  background-color: #fff;
 }
 
 .preload-logo {

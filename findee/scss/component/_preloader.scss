@@ -2,8 +2,8 @@
 .preload {
     overflow: hidden;
     .logo-img{
-        width: 140px;
-        height: 40px;
+        width: 173px;
+        height: 59px;
     }
 }
 
@@ -11,7 +11,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: var(--pest-1);
+    background: var(--Primary);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -20,20 +20,6 @@
     z-index: 99999999999;
     @include flex(center, center);
     overflow: hidden;
-
-    .spinner-circle {
-        position: fixed;
-        left: 50%;
-        bottom: 50px;
-        transform: translateX(-50%);
-        width: 52px;
-        height: 52px;
-        .spinner-child {
-            &::before {
-                background-color: #fff;
-            }
-        }
-    }
 }
 
 .preload-logo {
