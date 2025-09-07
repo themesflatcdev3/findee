@@ -2,7 +2,7 @@
 .form-control {
     border: 1px solid var(--line);
     color: var(--black);
-    background-color: var(--white);
+    background-color: var(--White);
     font-size: 14px;
     line-height: 24px;
     color: var(--black);
@@ -126,7 +126,7 @@
         height: 50px;
         width: 100%;
         border: 1px dashed var(--line-2);
-        background-color: var(--white);
+        background-color: var(--White);
         border-radius: 14px;
 
         &::before {
@@ -140,7 +140,7 @@
             @include flex(center, center);
             margin-left: -10px;
             border: none;
-            background-color: var(--white);
+            background-color: var(--White);
             color: var(--black);
         }
     }
@@ -159,7 +159,7 @@
     .bootstrap-select {
         width: auto !important;
         button {
-            background-color: var(--white);
+            background-color: var(--White);
             padding: 13px;
             padding-right: 20px;
             border-top-left-radius: 20px;
@@ -238,7 +238,7 @@
     label {
         position: absolute;
         top: -10px;
-        background-color: var(--white);
+        background-color: var(--White);
         padding: 0px 10px;
         left: 14px;
         z-index: 10;
@@ -317,7 +317,7 @@
     border-radius: 20px;
     border-color: var(--line);
     background-position: right 20px center;
-    background-color: var(--white);
+    background-color: var(--White);
 
     &:focus {
         box-shadow: unset;
@@ -362,7 +362,7 @@
         line-height: 36px;
         color: var(--black);
         text-align: center;
-        background: var(--white);
+        background: var(--White);
         border-color: var(--rgba-black-4);
         @include flex(center, center);
         padding: 0;
@@ -456,13 +456,13 @@
             align-items: center;
             border: 1px solid var(--blue);
             background-color: var(--blue);
-            color: var(--white);
+            color: var(--White);
         }
         &::after {
             position: absolute;
             content: "\e92d";
             font-family: $fontIcon;
-            color: var(--white);
+            color: var(--White);
             font-size: 12px;
             left: 6px;
             top: 6px;

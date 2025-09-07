@@ -383,7 +383,7 @@ input[type="color"] {
     border-radius: 16px;
     border: 1px solid var(--line);
     color: var(--black);
-    background-color: var(--white);
+    background-color: var(--White);
 }
 textarea {
     height: 135px;
@@ -421,7 +421,7 @@ input[type="color"]:focus {
     -moz-box-shadow: none;
     box-shadow: none;
     border-color: var(--rgba-black-3);
-    background-color: var(--white);
+    background-color: var(--White);
 }
 
 textarea::placeholder,
@@ -512,7 +512,7 @@ select {
 .app-content {
     padding: 70px 0px 100px;
     &.style-2 {
-        padding-top: 88px;
+        padding-top: 40px;
     }
     &.style-3 {
         padding-bottom: 110px;

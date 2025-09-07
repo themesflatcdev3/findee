@@ -111,7 +111,7 @@
     &:checked {
         background-color: var(--blue);
         &::before{
-            color: var(--white);
+            color: var(--White);
         }
     }
     &.sm {

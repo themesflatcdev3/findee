@@ -91,38 +91,38 @@
         justify-content: center;
         line-height: 30px;
         &.primary {
-            background-color: var(--white);
+            background-color: var(--White);
             color: var(--blue);
         }
         &.success {
-            background-color: var(--white);
+            background-color: var(--White);
             color: var(--success);
         }
         &.danger {
             border-color: var(--danger);
 
-            background-color: var(--white);
+            background-color: var(--White);
             color: var(--danger);
         }
         &.warning {
             border-color: var(--warning);
 
-            background-color: var(--white);
+            background-color: var(--White);
             color: var(--warning);
         }
         &.info {
             border-color: var(--info);
-            background-color: var(--white);
+            background-color: var(--White);
             color: var(--info);
         }
         &.light {
             border-color: var(--light);
-            background-color: var(--white);
+            background-color: var(--White);
             color: var(--black);
         }
         &.dark {
             border-color: var(--dark);
-            background-color: var(--white);
+            background-color: var(--White);
             color: var(--dark);
         }
     }

@@ -79,7 +79,7 @@
 }
 
 .preload-style-2 {
-    background: var(--white);
+    background: var(--White);
     .spinner-circle {
         .spinner-child {
             &::before {
@@ -95,7 +95,7 @@
             fill: var(--blue);
         }
         path:not(.text) {
-            fill: var(--white);
+            fill: var(--White);
             stroke: var(--blue);
         }
     }

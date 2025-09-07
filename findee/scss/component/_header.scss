@@ -97,7 +97,7 @@
         .left,
         .right {
             .icon {
-                color: var(--white);
+                color: var(--White);
             }
         }
     }
@@ -128,8 +128,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
-    padding-top: 20px;
+    padding: 4px 16px;
     position: relative;
     gap: 12px;
     .box-avt {
@@ -157,23 +156,23 @@
             }
         }
     }
+    .header-logo {
+        display: flex;
+        width: 81px;
+        height: 24px;
+    }
     .right {
         display: flex;
         align-items: center;
         gap: 10px;
+        .icon {
+            font-size: 19px;
+            color: var(--Secondary);
+        }
     }
     .box-icon {
-        width: 40px;
-        height: 40px;
-        background-color: var(--bg-black);
-        border-radius: 10px;
         @include transition3;
-        &:hover {
-            background-color: var(--blue-2);
-            svg path {
-                stroke: $white;
-            }
-        }
+       
     }
 }
 .fixed-top {
@@ -184,7 +183,7 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    background: var(--white);
+    background: var(--White);
 }
 .header-white {
     &.is-fixed {

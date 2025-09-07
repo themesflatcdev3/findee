@@ -36,16 +36,16 @@
         padding: 24px;
         padding-left: 99px;
         padding-right: 80px;
-        border: 1px solid var(--white);
-        background-color: var(--white);
+        border: 1px solid var(--White);
+        background-color: var(--White);
         font-size: 14px;
         font-weight: 500;
         line-height: 24px;
         border-radius: 0;
         color: var(--rgba-black-2);
         &:focus {
-            border-color: var(--white);
-            background-color: var(--white);
+            border-color: var(--White);
+            background-color: var(--White);
         }
     }
     .btn-message {
@@ -91,7 +91,7 @@
 
         .text-item {
             color: var(--rgba-black-13);
-            background-color: var(--white);
+            background-color: var(--White);
             border-bottom-left-radius: 30px;
             padding-right: 31px;
             padding-left: 16px;

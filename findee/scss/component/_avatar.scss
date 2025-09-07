@@ -21,7 +21,7 @@
             position: absolute;
             bottom: 0;
             right: 3px;
-            border: 1px solid var(--white);
+            border: 1px solid var(--White);
             background: var(--bright-green);
         }
         img {
@@ -36,7 +36,7 @@
             position: absolute;
             bottom: 0;
             right: 0px;
-            border: 2px solid var(--white);
+            border: 2px solid var(--White);
             background: rgba(240, 90, 90, 1);
         }
         .disabled {
@@ -48,7 +48,7 @@
             position: absolute;
             bottom: 0;
             right: 3px;
-            border: 1px solid var(--white);
+            border: 1px solid var(--White);
             background: var(--gray);
         }
     }
@@ -148,7 +148,7 @@
     height: 110px;
 }
 .line-3 {
-    border: 3px solid var(var(--white));
+    border: 3px solid var(var(--White));
 }
 
 .list-stacked {
@@ -156,34 +156,34 @@
     .avt-list {
         margin-right: -8px;
         .avatar {
-            border: 1px solid var(--white);
+            border: 1px solid var(--White);
         }
         .member {
             @include flex(center, center);
             &.type-1 {
                 background-color: rgba(52, 200, 222, 1);
-                color: var(--white);
+                color: var(--White);
                 font-size: 8px;
                 line-height: 10px;
                 font-weight: 400;
             }
             &.type-2 {
                 background-color: rgba(236, 72, 153, 1);
-                color: var(--white);
+                color: var(--White);
                 font-size: 8px;
                 line-height: 10px;
                 font-weight: 400;
             }
             &.type-3 {
                 background-color: rgba(69, 210, 178, 1);
-                color: var(--white);
+                color: var(--White);
                 font-size: 8px;
                 line-height: 10px;
                 font-weight: 400;
             }
             &.type-4 {
                 background-color: --blue;
-                color: var(--white);
+                color: var(--White);
                 font-size: 8px;
                 line-height: 10px;
                 font-weight: 400;

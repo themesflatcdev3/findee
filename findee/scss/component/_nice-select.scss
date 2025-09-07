@@ -1,7 +1,7 @@
 @use "../abstracts/index" as *;
 .nice-select {
     -webkit-tap-highlight-color: transparent;
-    background-color: var(--white);
+    background-color: var(--White);
     border: 1px solid var(--blue);
     border-radius: 12px;
     padding: 8px 20px;
@@ -116,7 +116,7 @@
 }
 
 .nice-select .list {
-    background-color: var(--white);
+    background-color: var(--White);
     border-radius: 5px;
     border: 1px solid var(--line);
     box-sizing: border-box;
