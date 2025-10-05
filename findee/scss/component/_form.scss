@@ -379,23 +379,45 @@
 .search-box {
     position: relative;
     width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
     .right-icon {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 10px;
-        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background-color: var(--On-Surface);
+        cursor: pointer;
+        .icon {
+            font-size: 24px;
+            color: var(--White);
+        }
     }
     .icon-left {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 20px;
+        left: 7px;
+        .icon {
+            font-size: 19px;
+        }
     }
     .search-field {
-        padding-left: 52px;
-        padding-right: 52px;
-        color: var(--black);
+        padding: 9px 34px;
+        font-weight: 400;
+        line-height: 20px;
+        border-radius: 8px;
+        &::placeholder {
+            color: var(--Placehoder);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 }
 

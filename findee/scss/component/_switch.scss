@@ -1,13 +1,14 @@
 @use "../abstracts/index" as *;
 .tf-switch-check {
     position: relative;
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     -webkit-appearance: none;
     border: 1px solid var(--Secondary);
     border-radius: 2px;
     transition: 0.2s;
     margin-right: 0;
+    flex-shrink: 0;
 
     &::before {
         position: absolute;

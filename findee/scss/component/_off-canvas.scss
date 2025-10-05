@@ -141,3 +141,22 @@
         border-bottom: 1px solid var(--rgba-black-4);
     }
 }
+
+.search-header {
+    padding: 4px 16px;
+    height: unset;
+    .right-icon {
+        font-size: 24px;
+    }
+}
+
+.close-popup {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 32px;;
+}
+
+.popup_job_detail {
+    height: calc(100vh - 40px) !important;
+}

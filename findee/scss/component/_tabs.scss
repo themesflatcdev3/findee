@@ -1,23 +1,42 @@
 @use "../abstracts/index" as *;
 .menu-tab-job {
     display: flex;
-    border-radius: 18px;
-    padding: 8px;
-    background-color: var(--rgba-blue);
-    gap: 12px;
+    border-bottom: 1px solid var(--line);
+    .tab-item {
+        display: flex;
+        justify-content: center;
+    }
     .tab-link {
-        background-color: var(--White);
-        padding: 8px 14px;
-        border-radius: 12px;
+        color: var(--Secondary);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 8px;
+        font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
-        font-weight: 600;
-        color: var(--rgba-blue-2);
-        display: block;
-        text-transform: capitalize;
+        line-height: 20px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: auto;
+            width: 0;
+            right: 0;
+            height: 2px;
+            background-color: var(--Primary);
+            @include transition3;
+        }
         &.active {
-            background-color: var(--blue);
-            color: $white;
+            color: var(--On-Surface);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            &::after {
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
         }
     }
 }

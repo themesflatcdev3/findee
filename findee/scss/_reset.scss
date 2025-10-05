@@ -251,7 +251,7 @@ body {
 a {
     text-decoration: none;
     outline: none;
-    color: inherit;
+    color: var(--On-Surface);
     cursor: pointer;
     @include transition3;
     display: inline-block;
@@ -525,6 +525,12 @@ select {
     }
 }
 
+.link {
+    &:hover {
+        color: var(--Primary) !important;
+    }
+}
+
 // text
 .text-body {
     font-size: 16px;
@@ -674,14 +680,23 @@ select {
 .mb-4 {
     margin-bottom: 4px !important;
 }
+.mb-8 {
+    margin-bottom: 8px !important;
+}
 .mb-10 {
     margin-bottom: 10px !important;
 }
 .mb-12 {
     margin-bottom: 12px;
 }
+.mb-16 {
+    margin-bottom: 16px;
+}
 .mb-20 {
     margin-bottom: 20px;
+}
+.mb-23 {
+    margin-bottom: 23px;
 }
 .mb-24 {
     margin-bottom: 24px;
@@ -716,7 +731,7 @@ select {
 
 // padding
 .p-16 {
-    padding: 16px;
+    padding: 16px !important;
 }
 .pt-20 {
     padding-top: 20px;
@@ -869,4 +884,16 @@ select {
         display: grid;
         gap: 20px;
     }
+}
+
+.w175 {
+    width: 175px;
+}
+
+.h-6 {
+    height: 6px !important;
+}
+
+.mb-6 {
+    margin-bottom: 6px !important;
 }

@@ -337,6 +337,14 @@
     }, 200);
   };
 
+  /* find-job
+  ------------------------------------------------------------------------------------- */
+  var find_job = function () {
+    $(".find-job-item .bookmark-save").click(function () {
+      $(this).closest(".find-job-item").toggleClass("save-item");
+    });
+  };
+
   $(function () {
     showPass();
     otpInput();
@@ -352,6 +360,7 @@
     flatCounter();
     inputUpload();
     RTL();
+    find_job();
     preloader();
   });
 })(jQuery);
