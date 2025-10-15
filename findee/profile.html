@@ -17,7 +17,7 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/168.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
-    <title>Profile</title>
+    <title>My profile</title>
     <!-- Apply dark theme early to avoid white flash -->
     <script>
         if (localStorage.toggled === "dark-theme") {
@@ -36,263 +36,416 @@
         
     </div>
     <!-- /preload -->
-    <div class="header fixed-top">
-        <div class="left">
-            <a href="javascript:void(0);" class="icon back-btn">
-                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.88986 12.2951L1.60986 7.00008L6.88986 1.70508" stroke="#121927" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </a>
-        </div>
-        <h3>Profile</h3>
-        <div class="right">
-            <a href="search-result.html" class="icon-noline">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-                        stroke="#121927" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M22 22L20 20" stroke="#121927" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </a>
-            <a href="#" class="icon-noline">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 3.75C12.6858 3.75 13.25 4.31421 13.25 5C13.25 5.68579 12.6858 6.25 12 6.25C11.3142 6.25 10.75 5.68579 10.75 5C10.75 4.31421 11.3142 3.75 12 3.75Z"
-                        fill="#121927" stroke="#121927" stroke-width="1.5" />
-                    <path
-                        d="M12 17.75C12.6858 17.75 13.25 18.3142 13.25 19C13.25 19.6858 12.6858 20.25 12 20.25C11.3142 20.25 10.75 19.6858 10.75 19C10.75 18.3142 11.3142 17.75 12 17.75Z"
-                        fill="#121927" stroke="#121927" stroke-width="1.5" />
-                    <path
-                        d="M12 10.75C12.6858 10.75 13.25 11.3142 13.25 12C13.25 12.6858 12.6858 13.25 12 13.25C11.3142 13.25 10.75 12.6858 10.75 12C10.75 11.3142 11.3142 10.75 12 10.75Z"
-                        fill="#121927" stroke="#121927" stroke-width="1.5" />
-                </svg>
-            </a>
+    <div class="header-avt fixed-top">
+        <div></div>
+        <h4>My profile</h4>
+        <a class="right-icon more-option" data-bs-target="#more-option" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0002 8.18737C11.1472 8.18737 10.3134 8.4403 9.60426 8.91416C8.89507 9.38802 8.34233 10.0615 8.01593 10.8496C7.68952 11.6376 7.60412 12.5047 7.77052 13.3412C7.93692 14.1777 8.34765 14.9462 8.95076 15.5493C9.55387 16.1524 10.3223 16.5631 11.1588 16.7295C11.9954 16.8959 12.8625 16.8105 13.6505 16.4841C14.4385 16.1577 15.112 15.605 15.5859 14.8958C16.0597 14.1866 16.3127 13.3528 16.3127 12.4999C16.3112 11.3566 15.8563 10.2605 15.0479 9.45212C14.2395 8.64369 13.1434 8.18886 12.0002 8.18737ZM12.0002 15.6874C11.3697 15.6874 10.7535 15.5004 10.2293 15.1502C9.7051 14.7999 9.29655 14.3021 9.05529 13.7197C8.81404 13.1372 8.75091 12.4963 8.8739 11.878C8.9969 11.2597 9.30048 10.6918 9.74625 10.246C10.192 9.80019 10.76 9.49661 11.3783 9.37362C11.9966 9.25063 12.6375 9.31375 13.22 9.55501C13.8024 9.79626 14.3002 10.2048 14.6505 10.729C15.0007 11.2532 15.1877 11.8694 15.1877 12.4999C15.1877 13.3453 14.8518 14.156 14.2541 14.7538C13.6563 15.3515 12.8455 15.6874 12.0002 15.6874ZM20.0627 12.7661C20.0683 12.5889 20.0683 12.4108 20.0627 12.2336L21.4998 10.4374C21.5548 10.3686 21.5928 10.2879 21.6109 10.2018C21.629 10.1157 21.6266 10.0265 21.6039 9.94144C21.379 9.094 21.0423 8.28029 20.6027 7.52175C20.559 7.44476 20.4978 7.37917 20.424 7.3303C20.3502 7.28143 20.2659 7.25066 20.178 7.2405L17.8858 6.98644C17.7652 6.85706 17.6402 6.73206 17.5108 6.61144L17.2558 4.31831C17.2456 4.23039 17.2149 4.1461 17.166 4.07231C17.1171 3.99851 17.0515 3.93729 16.9745 3.89362C16.2169 3.45521 15.4045 3.11916 14.5586 2.89425C14.4733 2.87197 14.384 2.87004 14.2979 2.8886C14.2118 2.90716 14.1312 2.94571 14.0627 3.00112L12.2627 4.44206C12.0855 4.43644 11.9073 4.43644 11.7302 4.44206L9.93766 3.00019C9.8689 2.94525 9.78821 2.90722 9.70207 2.88914C9.61594 2.87107 9.52676 2.87346 9.44172 2.89612C8.59429 3.12098 7.78057 3.45769 7.02203 3.89737C6.94505 3.94104 6.87945 4.00226 6.83058 4.07606C6.78171 4.14985 6.75095 4.23414 6.74078 4.32206L6.49047 6.61425C6.3611 6.7355 6.2361 6.8605 6.11547 6.98925L3.82141 7.24987C3.73348 7.26003 3.6492 7.2908 3.5754 7.33967C3.50161 7.38854 3.44039 7.45414 3.39672 7.53112C2.95831 8.28874 2.62225 9.10113 2.39735 9.94706C2.37561 10.0313 2.37369 10.1194 2.39175 10.2044C2.4098 10.2895 2.44734 10.3693 2.50141 10.4374L3.94235 12.2374C3.93672 12.4146 3.93672 12.5927 3.94235 12.7699L2.50047 14.5671C2.44554 14.6358 2.4075 14.7165 2.38943 14.8026C2.37136 14.8888 2.37375 14.978 2.39641 15.063C2.62166 15.9088 2.95836 16.7209 3.39766 17.478C3.44133 17.555 3.50255 17.6206 3.57634 17.6694C3.65014 17.7183 3.73442 17.7491 3.82235 17.7592L6.11453 18.0133C6.23578 18.1427 6.36078 18.2677 6.48953 18.3883L6.75016 20.6786C6.76032 20.7665 6.79109 20.8508 6.83996 20.9246C6.88883 20.9984 6.95442 21.0596 7.03141 21.1033C7.78902 21.5417 8.60141 21.8778 9.44735 22.1027C9.53239 22.1253 9.62156 22.1277 9.7077 22.1097C9.79383 22.0916 9.87452 22.0536 9.94328 21.9986L11.7339 20.5624C11.9111 20.568 12.0892 20.568 12.2664 20.5624L14.0673 22.0042C14.1672 22.0839 14.2912 22.1272 14.4189 22.1271C14.4676 22.1269 14.5161 22.1206 14.5633 22.1083C15.4091 21.8831 16.2212 21.5464 16.9783 21.1071C17.0553 21.0634 17.1209 21.0022 17.1697 20.9284C17.2186 20.8546 17.2494 20.7703 17.2595 20.6824L17.5136 18.3902C17.643 18.2696 17.768 18.1446 17.8886 18.0152L20.1817 17.7602C20.2696 17.75 20.3539 17.7193 20.4277 17.6704C20.5015 17.6215 20.5627 17.5559 20.6064 17.4789C21.045 16.7214 21.381 15.909 21.6058 15.063C21.6284 14.978 21.6308 14.8888 21.6128 14.8026C21.5947 14.7165 21.5567 14.6358 21.5017 14.5671L20.0627 12.7661ZM19.772 16.6689L17.5558 16.9155C17.4173 16.9315 17.2897 16.9983 17.1977 17.103C17.0124 17.3117 16.8148 17.5093 16.6061 17.6946C16.5014 17.7866 16.4346 17.9142 16.4186 18.0527L16.172 20.268C15.6532 20.5447 15.108 20.7689 14.5445 20.9374L12.8036 19.5442C12.7038 19.4646 12.5798 19.4213 12.452 19.4214H12.4183C12.1398 19.4374 11.8606 19.4374 11.582 19.4214C11.4429 19.4129 11.3056 19.4564 11.1967 19.5433L9.45672 20.9374C8.89381 20.768 8.34923 20.5428 7.8311 20.2652L7.58453 18.0508C7.56857 17.9123 7.50175 17.7847 7.39703 17.6927C7.1883 17.5074 6.99076 17.3099 6.80547 17.1011C6.71345 16.9964 6.58583 16.9296 6.44735 16.9136L4.23203 16.6671C3.95561 16.1497 3.73138 15.6061 3.56266 15.0442L4.95578 13.3033C5.04274 13.1944 5.08617 13.0571 5.07766 12.918C5.06172 12.6395 5.06172 12.3603 5.07766 12.0817C5.08617 11.9426 5.04274 11.8053 4.95578 11.6964L3.56266 9.95644C3.73202 9.39353 3.9572 8.84894 4.23485 8.33081L6.44922 8.08425C6.58771 8.06828 6.71533 8.00147 6.80735 7.89675C6.99264 7.68802 7.19018 7.49048 7.39891 7.30519C7.50362 7.21317 7.57044 7.08554 7.58641 6.94706L7.83297 4.73175C8.35036 4.45533 8.89397 4.23109 9.45578 4.06237L11.1967 5.4555C11.3056 5.54245 11.4429 5.58588 11.582 5.57737C11.8606 5.56144 12.1398 5.56144 12.4183 5.57737C12.5574 5.58588 12.6947 5.54245 12.8036 5.4555L14.5436 4.06237C15.1065 4.23173 15.6511 4.45691 16.1692 4.73456L16.4158 6.95081C16.4317 7.08929 16.4986 7.21692 16.6033 7.30894C16.812 7.49423 17.0096 7.69177 17.1948 7.9005C17.2869 8.00522 17.4145 8.07203 17.553 8.088L19.7683 8.33456C20.0446 8.85135 20.2688 9.39433 20.4377 9.9555L19.0445 11.6964C18.9576 11.8053 18.9142 11.9426 18.9227 12.0817C18.9386 12.3603 18.9386 12.6395 18.9227 12.918C18.9142 13.0571 18.9576 13.1944 19.0445 13.3033L20.4377 15.0433C20.2689 15.6062 20.0443 16.1507 19.7673 16.6689H19.772Z" fill="#121212"/>
+            </svg>
+        </a>
+    </div>
+    <div class="app-content style-2">
+        <div class="tf-container">
+            <div class="my-profile mb-16">
+                <div class="my-profile-infor">
+                    <div class="image">
+                        <img src="images/avt/my-profile.png" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="name text-title mb-4 text-white">Lindsey Curtis</div>
+                        <div class="sub text-caption-1 text-white">UI/UX Designer</div>
+                    </div>
+                    <a href="edit-profile.html" class="right-icon">
+                        <i class="icon icon-edit"></i>
+                    </a>
+                </div>
+                <div class="my-profile-follower">
+                    <div class="connections text-caption-2 text-white">235 Connections</div>
+                    <div class="line"></div>
+                    <div class="followers text-caption-2 text-white">367 Followers</div>
+                </div>
+            </div>
+            <div>
+                <div class="accordion" id="accordionSummary">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Summary">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                <i class="icon icon-book"></i>
+                                <span class="text-button-small">Summary</span>
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="Summary">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="text-caption-1 text-OnSurface">
+                                    Hi there, My name is Tony Nguyen. In over 10 years and over 10k hours of work, I have designed over 500 websites in various fields. With my experience, I can design websites and apps using tools: Figma, Framer, Photoshop, Sketch, adobeXD, Ai...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <i class="icon icon-imageSquare2"></i>
+                                <span class="text-button-small">Portfolio</span>
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="d-flex gap-12 list-item-ft">
+                                    <div class="item-ft"></div>
+                                    <div class="item-ft"></div>
+                                    <div class="item-ft"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <i class="icon icon-money"></i>
+                                <span class="text-button-small">Expected Salary</span>
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="text-caption-1 text-OnSurface">
+                                    10.000 - 15.000/month (only you can see this)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                <i class="icon icon-money"></i>
+                                <span class="text-button-small">Expected Salary</span>
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="text-caption-1 text-OnSurface">
+                                    10.000 - 15.000/month (only you can see this)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                <i class="icon icon-work"></i>
+                                <span class="text-button-small">Work Experience</span>
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="education-item">
+                                    <div class="sub text-caption-2 text-Primary">FindeeCompany</div>
+                                    <div class="title text-button-small text-OnSurface">Product Design</div>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <i class="icon icon-calendar"></i>
+                                        <div class="text-caption-3">July 2021 - Present</div>
+                                    </div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="sub text-caption-2 text-Primary">Avitex Company</div>
+                                    <div class="title text-button-small text-OnSurface">UI/UX Designer</div>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <i class="icon icon-calendar"></i>
+                                        <div class="text-caption-3">July 2019 - July 2021</div>
+                                    </div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="sub text-caption-2 text-Primary">Graphic Designer</div>
+                                    <div class="title text-button-small text-OnSurface">Graphic Designer</div>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <i class="icon icon-calendar"></i>
+                                        <div class="text-caption-3">July 2017 - July 2019</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                <i class="icon icon-education"></i>
+                                <span class="text-button-small">Education</span>
+                            </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="education-item">
+                                    <div class="sub text-caption-2 text-Primary">Infomation Technology University</div>
+                                    <div class="title text-button-small text-OnSurface">Graphic Design</div>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <i class="icon icon-calendar"></i>
+                                        <div class="text-caption-3">July 2008 - 2013</div>
+                                    </div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="sub text-caption-2 text-Primary">Google Acdemy</div>
+                                    <div class="title text-button-small text-OnSurface">UI/UX Designer</div>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <i class="icon icon-calendar"></i>
+                                        <div class="text-caption-3">July 2014 - July 2015</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                <i class="icon icon-skill"></i>
+                                <span class="text-button-small">Skills</span>
+                            </button>
+                        </h2>
+                        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="d-flex gap-8 list-item-ft flex-wrap">
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        Leadership
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        Teamwork
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        English
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        Consistent
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        Designer
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        UI/UX Designer
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        Target oriented
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                <i class="icon icon-globe"></i>
+                                <span class="text-button-small">Language</span>
+                            </button>
+                        </h2>
+                        <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="d-flex gap-8 list-item-ft flex-wrap">
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        English
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        Spanish
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                    <div class="tag-item item-ft text-caption-2 text-OnSurface">
+                                        Arabic
+                                        <i class="icon icon-x item-remove"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                <i class="icon icon-medal"></i>
+                                <span class="text-button-small">Appreciation</span>
+                            </button>
+                        </h2>
+                        <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="education-item">
+                                    <div class="title text-button-small text-OnSurface mb-0">Graphic Design</div>
+                                    <div class="sub text-caption-2 text-Primary mb-4">Young Scientist</div>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <i class="icon icon-calendar"></i>
+                                        <div class="text-caption-3">2015</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Portfolio">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                <i class="icon icon-cv"></i>
+                                <span class="text-button-small">CV/Resume</span>
+                            </button>
+                        </h2>
+                        <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="Portfolio">
+                            <div class="accordion-body">
+                                <a href="#" class="link-edit-detail">
+                                    <i class="icon icon-edit"></i>
+                                </a>
+                                <div class="list-item-ft d-flex flex-column gap-8">
+                                    <div class="item-ft cv-item">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4313_6088)">
+                                            <g filter="url(#filter0_di_4313_6088)">
+                                            <path d="M30 40H10C6.68629 40 4 37.3137 4 34V6C4 2.68629 6.68629 0 10 0H20.5147C22.106 0 23.6321 0.632142 24.7574 1.75736L34.2426 11.2426C35.3679 12.3679 36 13.894 36 15.4853V34C36 37.3137 33.3137 40 30 40Z" fill="white"/>
+                                            <path d="M10 0.75H20.5146C21.907 0.75 23.242 1.30354 24.2266 2.28809L33.7119 11.7734C34.6965 12.758 35.25 14.093 35.25 15.4854V34C35.25 36.8995 32.8995 39.25 30 39.25H10C7.10051 39.25 4.75 36.8995 4.75 34V6C4.75 3.10051 7.10051 0.75 10 0.75Z" stroke="#CDD0D5" stroke-width="1.5"/>
+                                            </g>
+                                            <path d="M23 1V9C23 11.2091 24.7909 13 27 13H35" stroke="#CDD0D5" stroke-width="1.5"/>
+                                            <g filter="url(#filter1_i_4313_6088)">
+                                            <mask id="path-4-inside-1_4313_6088" fill="white">
+                                            <path d="M0 22C0 19.7909 1.79086 18 4 18H24C26.2091 18 28 19.7909 28 22V30C28 32.2091 26.2091 34 24 34H4C1.79086 34 0 32.2091 0 30V22Z"/>
+                                            </mask>
+                                            <path d="M0 22C0 19.7909 1.79086 18 4 18H24C26.2091 18 28 19.7909 28 22V30C28 32.2091 26.2091 34 24 34H4C1.79086 34 0 32.2091 0 30V22Z" fill="#E74141"/>
+                                            <path d="M-1 22C-1 19.2386 1.23858 17 4 17H24C26.7614 17 29 19.2386 29 22H27C27 20.3431 25.6569 19 24 19H4C2.34315 19 1 20.3431 1 22H-1ZM28 34H0H28ZM4 34C1.23858 34 -1 31.7614 -1 29V22C-1 19.2386 1.23858 17 4 17V19C2.34315 19 1 20.3431 1 22V30C1 32.2091 2.34315 34 4 34ZM24 17C26.7614 17 29 19.2386 29 22V29C29 31.7614 26.7614 34 24 34C25.6569 34 27 32.2091 27 30V22C27 20.3431 25.6569 19 24 19V17Z" fill="black" fill-opacity="0.08" mask="url(#path-4-inside-1_4313_6088)"/>
+                                            <path d="M3.78906 30V22H6.78906C7.40365 22 7.91927 22.1146 8.33594 22.3437C8.75521 22.5729 9.07161 22.888 9.28516 23.2891C9.5013 23.6875 9.60938 24.1406 9.60938 24.6484C9.60938 25.1615 9.5013 25.6172 9.28516 26.0156C9.06901 26.4141 8.75 26.7279 8.32812 26.957C7.90625 27.1836 7.38672 27.2969 6.76953 27.2969H4.78125V26.1055H6.57422C6.93359 26.1055 7.22786 26.043 7.45703 25.918C7.6862 25.793 7.85547 25.6211 7.96484 25.4023C8.07682 25.1836 8.13281 24.9323 8.13281 24.6484C8.13281 24.3646 8.07682 24.1146 7.96484 23.8984C7.85547 23.6823 7.6849 23.5143 7.45313 23.3945C7.22396 23.2721 6.92839 23.2109 6.56641 23.2109H5.23828V30H3.78906ZM13.7991 30H11.0882V22H13.8538C14.6481 22 15.3304 22.1602 15.9007 22.4805C16.4736 22.7982 16.9137 23.2552 17.221 23.8516C17.5283 24.4479 17.6819 25.1615 17.6819 25.9922C17.6819 26.8255 17.527 27.5417 17.2171 28.1406C16.9098 28.7396 16.4658 29.1992 15.885 29.5195C15.3069 29.8398 14.6116 30 13.7991 30ZM12.5374 28.7461H13.7288C14.2861 28.7461 14.7509 28.6445 15.1233 28.4414C15.4957 28.2357 15.7757 27.9297 15.9632 27.5234C16.1507 27.1146 16.2444 26.6042 16.2444 25.9922C16.2444 25.3802 16.1507 24.8724 15.9632 24.4687C15.7757 24.0625 15.4983 23.7591 15.1311 23.5586C14.7665 23.3555 14.3134 23.2539 13.7718 23.2539H12.5374V28.7461ZM19.2789 30V22H24.4039V23.2148H20.7281V25.3867H24.0523V26.6016H20.7281V30H19.2789Z" fill="white"/>
+                                            </g>
+                                            </g>
+                                            <defs>
+                                            <filter id="filter0_di_4313_6088" x="2" y="-4" width="36" height="47" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="1"/>
+                                            <feGaussianBlur stdDeviation="1"/>
+                                            <feComposite in2="hardAlpha" operator="out"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.894118 0 0 0 0 0.898039 0 0 0 0 0.905882 0 0 0 0.24 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4313_6088"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4313_6088" result="shape"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="-4"/>
+                                            <feGaussianBlur stdDeviation="2"/>
+                                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.813571 0 0 0 0 0.82 0 0 0 0 0.826429 0 0 0 0.32 0"/>
+                                            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_4313_6088"/>
+                                            </filter>
+                                            <filter id="filter1_i_4313_6088" x="0" y="18" width="28" height="20" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="4"/>
+                                            <feGaussianBlur stdDeviation="2"/>
+                                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.08 0"/>
+                                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_4313_6088"/>
+                                            </filter>
+                                            <clipPath id="clip0_4313_6088">
+                                            <rect width="40" height="40" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="flex-grow-1">
+                                            <div class="text-button-small text-OnSurface mb-4 title">CV_Tony_Findee.pdf</div>
+                                            <div class="text-caption-2 capacity">800kb</div>
+                                        </div>
+                                        <i class="cv-item-icon icon-trash item-remove"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
-    <div class="app-content pb-0 app-fullheight">
-        <div class="tf-container">
-            <div class="box-profile text-center">
-                <div class="avatar">
-                    <img src="images/avt/avt-1.jpg" alt="avt">
-                </div>
-                <div class="content">
-                    <h4 class="name">Jonathan Smith</h4>
-                    <p class="text-mail body-4">jonathansmith@gmail.com</p>
-                    <a href="#" class="button-1 text-primary-violet">Active Looking</a>
-                </div>
-            </div>
-            <div class="mt-22 wrap-count">
-                <div class="count-item">
-                    <div class="box-count bg-rgba-violet">
-                        <div class="h1 text-secondary-violet">36</div>
+    <div class="menubar-footer footer-fixed">
+        <ul class="inner-bar">
+            <li class="">
+                <a href="index.html">
+                    <div class="icon">
+                        <i class="icon-home-line"></i>
                     </div>
-                    <span class="text-dark body-2 fw-medium">Applied</span>
-                </div>
-                <div class="count-item">
-                    <div class="box-count bg-rgba-pink">
-                        <div class="h1 text-secondary-pink">20</div>
+                    <div class="text-caption-3 text">Home</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="new-feed.html">
+                    <div class="icon">
+                        <i class="icon-new-line"></i>
                     </div>
-                    <span class="text-dark body-2 fw-medium">Reviewed</span>
-                </div>
-                <div class="count-item">
-                    <div class="box-count bg-rgba-green-2">
-                        <div class="h1 text-secondary-green">36</div>
+                    <div class="text-caption-3 text">New Feed</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="saved.html">
+                    <div class="icon">
+                        <i class="icon-bookmarks-line"></i>
                     </div>
-                    <span class="text-dark body-2 fw-medium">Contacted</span>
-                </div>
-            </div>
-        </div>
-        <div class="mt-24 wrapper-box">
-            <ul class="list-profile">
-                <li>
-                    <a href="personal-information.html" class="item">
-                        <span class="box-icon"><i class="icon icon-profile-fill"></i></span>
-                        <div class="content">
-                            <h6 class="title">Personal Information</h6>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path
-                                        d="M7.42505 16.6004L12.8584 11.1671C13.5 10.5254 13.5 9.47539 12.8584 8.83372L7.42505 3.40039"
-                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="skill-view.html" class="item">
-                        <span class="box-icon"><i class="icon icon-teacher"></i></span>
-                        <div class="content">
-                            <h6 class="title">Skill</h6>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path
-                                        d="M7.42505 16.6004L12.8584 11.1671C13.5 10.5254 13.5 9.47539 12.8584 8.83372L7.42505 3.40039"
-                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="work-experience.html" class="item">
-                        <span class="box-icon"><i class="icon icon-briefcase"></i></span>
-                        <div class="content">
-                            <h6 class="title">Work Experience</h6>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path
-                                        d="M7.42505 16.6004L12.8584 11.1671C13.5 10.5254 13.5 9.47539 12.8584 8.83372L7.42505 3.40039"
-                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="education.html" class="item">
-                        <span class="box-icon"><i class="icon icon-teacher"></i></span>
-                        <div class="content">
-                            <h6 class="title">Education</h6>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path
-                                        d="M7.42505 16.6004L12.8584 11.1671C13.5 10.5254 13.5 9.47539 12.8584 8.83372L7.42505 3.40039"
-                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="awards.html" class="item">
-                        <span class="box-icon"><i class="icon icon-medal-star"></i></span>
-                        <div class="content">
-                            <h6 class="title">Awards</h6>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path
-                                        d="M7.42505 16.6004L12.8584 11.1671C13.5 10.5254 13.5 9.47539 12.8584 8.83372L7.42505 3.40039"
-                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="onboarding.html" class="item">
-                        <span class="box-icon"><i class="icon icon-logout"></i></span>
-                        <div class="content">
-                            <h6 class="title">Log out</h6>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path
-                                        d="M7.42505 16.6004L12.8584 11.1671C13.5 10.5254 13.5 9.47539 12.8584 8.83372L7.42505 3.40039"
-                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <div class="menubar-footer style-2 footer-fixed">
-                <ul class="inner-bar">
-                    <li>
-                        <a href="index.html">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path
-                                        d="M9.02 2.84016L3.63 7.04016C2.73 7.74016 2 9.23016 2 10.3602V17.7702C2 20.0902 3.89 21.9902 6.21 21.9902H17.79C20.11 21.9902 22 20.0902 22 17.7802V10.5002C22 9.29016 21.19 7.74016 20.2 7.05016L14.02 2.72016C12.62 1.74016 10.37 1.79016 9.02 2.84016Z"
-                                        stroke="#121927" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M12 17.9902V14.9902" stroke="#121927" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="application.html">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path d="M8 12.2002H15" stroke="#121927" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M8 16.2002H12.38" stroke="#121927" stroke-width="1.5"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10 6H14C16 6 16 5 16 4C16 2 15 2 14 2H10C9 2 8 2 8 4C8 6 9 6 10 6Z"
-                                        stroke="#121927" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                        d="M16 4.02002C19.33 4.20002 21 5.43002 21 10V16C21 20 20 22 15 22H9C4 22 3 20 3 16V10C3 5.44002 4.67 4.20002 8 4.02002"
-                                        stroke="#121927" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="action-add"><a href="apply-job.html">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 12H18" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12 18V6" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
+                    <div class="text-caption-3 text">Saved</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="notification.html">
+                    <div class="icon">
+                        <i class="icon-noti-line"></i>
+                    </div>
+                    <div class="text-caption-3 text">Notification</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="profile.html">
+                    <div class="icon">
+                        <i class="icon-user-line"></i>
+                    </div>
+                    <div class="text-caption-3 text">Profile</div>
+                </a>
+            </li>
+        </ul>
 
-                        </a></li>
-                    <li>
-                        <a href="message.html">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.6">
-                                    <path
-                                        d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z"
-                                        stroke="#121927" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M15.9965 11H16.0054" stroke="#121927" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.9955 11H12.0045" stroke="#121927" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M7.99451 11H8.00349" stroke="#121927" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="profile.html">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C9.38 2 7.25 4.13 7.25 6.75C7.25 9.32 9.26 11.4 11.88 11.49C11.96 11.48 12.04 11.48 12.1 11.49C12.12 11.49 12.13 11.49 12.15 11.49C12.16 11.49 12.16 11.49 12.17 11.49C14.73 11.4 16.74 9.32 16.75 6.75C16.75 4.13 14.62 2 12 2Z"
-                                    fill="#2869FE" />
-                                <path
-                                    d="M17.08 14.1499C14.29 12.2899 9.73996 12.2899 6.92996 14.1499C5.65996 14.9999 4.95996 16.1499 4.95996 17.3799C4.95996 18.6099 5.65996 19.7499 6.91996 20.5899C8.31996 21.5299 10.16 21.9999 12 21.9999C13.84 21.9999 15.68 21.5299 17.08 20.5899C18.34 19.7399 19.04 18.5999 19.04 17.3599C19.03 16.1299 18.34 14.9899 17.08 14.1499Z"
-                                    fill="#2869FE" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-
+    </div>
+    <div class="offcanvas offcanvas-bottom more-option" id="more-option">
+        <div class="overflow-auto">
+            <div class="more-option-wrap">
+                <a href="javascript:void(0);" data-bs-dismiss="offcanvas" class="item read-all-noti">
+                    <i class="icon icon-bookTxt"></i>
+                    <div class="text-caption-1 text-OnSurface">Mark all as read</div>
+                </a>
+                <a href="javascript:void(0);" data-bs-dismiss="offcanvas" class="item clear-noti">
+                    <i class="icon icon-trash"></i>
+                    <div class="text-caption-1 text-OnSurface">Clear Notification History</div>
+                </a>
             </div>
         </div>
-
     </div>
 
 

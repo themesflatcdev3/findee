@@ -2,6 +2,7 @@
 .menu-tab-job {
     display: flex;
     border-bottom: 1px solid var(--line);
+    overflow-x: auto;
     .tab-item {
         display: flex;
         justify-content: center;

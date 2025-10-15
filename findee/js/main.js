@@ -345,6 +345,24 @@
     });
   };
 
+  /* read-all-noti
+  ------------------------------------------------------------------------------------- */
+  var read_all_noti = function () {
+    $(".read-all-noti").click(function () {
+      $(".noti-item").removeClass("unread");
+    });
+  };
+  
+  /* clear_noti
+  ------------------------------------------------------------------------------------- */
+  var clear_noti = function () {
+    $(".clear-noti").click(function () {
+      $(".noti-item").remove();
+      $(".no-results-found").removeClass("d-none");
+    });
+  };
+
+
   $(function () {
     showPass();
     otpInput();
@@ -361,6 +379,8 @@
     inputUpload();
     RTL();
     find_job();
+    read_all_noti();
+    clear_noti();
     preloader();
   });
 })(jQuery);

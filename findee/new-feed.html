@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/168.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
+    <title>New feed</title>
+    <!-- Apply dark theme early to avoid white flash -->
+    <script>
+        if (localStorage.toggled === "dark-theme") {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="logo-img">
+            <img src="images/logo/logo-dark.png" alt="">
+        </div>
+        
+    </div>
+    <!-- /preload -->
+    <div class="header-avt fixed-top">
+        <a href="index.html" class="icon">
+            <img src="images/logo/logo-1.png" alt="">
+        </a>
+        <h4>New Feed</h4>
+        <div></div>
+    </div>
+    <div class="app-content style-2">
+        <div class="tf-container">
+            <div class="new-feed-top mb-16">
+                <div class="message-box-bottom">
+                    <div class="avatar avt-status avt-40">
+                        <img src="images/avt/avt-3.png" alt="">
+                    </div>
+                    <input type="text" class="search-field" placeholder="Comment">
+                    <div class="box-left">
+                        <a href="#" class="image-add">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 2.84985H3.75C3.41848 2.84985 3.10054 2.98155 2.86612 3.21597C2.6317 3.45039 2.5 3.76833 2.5 4.09985V16.5999C2.5 16.9314 2.6317 17.2493 2.86612 17.4837C3.10054 17.7182 3.41848 17.8499 3.75 17.8499H16.25C16.5815 17.8499 16.8995 17.7182 17.1339 17.4837C17.3683 17.2493 17.5 16.9314 17.5 16.5999V4.09985C17.5 3.76833 17.3683 3.45039 17.1339 3.21597C16.8995 2.98155 16.5815 2.84985 16.25 2.84985ZM3.75 4.09985H16.25V10.1452L14.3211 8.21548C14.0867 7.98124 13.7689 7.84965 13.4375 7.84965C13.1061 7.84965 12.7883 7.98124 12.5539 8.21548L4.16953 16.5999H3.75V4.09985ZM16.25 16.5999H5.9375L13.4375 9.09985L16.25 11.9124V16.5999ZM7.5 9.72485C7.87084 9.72485 8.23335 9.61489 8.54169 9.40886C8.85004 9.20283 9.09036 8.91 9.23227 8.56738C9.37419 8.22477 9.41132 7.84777 9.33897 7.48406C9.26663 7.12034 9.08805 6.78625 8.82583 6.52403C8.5636 6.2618 8.22951 6.08323 7.86579 6.01088C7.50208 5.93853 7.12508 5.97566 6.78247 6.11758C6.43986 6.25949 6.14702 6.49982 5.94099 6.80816C5.73497 7.1165 5.625 7.47901 5.625 7.84985C5.625 8.34713 5.82254 8.82405 6.17417 9.17568C6.52581 9.52731 7.00272 9.72485 7.5 9.72485ZM7.5 7.22485C7.62361 7.22485 7.74445 7.26151 7.84723 7.33018C7.95001 7.39886 8.03012 7.49647 8.07743 7.61068C8.12473 7.72488 8.13711 7.85055 8.11299 7.97179C8.08888 8.09302 8.02935 8.20439 7.94194 8.2918C7.85453 8.3792 7.74317 8.43873 7.62193 8.46284C7.50069 8.48696 7.37503 8.47458 7.26082 8.42728C7.14662 8.37997 7.04901 8.29987 6.98033 8.19709C6.91166 8.0943 6.875 7.97347 6.875 7.84985C6.875 7.68409 6.94085 7.52512 7.05806 7.40791C7.17527 7.2907 7.33424 7.22485 7.5 7.22485Z" fill="#121212"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="paperclip">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.3799 9.55781C16.438 9.61586 16.4841 9.68479 16.5156 9.76066C16.547 9.83653 16.5632 9.91786 16.5632 10C16.5632 10.0821 16.547 10.1635 16.5156 10.2393C16.4841 10.3152 16.438 10.3841 16.3799 10.4422L9.96974 16.8484C9.14912 17.669 8.03617 18.1299 6.87571 18.1298C5.71526 18.1297 4.60236 17.6687 3.78185 16.848C2.96133 16.0274 2.50042 14.9145 2.50049 13.754C2.50056 12.5936 2.96162 11.4807 3.78224 10.6602L11.5369 2.7914C12.1228 2.20492 12.9176 1.8752 13.7466 1.87476C14.5756 1.87432 15.3708 2.2032 15.9572 2.78906C16.5437 3.37492 16.8734 4.16976 16.8739 4.99873C16.8743 5.8277 16.5454 6.62289 15.9596 7.20937L8.20333 15.0781C7.85109 15.4304 7.37335 15.6283 6.87521 15.6283C6.37706 15.6283 5.89932 15.4304 5.54708 15.0781C5.19484 14.7259 4.99695 14.2481 4.99695 13.75C4.99695 13.2519 5.19484 12.7741 5.54708 12.4219L12.0549 5.81094C12.1119 5.75012 12.1805 5.70133 12.2566 5.66742C12.3328 5.63351 12.415 5.61518 12.4983 5.6135C12.5816 5.61183 12.6645 5.62684 12.7419 5.65765C12.8194 5.68847 12.8899 5.73446 12.9493 5.79293C13.0087 5.8514 13.0558 5.92117 13.0879 5.99812C13.1199 6.07507 13.1362 6.15765 13.1359 6.24101C13.1355 6.32437 13.1185 6.40681 13.0858 6.48349C13.0531 6.56016 13.0054 6.62953 12.9455 6.6875L6.43693 13.3055C6.37865 13.3633 6.33233 13.432 6.30062 13.5077C6.26891 13.5834 6.25241 13.6646 6.25209 13.7467C6.25176 13.8288 6.26761 13.9102 6.29872 13.9861C6.32983 14.0621 6.3756 14.1312 6.43341 14.1895C6.49122 14.2477 6.55995 14.294 6.63566 14.3258C6.71137 14.3575 6.79259 14.374 6.87467 14.3743C6.95676 14.3746 7.03811 14.3588 7.11407 14.3277C7.19003 14.2965 7.25912 14.2508 7.31739 14.193L15.0729 6.32812C15.4251 5.97661 15.6233 5.49956 15.6238 5.00193C15.6243 4.5043 15.4271 4.02685 15.0756 3.67461C14.7241 3.32237 14.247 3.12419 13.7494 3.12368C13.2518 3.12317 12.7743 3.32036 12.4221 3.67187L4.66896 11.5375C4.37851 11.8275 4.14802 12.1718 3.99066 12.5509C3.83329 12.93 3.75213 13.3363 3.7518 13.7467C3.75148 14.1572 3.83199 14.5636 3.98875 14.9429C4.14552 15.3223 4.37546 15.667 4.66544 15.9574C4.95543 16.2479 5.29978 16.4784 5.67884 16.6357C6.0579 16.7931 6.46425 16.8742 6.87467 16.8746C7.2851 16.8749 7.69158 16.7944 8.07089 16.6376C8.4502 16.4809 8.79492 16.2509 9.08536 15.9609L15.4963 9.55469C15.6139 9.43798 15.7731 9.37275 15.9387 9.37333C16.1044 9.37392 16.2631 9.44027 16.3799 9.55781Z" fill="#121212"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="calendarblank">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 2.5H14.375V1.875C14.375 1.70924 14.3092 1.55027 14.1919 1.43306C14.0747 1.31585 13.9158 1.25 13.75 1.25C13.5842 1.25 13.4253 1.31585 13.3081 1.43306C13.1908 1.55027 13.125 1.70924 13.125 1.875V2.5H6.875V1.875C6.875 1.70924 6.80915 1.55027 6.69194 1.43306C6.57473 1.31585 6.41576 1.25 6.25 1.25C6.08424 1.25 5.92527 1.31585 5.80806 1.43306C5.69085 1.55027 5.625 1.70924 5.625 1.875V2.5H3.75C3.41848 2.5 3.10054 2.6317 2.86612 2.86612C2.6317 3.10054 2.5 3.41848 2.5 3.75V16.25C2.5 16.5815 2.6317 16.8995 2.86612 17.1339C3.10054 17.3683 3.41848 17.5 3.75 17.5H16.25C16.5815 17.5 16.8995 17.3683 17.1339 17.1339C17.3683 16.8995 17.5 16.5815 17.5 16.25V3.75C17.5 3.41848 17.3683 3.10054 17.1339 2.86612C16.8995 2.6317 16.5815 2.5 16.25 2.5ZM5.625 3.75V4.375C5.625 4.54076 5.69085 4.69973 5.80806 4.81694C5.92527 4.93415 6.08424 5 6.25 5C6.41576 5 6.57473 4.93415 6.69194 4.81694C6.80915 4.69973 6.875 4.54076 6.875 4.375V3.75H13.125V4.375C13.125 4.54076 13.1908 4.69973 13.3081 4.81694C13.4253 4.93415 13.5842 5 13.75 5C13.9158 5 14.0747 4.93415 14.1919 4.81694C14.3092 4.69973 14.375 4.54076 14.375 4.375V3.75H16.25V6.25H3.75V3.75H5.625ZM16.25 16.25H3.75V7.5H16.25V16.25Z" fill="#121212"/>
+                            </svg>
+                        </a>
+                        <div class="line"></div>
+                        <a href="javascript:void(0);" class="btn-message">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4311_26746)">
+                                <path d="M17.4754 3.64523C17.5055 3.53832 17.5066 3.42531 17.4785 3.31784C17.4505 3.21036 17.3943 3.11231 17.3157 3.03377C17.2372 2.95522 17.1391 2.89903 17.0317 2.87098C16.9242 2.84292 16.8112 2.84401 16.7043 2.87414L1.70427 7.42258C1.5818 7.45714 1.47281 7.52826 1.39185 7.62642C1.31089 7.72459 1.26182 7.84513 1.2512 7.97193C1.24059 8.09874 1.26893 8.22576 1.33244 8.33602C1.39595 8.44629 1.4916 8.53454 1.60661 8.58898L8.29567 11.7562C8.4259 11.8179 8.53078 11.9228 8.59255 12.053L11.7605 18.7413C11.815 18.8563 11.9032 18.952 12.0135 19.0155C12.1237 19.079 12.2508 19.1073 12.3776 19.0967C12.5044 19.0861 12.6249 19.037 12.7231 18.9561C12.8212 18.8751 12.8924 18.7661 12.9269 18.6437L17.4754 3.64523Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.46973 11.8795L12.4994 7.84985" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4311_26746">
+                                <rect width="20" height="20" fill="white" transform="translate(0 0.349854)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="new-feed-post box-post mb-16">
+                <div class="post-user mb-12">
+                    <div class="avatar avt-status avt-40">
+                        <img src="images/avt/avt-3.png" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                        <a href="#" class="name d-flex text-button-small text-OnSurface mb-4">Kaiya Siphron</a>
+                        <div class="infor">
+                            <div class="sub text-caption-2">CEO at Findee</div>
+                            <div class="dot"></div>
+                            <div class="time text-caption-2">2 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a class="save-post d-flex">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.375 2.5H5.625C5.29348 2.5 4.97554 2.6317 4.74112 2.86612C4.5067 3.10054 4.375 3.41848 4.375 3.75V17.5C4.37506 17.6115 4.40496 17.721 4.46161 17.8171C4.51826 17.9132 4.59959 17.9924 4.69716 18.0464C4.79473 18.1005 4.90498 18.1274 5.01648 18.1245C5.12798 18.1215 5.23666 18.0888 5.33125 18.0297L10 15.1117L14.6695 18.0297C14.7641 18.0886 14.8727 18.1212 14.9841 18.124C15.0955 18.1268 15.2056 18.0998 15.303 18.0458C15.4005 17.9918 15.4817 17.9127 15.5383 17.8167C15.5949 17.7208 15.6249 17.6114 15.625 17.5V3.75C15.625 3.41848 15.4933 3.10054 15.2589 2.86612C15.0245 2.6317 14.7065 2.5 14.375 2.5ZM14.375 16.3727L10.3305 13.8453C10.2311 13.7832 10.1164 13.7503 9.99922 13.7503C9.88208 13.7503 9.7673 13.7832 9.66797 13.8453L5.625 16.3727V3.75H14.375V16.3727Z" fill="#121212"/>
+                            </svg>
+                        </a>
+                        <a class="right-icon more-option" data-bs-target="#more-option" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 11C12.5523 11 13 10.5523 13 10C13 9.44772 12.5523 9 12 9C11.4477 9 11 9.44772 11 10C11 10.5523 11.4477 11 12 11Z" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5Z" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-caption-1 text-OnSurface mb-12">
+                    Lorem ipsum dolor sit amet consectetur. Cursus nunc pharetra arcu quam turpis risus amet turpis. Facilisis elementum tincidunt pellentesque sed rutrum enim.
+                </div>
+                <div class="mb-12">
+                    <img src="images/post/post-1.jpg" alt="">
+                </div>
+                <div class="like-share mb-16">
+                    <div class="like-share-infor d-flex align-items-center justify-content-between mb-8">
+                        <div class="text-caption-2 likes">213 Likes</div>
+                        <div class="d-flex gap-16">
+                            <div class="text-caption-2 comments">48 Comments</div>
+                            <div class="text-caption-2 shares">6 Shares</div>
+                        </div>
+                    </div>
+                    <div class="like-share-button">
+                        <a href="#" class="link">
+                            <i class="icon icon-like"></i>
+                            <span class="text-caption-1">Like</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-cmt"></i>
+                            <span class="text-caption-1">Comment</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-shareFat"></i>
+                            <span class="text-caption-1">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-comment">
+                    <div class="title text-caption-1 text-OnSurface d-flex gap-8 mb-12">
+                        All Comments
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6925 7.94229L10.4425 14.1923C10.3845 14.2504 10.3156 14.2965 10.2397 14.328C10.1638 14.3594 10.0825 14.3756 10.0003 14.3756C9.91821 14.3756 9.83688 14.3594 9.76101 14.328C9.68514 14.2965 9.61621 14.2504 9.55816 14.1923L3.30816 7.94229C3.19088 7.82502 3.125 7.66596 3.125 7.5001C3.125 7.33425 3.19088 7.17519 3.30816 7.05792C3.42544 6.94064 3.5845 6.87476 3.75035 6.87476C3.9162 6.87476 4.07526 6.94064 4.19253 7.05792L10.0003 12.8665L15.8082 7.05792C15.8662 6.99985 15.9352 6.95378 16.011 6.92236C16.0869 6.89093 16.1682 6.87476 16.2503 6.87476C16.3325 6.87476 16.4138 6.89093 16.4897 6.92236C16.5655 6.95378 16.6345 6.99985 16.6925 7.05792C16.7506 7.11598 16.7967 7.18492 16.8281 7.26079C16.8595 7.33666 16.8757 7.41798 16.8757 7.5001C16.8757 7.58223 16.8595 7.66354 16.8281 7.73941C16.7967 7.81528 16.7506 7.88422 16.6925 7.94229Z" fill="#121212"/>
+                        </svg>
+                    </div>
+                    <div class="post-comment-item">
+                        <div class="user d-flex gap-12 mb-8">
+                            <div class="avatar avt-status avt-40">
+                                <img src="images/avt/avt-1.png" alt="">
+                            </div>
+                            <div class="flex-grow-1">
+                                <a href="#" class="name link d-flex text-button-small text-OnSurface mb-4">Corey Schleifer</a>
+                                <div class="sub text-caption-2">CEO at Findee</div>
+                            </div>
+                        </div>
+                        <div class="desc text-caption-1 text-OnSurface">
+                            I am interested in this recruitment. Please give me JD
+                        </div>
+                    </div>
+                    <div class="post-comment-item">
+                        <div class="user d-flex gap-12 mb-8">
+                            <div class="avatar avt-status avt-40">
+                                <img src="images/avt/avt-2.png" alt="">
+                            </div>
+                            <div class="flex-grow-1">
+                                <a href="#" class="name link d-flex text-button-small text-OnSurface mb-4">Leo Kenter</a>
+                                <div class="sub text-caption-2">CEO at Findee</div>
+                            </div>
+                        </div>
+                        <div class="desc text-caption-1 text-OnSurface">
+                            I am interested in this recruitment. Please give me JD
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-feed-post mb-16">
+                <div class="text-button-small text-OnSurface mb-12">People you may know</div>
+                <div class="grid-2 gap-20">
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img class="round-full" src="images/avt/avt-1.png" alt="">
+                        </div>
+                        <div class="text-caption-2 text-Primary sub">Solutions Architect</div>
+                        <div class="text-button-small text-OnSurface name">Mr Ruben Calzoni</div>
+                        <div class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10 connections</div>
+                        </div>
+                        <a href="sign-in.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
+                    </div>
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img class="round-full" src="images/avt/avt-2.png" alt="">
+                        </div>
+                        <div class="text-caption-2 text-Primary sub">Solutions Architect</div>
+                        <div class="text-button-small text-OnSurface name">Ms Rayna Bator</div>
+                        <div class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10 connections</div>
+                        </div>
+                        <a href="sign-in.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
+                    </div>
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img class="round-full" src="images/avt/avt-1.png" alt="">
+                        </div>
+                        <div class="text-caption-2 text-Primary sub">Ms Esther Howard</div>
+                        <div class="text-button-small text-OnSurface name">Mr Ruben Calzoni</div>
+                        <div class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10 connections</div>
+                        </div>
+                        <a href="sign-in.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
+                    </div>
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img class="round-full" src="images/avt/avt-2.png" alt="">
+                        </div>
+                        <div class="text-caption-2 text-Primary sub">Solutions Architect</div>
+                        <div class="text-button-small text-OnSurface name">James Siphron</div>
+                        <div class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10 connections</div>
+                        </div>
+                        <a href="sign-in.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
+                    </div>
+                </div>
+            </div>
+            <div class="new-feed-post box-post mb-16">
+                <div class="post-user mb-12">
+                    <div class="avatar avt-status avt-40">
+                        <img src="images/avt/avt-2.png" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                        <a href="#" class="name d-flex text-button-small text-OnSurface mb-4">Randy Aminoff</a>
+                        <div class="infor">
+                            <div class="sub text-caption-2">CEO at Findee</div>
+                            <div class="dot"></div>
+                            <div class="time text-caption-2">2 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a class="save-post d-flex">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.375 2.5H5.625C5.29348 2.5 4.97554 2.6317 4.74112 2.86612C4.5067 3.10054 4.375 3.41848 4.375 3.75V17.5C4.37506 17.6115 4.40496 17.721 4.46161 17.8171C4.51826 17.9132 4.59959 17.9924 4.69716 18.0464C4.79473 18.1005 4.90498 18.1274 5.01648 18.1245C5.12798 18.1215 5.23666 18.0888 5.33125 18.0297L10 15.1117L14.6695 18.0297C14.7641 18.0886 14.8727 18.1212 14.9841 18.124C15.0955 18.1268 15.2056 18.0998 15.303 18.0458C15.4005 17.9918 15.4817 17.9127 15.5383 17.8167C15.5949 17.7208 15.6249 17.6114 15.625 17.5V3.75C15.625 3.41848 15.4933 3.10054 15.2589 2.86612C15.0245 2.6317 14.7065 2.5 14.375 2.5ZM14.375 16.3727L10.3305 13.8453C10.2311 13.7832 10.1164 13.7503 9.99922 13.7503C9.88208 13.7503 9.7673 13.7832 9.66797 13.8453L5.625 16.3727V3.75H14.375V16.3727Z" fill="#121212"/>
+                            </svg>
+                        </a>
+                        <a class="right-icon more-option" data-bs-target="#more-option" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 11C12.5523 11 13 10.5523 13 10C13 9.44772 12.5523 9 12 9C11.4477 9 11 9.44772 11 10C11 10.5523 11.4477 11 12 11Z" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5Z" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-caption-1 text-OnSurface mb-12">
+                    Lorem ipsum dolor sit amet consectetur. Cursus nunc pharetra arcu quam turpis risus amet turpis. Facilisis elementum tincidunt pellentesque sed rutrum enim.
+                </div>
+                <div class="mb-12">
+                    <img src="images/post/post-1.jpg" alt="">
+                </div>
+                <div class="like-share mb-16">
+                    <div class="like-share-infor d-flex align-items-center justify-content-between mb-8">
+                        <div class="text-caption-2 likes">213 Likes</div>
+                        <div class="d-flex gap-16">
+                            <div class="text-caption-2 comments">48 Comments</div>
+                            <div class="text-caption-2 shares">6 Shares</div>
+                        </div>
+                    </div>
+                    <div class="like-share-button">
+                        <a href="#" class="link">
+                            <i class="icon icon-like"></i>
+                            <span class="text-caption-1">Like</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-cmt"></i>
+                            <span class="text-caption-1">Comment</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-shareFat"></i>
+                            <span class="text-caption-1">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-comment">
+                    <div class="title text-caption-1 text-OnSurface d-flex gap-8 mb-12">
+                        All Comments
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6925 7.94229L10.4425 14.1923C10.3845 14.2504 10.3156 14.2965 10.2397 14.328C10.1638 14.3594 10.0825 14.3756 10.0003 14.3756C9.91821 14.3756 9.83688 14.3594 9.76101 14.328C9.68514 14.2965 9.61621 14.2504 9.55816 14.1923L3.30816 7.94229C3.19088 7.82502 3.125 7.66596 3.125 7.5001C3.125 7.33425 3.19088 7.17519 3.30816 7.05792C3.42544 6.94064 3.5845 6.87476 3.75035 6.87476C3.9162 6.87476 4.07526 6.94064 4.19253 7.05792L10.0003 12.8665L15.8082 7.05792C15.8662 6.99985 15.9352 6.95378 16.011 6.92236C16.0869 6.89093 16.1682 6.87476 16.2503 6.87476C16.3325 6.87476 16.4138 6.89093 16.4897 6.92236C16.5655 6.95378 16.6345 6.99985 16.6925 7.05792C16.7506 7.11598 16.7967 7.18492 16.8281 7.26079C16.8595 7.33666 16.8757 7.41798 16.8757 7.5001C16.8757 7.58223 16.8595 7.66354 16.8281 7.73941C16.7967 7.81528 16.7506 7.88422 16.6925 7.94229Z" fill="#121212"/>
+                        </svg>
+                    </div>
+                    <div class="post-comment-item">
+                        <div class="user d-flex gap-12 mb-8">
+                            <div class="avatar avt-status avt-40">
+                                <img src="images/avt/avt-1.png" alt="">
+                            </div>
+                            <div class="flex-grow-1">
+                                <a href="#" class="name link d-flex text-button-small text-OnSurface mb-4">Corey Schleifer</a>
+                                <div class="sub text-caption-2">CEO at Findee</div>
+                            </div>
+                        </div>
+                        <div class="desc text-caption-1 text-OnSurface">
+                            I am interested in this recruitment. Please give me JD
+                        </div>
+                    </div>
+                    <div class="post-comment-item">
+                        <div class="user d-flex gap-12 mb-8">
+                            <div class="avatar avt-status avt-40">
+                                <img src="images/avt/avt-2.png" alt="">
+                            </div>
+                            <div class="flex-grow-1">
+                                <a href="#" class="name link d-flex text-button-small text-OnSurface mb-4">Leo Kenter</a>
+                                <div class="sub text-caption-2">CEO at Findee</div>
+                            </div>
+                        </div>
+                        <div class="desc text-caption-1 text-OnSurface">
+                            I am interested in this recruitment. Please give me JD
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-feed-post">
+                <div class="text-button-small text-OnSurface mb-12">Company you may follow</div>
+                <div class="grid-2 gap-20">
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img src="images/companies/companies-1.png" alt="">
+                        </div>
+                        <div class="text-button-small text-OnSurface name">Findee Company</div>
+                        <div class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10k Followers</div>
+                        </div>
+                        <a href="sign-in.html" class="tf-btn style-1 text-button-small round-full">Follow</a>
+                    </div>
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img src="images/companies/companies-1.png" alt="">
+                        </div>
+                        <div class="text-button-small text-OnSurface name">Findee Company</div>
+                        <div class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10k Followers</div>
+                        </div>
+                        <a href="sign-in.html" class="tf-btn style-1 text-button-small round-full">Follow</a>
+                    </div>
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img src="images/companies/companies-1.png" alt="">
+                        </div>
+                        <div class="text-button-small text-OnSurface name">Findee Company</div>
+                        <div class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10k Followers</div>
+                        </div>
+                        <a href="sign-in.html" class="tf-btn style-1 text-button-small round-full">Follow</a>
+                    </div>
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img src="images/companies/companies-1.png" alt="">
+                        </div>
+                        <div class="text-button-small text-OnSurface name">Findee Company</div>
+                        <div class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10k Followers</div>
+                        </div>
+                        <a href="sign-in.html" class="tf-btn style-1 text-button-small round-full">Follow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menubar-footer footer-fixed">
+        <ul class="inner-bar">
+            <li class="">
+                <a href="index.html">
+                    <div class="icon">
+                        <i class="icon-home-line"></i>
+                    </div>
+                    <div class="text-caption-3 text">Home</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="new-feed.html">
+                    <div class="icon">
+                        <i class="icon-new-line"></i>
+                    </div>
+                    <div class="text-caption-3 text">New Feed</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="saved.html">
+                    <div class="icon">
+                        <i class="icon-bookmarks-line"></i>
+                    </div>
+                    <div class="text-caption-3 text">Saved</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="notification.html">
+                    <div class="icon">
+                        <i class="icon-noti-line"></i>
+                    </div>
+                    <div class="text-caption-3 text">Notification</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="profile.html">
+                    <div class="icon">
+                        <i class="icon-user-line"></i>
+                    </div>
+                    <div class="text-caption-3 text">Profile</div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="offcanvas offcanvas-bottom more-option" id="more-option">
+        <div class="overflow-auto">
+            <div class="more-option-wrap">
+                <a href="#" class="item">
+                    <i class="icon icon-save"></i>
+                    <div class="text-caption-1 text-OnSurface">Save</div>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon icon-share"></i>
+                    <div class="text-caption-1 text-OnSurface">Share via</div>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon icon-eyeSlash"></i>
+                    <div class="text-caption-1 text-OnSurface">Unfollow</div>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon icon-xCircle"></i>
+                    <div class="text-caption-1 text-OnSurface">I don't want to see this</div>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon icon-flag"></i>
+                    <div class="text-caption-1 text-OnSurface">Report post</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lazysize.min.js"></script>
+    <script type="text/javascript" src="js/countto.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

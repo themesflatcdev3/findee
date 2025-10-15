@@ -14,18 +14,14 @@
         position: relative;
         .status {
             position: absolute;
-            width: 10px;
-            min-width: 10px;
-            height: 10px;
+            width: 8px;
+            min-width: 8px;
+            height: 8px;
             border-radius: 50%;
-            position: absolute;
-            bottom: 0;
-            right: 3px;
+            bottom: 3px;
+            right: 2px;
             border: 1px solid var(--White);
-            background: var(--bright-green);
-        }
-        img {
-            border-radius: 50%;
+            background: var(--Success);
         }
         .danger {
             position: absolute;
