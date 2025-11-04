@@ -362,6 +362,14 @@
     });
   };
 
+  /* ft
+  ----------------------------------------------------------------------------------------- */
+  var ft = function () {
+    $(".item-ft .item-remove").click(function () {
+      $(this).closest(".item-ft").remove();
+    });
+  };
+
 
   $(function () {
     showPass();
@@ -381,6 +389,7 @@
     find_job();
     read_all_noti();
     clear_noti();
+    ft();
     preloader();
   });
 })(jQuery);
