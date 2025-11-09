@@ -2619,43 +2619,39 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 .input-upload {
   position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 0;
+  border: 1px dashed var(--line);
 }
 .input-upload .icon {
+  display: inline-flex;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.input-upload .sub {
+  margin-bottom: 8px;
+}
+.input-upload .input-upload-wrap {
   position: absolute;
-  z-index: 1;
   top: 50%;
-  left: calc(50% + 32px);
-  transform: translateY(-50%);
-  color: var(--black);
-  font-size: 22px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.input-upload .tf-btn {
+  padding: 3px 11px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+  border-radius: 99px;
 }
 .input-upload .upload-file {
-  position: relative;
-  overflow: hidden;
-  height: 50px;
-  width: 100%;
-  border: 1px dashed var(--line-2);
-  background-color: var(--White);
-  border-radius: 14px;
-}
-.input-upload .upload-file::before {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  content: "Upload file";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -10px;
-  border: none;
-  background-color: var(--White);
-  color: var(--black);
-}
-.input-upload.up-lg .upload-file {
-  height: 60px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .drop-select {
@@ -5605,8 +5601,8 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 
 .nice-select:after {
-  border-bottom: 1.7px solid var(--blue);
-  border-right: 1.7px solid var(--blue);
+  border-bottom: 1.7px solid var(--On-Surface);
+  border-right: 1.7px solid var(--On-Surface);
   content: "";
   height: 8px;
   width: 8px;
@@ -5773,7 +5769,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 
 .nice-select .option.selected {
-  color: var(--black);
+  color: var(--On-Surface);
 }
 
 .nice-select .option.disabled {
@@ -5795,35 +5791,29 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 
 .tf-select {
-  border-radius: 6px;
-  padding: 4px 8px;
-  padding-right: 26px;
+  border-radius: 8px;
+  padding: 11px 15px;
   display: inline-flex;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
-  color: var(--rgba-black-3);
+  border: 1px solid var(--line);
 }
 .tf-select::after {
   width: 6px;
   height: 6px;
   margin-top: -4px;
   right: 14px;
-  content: none;
+  border-color: var(--On-Surface);
 }
 .tf-select .option {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
   padding: 4px 8px;
   min-height: 30px;
   color: var(--rgba-black-3);
 }
 .tf-select .list {
   padding: 10px;
+  max-height: 400px;
 }
 .tf-select .current.active {
-  color: var(--black);
+  color: var(--OnSurface);
 }
 
 /*------------ preloader ---------------- */
@@ -7640,6 +7630,11 @@ ul.list-text {
   height: 137px;
   flex-shrink: 0;
 }
+.portfolio-wrap.style-2 {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
 
 .tag-item {
   display: flex;
@@ -7660,6 +7655,18 @@ ul.list-text {
 }
 .cv-item .cv-item-icon {
   font-size: 24px;
+}
+.cv-item .status {
+  position: relative;
+}
+.cv-item .status::before {
+  position: absolute;
+  left: -6px;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 99px;
+  background-color: var(--Secondary);
 }
 
 .accordion {
@@ -7765,6 +7772,12 @@ ul.list-text {
   font-size: 20px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.form-profile-summary .title {
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

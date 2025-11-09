@@ -15,7 +15,7 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/168.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
-    <title>Sign In</title>
+    <title>Edit Profile</title>
     <script>
         if (localStorage.toggled === "dark-theme") {
             document.documentElement.classList.add('dark-theme');
@@ -80,14 +80,17 @@
                         <input type="text" value="UI/UX Designer" placeholder="Current Position" class="form-control" required>
                     </fieldset>
                 </div>
-
                 <div class="mb-12">
                     <div class="label text-caption-1 mb-8">Gender<span class="text-Red">*</span></div>
-                    <fieldset class="input-icon">
-                        <input type="text" value="UI/UX Designer" placeholder="Current Position" class="form-control" required>
-                    </fieldset>
+                    <div class="nice-select tf-select" tabindex="0">
+                        <span class="current text-body text-OnSurface">Male</span>
+                        <ul class="list">
+                            <li data-value="Male" class="option selected">Male</li>
+                            <li data-value="Female" class="option">Female</li>
+                            <li data-value="Other" class="option">Other</li>
+                        </ul>
+                    </div>
                 </div>
-
                 <div class="mb-12">
                     <div class="label text-caption-1 mb-8">Phone<span class="text-Red">*</span></div>
                     <fieldset class="input-icon">

@@ -1693,6 +1693,12 @@ ul.list-text {
             flex-shrink: 0;
         }
     }
+    &.style-2 {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 1fr 1fr;
+
+    }
 }
 
 .tag-item {
@@ -1713,6 +1719,18 @@ ul.list-text {
     border: 1px solid var(--line);
     .cv-item-icon {
         font-size: 24px;
+    }
+    .status {
+        position: relative;
+        &::before {
+            position: absolute;
+            left: -6px;
+            content: '';
+            width: 3px;
+            height: 3px;
+            border-radius: 99px;
+            background-color: var(--Secondary);
+        }
     }
 }
 
@@ -1825,5 +1843,13 @@ ul.list-text {
         font-size: 20px;
         top: 50%;
         transform: translateY(-50%);
+    }
+}
+
+.form-profile-summary {
+    .title {
+        padding-bottom: 7px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 8px;
     }
 }
