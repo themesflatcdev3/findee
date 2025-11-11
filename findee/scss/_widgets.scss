@@ -1741,6 +1741,24 @@ ul.list-text {
     .accordion-item {
         border: 0;
         position: relative;
+        &.style-1 {
+            .accordion-button {
+                border-radius: 4px 4px 0 0;
+                &:not(.collapsed) {
+                    background: rgba(39, 72, 219, 0.1) !important;
+                    border-bottom: 1px solid rgba(39, 72, 219, 0.5) !important;
+                    .icon {
+                        background-color: var(--White);
+                    }
+                    .pluscircle {
+                        display: flex;
+                    }
+                }
+            }
+            .accordion-body {
+                border: 0;
+            }
+        }
     }
     .accordion-button {
         padding: 8px 12px;
@@ -1759,6 +1777,7 @@ ul.list-text {
             display: flex;
             align-items: center;
             justify-content: center;
+            @include transition3;
         }
         .title {
             flex-grow: 1;

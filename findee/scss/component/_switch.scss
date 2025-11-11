@@ -1,34 +1,43 @@
 @use "../abstracts/index" as *;
 .tf-switch-check {
     position: relative;
-    width: 12px;
-    height: 12px;
+    width: 48px;
+    height: 24px;
     -webkit-appearance: none;
-    border: 1px solid var(--Secondary);
-    border-radius: 2px;
+    background-color: var(--line);
+    border-radius: 99px;
     transition: 0.2s;
     margin-right: 0;
-    flex-shrink: 0;
 
     &::before {
+        content: "";
+        border-radius: 99px;
+        width: 20px;
+        height: 20px;
         position: absolute;
-        font-family: $fontIcon;
-        content: "\e916";
-        font-size: 15px;
-        color: var(--White);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 2px;
+        left: 2px;
+        background: var(--White);
         transition: 0.2s;
-        opacity: 0;
-        visibility: hidden;
     }
     &:checked {
-        background: var(--Primary);
-        border-color: var(--Primary);
+        background-color: var(--Success);
         &::before {
-            opacity: 1;
-            visibility: visible;
+            left: 26px;
+        }
+    }
+    &.lg {
+        width: 24px;
+        height: 17px;
+        &::before {
+            width: 10px;
+            height: 10px;
+            left: 4px;
+        }
+        &:checked {
+            &::before {
+                left: 10px;
+            }
         }
     }
 }
