@@ -395,6 +395,7 @@
     }
     .icon-left {
         position: absolute;
+        display: flex;
         top: 50%;
         transform: translateY(-50%);
         left: 7px;
@@ -409,6 +410,20 @@
         border-radius: 8px;
         &::placeholder {
             color: var(--Placehoder);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &.style-1 {
+        .icon-left {
+            left: 16px;
+            .icon {
+                font-size: 24px;
+            }
+        }
+        input {
+            padding: 13px 14px 13px 48px;
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;

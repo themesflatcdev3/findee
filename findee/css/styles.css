@@ -475,7 +475,7 @@ input[type=color] {
   font-weight: 500;
   border-radius: 16px;
   border: 1px solid var(--line);
-  color: var(--black);
+  color: var(--On-Surface);
   background-color: var(--White);
 }
 
@@ -2898,6 +2898,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 .search-box .icon-left {
   position: absolute;
+  display: flex;
   top: 50%;
   transform: translateY(-50%);
   left: 7px;
@@ -2913,6 +2914,18 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 .search-box .search-field::placeholder {
   color: var(--Placehoder);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.search-box.style-1 .icon-left {
+  left: 16px;
+}
+.search-box.style-1 .icon-left .icon {
+  font-size: 24px;
+}
+.search-box.style-1 input {
+  padding: 13px 14px 13px 48px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -7806,6 +7819,31 @@ ul.list-text {
   padding-bottom: 7px;
   border-bottom: 1px solid var(--line);
   margin-bottom: 8px;
+}
+
+.skill-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.skill-item .left-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  color: var(--On-Surface);
+  background-color: var(--surface);
+  border-radius: 50%;
+}
+.skill-item .title {
+  display: flex;
+  flex-grow: 1;
+  color: var(--On-Surface);
+}
+.skill-item .right-icon {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

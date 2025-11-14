@@ -1872,3 +1872,28 @@ ul.list-text {
         margin-bottom: 8px;
     }
 }
+
+.skill-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    .left-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        color: var(--On-Surface);
+        background-color: var(--surface);
+        border-radius: 50%;
+    }
+    .title {
+        display: flex;
+        flex-grow: 1;
+        color: var(--On-Surface);
+    }
+    .right-icon {
+        font-size: 20px;
+    }
+}
