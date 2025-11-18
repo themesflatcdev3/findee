@@ -4684,6 +4684,33 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   border-top: 1px solid var(--line);
 }
 
+.profile-setting {
+  display: grid;
+  gap: 8px;
+}
+.profile-setting .setting-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+}
+.profile-setting .setting-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--surface);
+  font-size: 20px;
+}
+.profile-setting .setting-item .text {
+  flex-grow: 1;
+}
+.profile-setting .setting-item.logout .icon {
+  background-color: rgba(231, 65, 65, 0.1);
+}
+
 /*------------ progressbar ---------------- */
 /* ---------------------------------------------------------
     * Name: Findee - Job Finding App Figma UI Template Avitex
