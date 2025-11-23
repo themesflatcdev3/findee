@@ -1949,6 +1949,7 @@ ul.list-text {
 }
 
 .setting-packages-item {
+    position: relative;
     padding: 15px;
     border-radius: 8px;
     border: 1px solid var(--line);
@@ -1964,6 +1965,13 @@ ul.list-text {
             padding: 4px 0;
         }
     }
+    .paid {
+        position: absolute;
+        width: 108px;
+        height: 62px;
+        top: 24px;
+        right: 24px;
+    }
 }
 
 .add-card {
@@ -1973,4 +1981,61 @@ ul.list-text {
     padding: 11px 16px;
     border-radius: 8px;
     border: 1px solid var(--line);
+}
+
+.bank-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: var(--surface);
+    padding: 11px;
+    border: 1px solid var(--surface);
+    @include transition3;
+    cursor: pointer;
+    .image {
+        display: flex;
+        width: 62px;
+        height: 62px;
+        flex-shrink: 0;
+    }
+    .content {
+        flex-grow: 1;
+    }
+    .name {
+        margin-bottom: 4px;
+    }
+    .exp {
+        text-align: end;
+    }
+    &.active {
+        background-color: var(--White);
+        border: 1px solid var(--Primary);
+    }
+}
+
+.successful-wrap {
+    min-height: 100vh;
+    align-content: center;
+    background-color: var(--surface);
+    background-image: url(./../images/banner/bg-successful.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.popup-successful {
+    position: relative;
+    padding: 80px 16px 16px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--White);
+    .image {
+        width: 190px;
+        height: auto;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

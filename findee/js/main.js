@@ -132,6 +132,9 @@
         .find(".current")
         .addClass("active");
     });
+    $(".item-ft .item-remove").click(function () {
+      $(this).closest(".item-ft").remove();
+    });
   };
 
   if ($(".nice-select").length > 0) {
@@ -362,12 +365,25 @@
     });
   };
 
-  /* ft
+  /* date
   ----------------------------------------------------------------------------------------- */
-  var ft = function () {
-    $(".item-ft .item-remove").click(function () {
-      $(this).closest(".item-ft").remove();
-    });
+  var date = function () {
+    $('#date-mmyy').on('input', function () {
+      let v = $(this).val();
+
+      if (v.length === 2 && !v.includes('/')) {
+          $(this).val(v + '/');
+          return;
+      }
+
+      const regex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+
+      if (regex.test($(this).val())) {
+          $(this).css('border-color', 'var(--Success)');
+      } else {
+          $(this).css('border-color', 'var(--Red)');
+      }
+  });
   };
 
 
@@ -389,7 +405,7 @@
     find_job();
     read_all_noti();
     clear_noti();
-    ft();
+    date();
     preloader();
   });
 })(jQuery);
