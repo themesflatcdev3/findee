@@ -1083,6 +1083,16 @@ select {
   padding-bottom: 8px;
 }
 
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-14 {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 /*------------ Settings ----------------- */
 /* ---------------------------------------------------------
     * Name: Findee - Job Finding App Figma UI Template Avitex
@@ -2099,6 +2109,9 @@ select {
   background-color: var(--line);
   color: var(--On-Surface);
   border: 0;
+}
+.tf-btn.type-small {
+  padding: 6px 14px;
 }
 
 .tf-loading {
