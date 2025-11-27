@@ -661,3 +661,13 @@
         margin-top: 2px;
     }
 }
+
+.form-rate {
+    padding: 43px 16px 20px;
+    position: relative;
+    .close {
+        position: absolute;
+        top: 12px;
+        right: 17px;
+    }
+}

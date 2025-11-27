@@ -3178,6 +3178,16 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   margin-top: 2px;
 }
 
+.form-rate {
+  padding: 43px 16px 20px;
+  position: relative;
+}
+.form-rate .close {
+  position: absolute;
+  top: 12px;
+  right: 17px;
+}
+
 /*------------ footer ---------------- */
 /* ---------------------------------------------------------
     * Name: Findee - Job Finding App Figma UI Template Avitex
@@ -4095,6 +4105,69 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 .radio-check.success:checked {
   border-color: #fff;
   background-color: red;
+}
+
+.tf-btn-radio {
+  position: relative;
+}
+.tf-btn-radio label {
+  display: flex;
+  align-items: center;
+  padding: 12.5px 15px;
+  color: var(--On-Surface);
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.tf-btn-radio input {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid rgb(185, 185, 191);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tf-btn-radio input::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--Primary);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tf-btn-radio input:checked {
+  border-color: var(--Primary);
+}
+.tf-btn-radio input:checked::before {
+  opacity: 1;
+}
+.tf-btn-radio input:checked ~ label {
+  border-color: rgba(39, 72, 219, 0.5);
 }
 
 /*------------ card ---------------- */
