@@ -53,6 +53,14 @@
         padding: 6px 14px;
     }
 
+    &.type-red {
+        background-color: var(--Red);
+        border-color: var(--Red);
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
 }
 
 .tf-loading {

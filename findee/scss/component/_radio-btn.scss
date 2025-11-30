@@ -235,3 +235,43 @@
         }
     }
 }
+
+.tf-btn-radio-1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    input {
+        border: 2px solid rgba(185, 185, 191, 1);
+        border-radius: 50%;
+        background: none;
+        cursor: pointer;
+        outline: 0;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-appearance: none;
+        @include transition3;
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: var(--Primary);
+            opacity: 0;
+            @include transition3;
+        }
+        &:checked {
+            border-color: var(--Primary);
+            &::before {
+                opacity: 1;
+            }
+            ~ label {
+                border-color: rgba(39, 72, 219, 0.5)
+            }
+        }
+    }
+}

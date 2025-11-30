@@ -1922,28 +1922,29 @@ ul.list-text {
 .profile-setting {
     display: grid;
     gap: 8px;
-    .setting-item {
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    .icon {
         display: flex;
         align-items: center;
-        gap: 8px;
-        padding: 8px 12px;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: var(--surface);
+        font-size: 20px;
+    }
+    .text {
+        flex-grow: 1;
+    }
+    &.logout {
         .icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: var(--surface);
-            font-size: 20px;
-        }
-        .text {
-            flex-grow: 1;
-        }
-        &.logout {
-            .icon {
-                background-color: rgba(231, 65, 65, 0.1);
-            }
+            background-color: rgba(231, 65, 65, 0.1);
         }
     }
 }

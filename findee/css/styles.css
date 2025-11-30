@@ -813,6 +813,10 @@ select {
   margin-bottom: 8px !important;
 }
 
+.mb-9 {
+  margin-bottom: 9px !important;
+}
+
 .mb-10 {
   margin-bottom: 10px !important;
 }
@@ -848,6 +852,10 @@ select {
 
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
 }
 
 .mb-40 {
@@ -2113,6 +2121,13 @@ select {
 .tf-btn.type-small {
   padding: 6px 14px;
 }
+.tf-btn.type-red {
+  background-color: var(--Red);
+  border-color: var(--Red);
+}
+.tf-btn.type-red:hover {
+  background-color: transparent;
+}
 
 .tf-loading {
   width: auto;
@@ -3074,8 +3089,8 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 
 .logo-account {
-  width: 117px;
-  height: 32px;
+  width: 81px;
+  height: 24px;
 }
 
 .form-field .label {
@@ -3178,11 +3193,11 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   margin-top: 2px;
 }
 
-.form-rate {
+.form-type-1 {
   padding: 43px 16px 20px;
   position: relative;
 }
-.form-rate .close {
+.form-type-1 .close {
   position: absolute;
   top: 12px;
   right: 17px;
@@ -4167,6 +4182,54 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   opacity: 1;
 }
 .tf-btn-radio input:checked ~ label {
+  border-color: rgba(39, 72, 219, 0.5);
+}
+
+.tf-btn-radio-1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.tf-btn-radio-1 input {
+  border: 2px solid rgb(185, 185, 191);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tf-btn-radio-1 input::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--Primary);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tf-btn-radio-1 input:checked {
+  border-color: var(--Primary);
+}
+.tf-btn-radio-1 input:checked::before {
+  opacity: 1;
+}
+.tf-btn-radio-1 input:checked ~ label {
   border-color: rgba(39, 72, 219, 0.5);
 }
 
@@ -7936,13 +7999,14 @@ ul.list-text {
   display: grid;
   gap: 8px;
 }
-.profile-setting .setting-item {
+
+.setting-item {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
 }
-.profile-setting .setting-item .icon {
+.setting-item .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7952,10 +8016,10 @@ ul.list-text {
   background-color: var(--surface);
   font-size: 20px;
 }
-.profile-setting .setting-item .text {
+.setting-item .text {
   flex-grow: 1;
 }
-.profile-setting .setting-item.logout .icon {
+.setting-item.logout .icon {
   background-color: rgba(231, 65, 65, 0.1);
 }
 
