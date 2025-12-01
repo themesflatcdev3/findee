@@ -1734,89 +1734,6 @@ ul.list-text {
     }
 }
 
-.accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    .accordion-item {
-        border: 0;
-        position: relative;
-        &.style-1 {
-            .accordion-button {
-                border-radius: 4px 4px 0 0;
-                &:not(.collapsed) {
-                    background: rgba(39, 72, 219, 0.1) !important;
-                    border-bottom: 1px solid rgba(39, 72, 219, 0.5) !important;
-                    .icon {
-                        background-color: var(--White);
-                    }
-                    .pluscircle {
-                        display: flex;
-                    }
-                }
-            }
-            .accordion-body {
-                border: 0;
-            }
-        }
-    }
-    .accordion-button {
-        padding: 8px 12px;
-        gap: 12px;
-        color: var(--On-Surface);
-        background: none !important;
-        border: 0 !important;
-        outline: none !important;
-        box-shadow: none !important;
-        .icon {
-            width: 36px;
-            height: 36px;
-            background-color: var(--line);
-            border-radius: 99px;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            @include transition3;
-        }
-        .title {
-            flex-grow: 1;
-        }
-       
-        &::after {
-            display: none;
-        }
-        &:not(.collapsed) {
-            .pluscircle {
-                display: none;
-            }
-        }
-    }
-    .accordion-body {
-        padding: 8px 12px 12px !important; 
-        border-top: 1px solid transparent;
-        @include transition3;
-        .link-edit-detail {
-            position: absolute;
-            top: 14px;
-            right: 12px;
-            font-size: 24px;
-            color: var(--Primary);
-            opacity: 0;
-        }
-    }
-    .accordion-collapse {
-        &.show {
-            .link-edit-detail {
-                opacity: 1;
-            }
-            .accordion-body {
-                border-color: var(--line);
-            }
-        }
-    }
-}
-
 .edit-profile-wrap {
     .profile-avatar {
         display: flex;
@@ -2038,5 +1955,89 @@ ul.list-text {
         top: -50px;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+.accordion-item {
+    border: 0 !important;
+    border-radius: 8px !important;
+    border: 1px solid var(--line) !important;
+    padding: 15px;
+    position: relative;
+    .faq-accordion-btn {
+        position: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px !important;
+        padding: 0 !important;
+        outline: 0 !important;
+        box-shadow: none !important;
+        background-color: var(--White);
+        &::after {
+            display: none;
+        }
+        span.right {
+            position: relative;
+            display: flex;
+            width: 16px;
+            height: 16px;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 12px;
+                height: 1px;
+                background-color: var(--On-Surface);
+                @include transition3;
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 1px;
+                height: 12px;
+                background-color: var(--On-Surface);
+                @include transition3;
+            }
+        }
+        &:not(.collapsed) {
+            &::before {
+                background-color: rgba(39, 72, 219, 0.1);
+            }
+            span.right::before {
+                display: none;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            inset: 0;
+            border-radius: 8px !important;
+            @include transition3;
+        }
+    }
+    .faq-accordion-content {
+        padding: 0;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(39, 72, 219, 0.1);
+    }
+}
+
+.boarding-image {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Primary);
+    img {
+        width: 173px;
+        height: 59px;
     }
 }

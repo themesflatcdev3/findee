@@ -1101,6 +1101,14 @@ select {
   padding-bottom: 14px;
 }
 
+.list-style-unset {
+  list-style: unset !important;
+}
+
+.pl-21 {
+  padding-left: 21px;
+}
+
 /*------------ Settings ----------------- */
 /* ---------------------------------------------------------
     * Name: Findee - Job Finding App Figma UI Template Avitex
@@ -7817,88 +7825,6 @@ ul.list-text {
   background-color: var(--Secondary);
 }
 
-.accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.accordion .accordion-item {
-  border: 0;
-  position: relative;
-}
-.accordion .accordion-item.style-1 .accordion-button {
-  border-radius: 4px 4px 0 0;
-}
-.accordion .accordion-item.style-1 .accordion-button:not(.collapsed) {
-  background: rgba(39, 72, 219, 0.1) !important;
-  border-bottom: 1px solid rgba(39, 72, 219, 0.5) !important;
-}
-.accordion .accordion-item.style-1 .accordion-button:not(.collapsed) .icon {
-  background-color: var(--White);
-}
-.accordion .accordion-item.style-1 .accordion-button:not(.collapsed) .pluscircle {
-  display: flex;
-}
-.accordion .accordion-item.style-1 .accordion-body {
-  border: 0;
-}
-.accordion .accordion-button {
-  padding: 8px 12px;
-  gap: 12px;
-  color: var(--On-Surface);
-  background: none !important;
-  border: 0 !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-.accordion .accordion-button .icon {
-  width: 36px;
-  height: 36px;
-  background-color: var(--line);
-  border-radius: 99px;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.accordion .accordion-button .title {
-  flex-grow: 1;
-}
-.accordion .accordion-button::after {
-  display: none;
-}
-.accordion .accordion-button:not(.collapsed) .pluscircle {
-  display: none;
-}
-.accordion .accordion-body {
-  padding: 8px 12px 12px !important;
-  border-top: 1px solid transparent;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.accordion .accordion-body .link-edit-detail {
-  position: absolute;
-  top: 14px;
-  right: 12px;
-  font-size: 24px;
-  color: var(--Primary);
-  opacity: 0;
-}
-.accordion .accordion-collapse.show .link-edit-detail {
-  opacity: 1;
-}
-.accordion .accordion-collapse.show .accordion-body {
-  border-color: var(--line);
-}
-
 .edit-profile-wrap .profile-avatar {
   display: flex;
   position: relative;
@@ -8117,6 +8043,100 @@ ul.list-text {
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.accordion-item {
+  border: 0 !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--line) !important;
+  padding: 15px;
+  position: relative;
+}
+.accordion-item .faq-accordion-btn {
+  position: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px !important;
+  padding: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background-color: var(--White);
+}
+.accordion-item .faq-accordion-btn::after {
+  display: none;
+}
+.accordion-item .faq-accordion-btn span.right {
+  position: relative;
+  display: flex;
+  width: 16px;
+  height: 16px;
+}
+.accordion-item .faq-accordion-btn span.right::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 1px;
+  background-color: var(--On-Surface);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.accordion-item .faq-accordion-btn span.right::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 12px;
+  background-color: var(--On-Surface);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.accordion-item .faq-accordion-btn:not(.collapsed)::before {
+  background-color: rgba(39, 72, 219, 0.1);
+}
+.accordion-item .faq-accordion-btn:not(.collapsed) span.right::before {
+  display: none;
+}
+.accordion-item .faq-accordion-btn::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  border-radius: 8px !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.accordion-item .faq-accordion-content {
+  padding: 0;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(39, 72, 219, 0.1);
+}
+
+.boarding-image {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Primary);
+}
+.boarding-image img {
+  width: 173px;
+  height: 59px;
 }
 
 /*# sourceMappingURL=styles.css.map */
