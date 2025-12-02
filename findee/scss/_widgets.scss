@@ -2035,7 +2035,10 @@ ul.list-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--Primary);
+    background-image: url(./../images/banner/boarding-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     img {
         width: 173px;
         height: 59px;

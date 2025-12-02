@@ -3400,7 +3400,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0px 4px;
+  margin: 0px 9px;
 }
 
 .line-tes {
@@ -3410,20 +3410,40 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   justify-content: center;
 }
 .line-tes .swiper-pagination-bullet {
+  position: relative;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  width: 32px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   display: block;
-  background-color: var(--rgba-black-4);
   opacity: 1;
-  border-radius: 5px;
+  border-radius: 50%;
+  border: 1px solid var(--On-Surface);
+}
+.line-tes .swiper-pagination-bullet::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .line-tes .swiper-pagination-bullet-active {
-  background-color: var(--blue);
+  background-color: var(--On-Surface);
+}
+.line-tes .swiper-pagination-bullet-active::after {
+  border-color: var(--On-Surface);
 }
 
 /*------------ alert ---------------- */
@@ -8132,7 +8152,10 @@ ul.list-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--Primary);
+  background-image: url(./../images/banner/boarding-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .boarding-image img {
   width: 173px;

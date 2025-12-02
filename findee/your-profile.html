@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/168.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
+    <title>Edit Profile</title>
+    <script>
+        if (localStorage.toggled === "dark-theme") {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="logo-img">
+            <img src="images/logo/logo-dark.png" alt="">
+        </div>
+        
+    </div>
+    <!-- /preload -->
+    <div class="header-avt fixed-top">
+        <div class="left">
+            <a href="javascript:void(0);" class="icon back-btn">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.88986 12.2951L1.60986 7.00008L6.88986 1.70508" stroke="#121927" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <h4>Profile</h4>
+        <a href="#" class="text-caption-1 text-Primary">Reset</a>
+    </div>
+    <div class="app-content style-4 edit-profile-wrap">
+        <div class="tf-container">
+            <form action="profile.html">
+                <div class="profile-avatar">
+                    <img src="images/avt/default.png" alt="">
+                    <div class="add-img">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.874 3.625H12.0746L11.1865 2.29188C11.1522 2.24046 11.1057 2.19832 11.0512 2.16921C10.9967 2.1401 10.9358 2.12491 10.874 2.125H6.87402C6.81222 2.12491 6.75135 2.1401 6.69683 2.16921C6.64231 2.19832 6.59583 2.24046 6.56152 2.29188L5.67277 3.625H3.87402C3.50935 3.625 3.15961 3.76987 2.90175 4.02773C2.64389 4.28559 2.49902 4.63533 2.49902 5V12C2.49902 12.3647 2.64389 12.7144 2.90175 12.9723C3.15961 13.2301 3.50935 13.375 3.87402 13.375H13.874C14.2387 13.375 14.5884 13.2301 14.8463 12.9723C15.1042 12.7144 15.249 12.3647 15.249 12V5C15.249 4.63533 15.1042 4.28559 14.8463 4.02773C14.5884 3.76987 14.2387 3.625 13.874 3.625ZM14.499 12C14.499 12.1658 14.4332 12.3247 14.316 12.4419C14.1988 12.5592 14.0398 12.625 13.874 12.625H3.87402C3.70826 12.625 3.54929 12.5592 3.43208 12.4419C3.31487 12.3247 3.24902 12.1658 3.24902 12V5C3.24902 4.83424 3.31487 4.67527 3.43208 4.55806C3.54929 4.44085 3.70826 4.375 3.87402 4.375H5.87402C5.93583 4.37509 5.9967 4.35991 6.05122 4.33079C6.10574 4.30168 6.15222 4.25954 6.18652 4.20813L7.07465 2.875H10.6728L11.5615 4.20813C11.5958 4.25954 11.6423 4.30168 11.6968 4.33079C11.7513 4.35991 11.8122 4.37509 11.874 4.375H13.874C14.0398 4.375 14.1988 4.44085 14.316 4.55806C14.4332 4.67527 14.499 4.83424 14.499 5V12ZM8.87402 5.625C8.35485 5.625 7.84733 5.77895 7.41565 6.06739C6.98397 6.35583 6.64752 6.7658 6.44884 7.24546C6.25016 7.72511 6.19818 8.25291 6.29946 8.76211C6.40075 9.27131 6.65076 9.73904 7.01787 10.1062C7.38498 10.4733 7.85271 10.7233 8.36191 10.8246C8.87111 10.9258 9.39891 10.8739 9.87857 10.6752C10.3582 10.4765 10.7682 10.1401 11.0566 9.70837C11.3451 9.27669 11.499 8.76918 11.499 8.25C11.499 7.55381 11.2225 6.88613 10.7302 6.39385C10.2379 5.90156 9.57022 5.625 8.87402 5.625ZM8.87402 10.125C8.50318 10.125 8.14067 10.015 7.83233 9.80901C7.52399 9.60298 7.28366 9.31014 7.14175 8.96753C6.99984 8.62492 6.9627 8.24792 7.03505 7.88421C7.1074 7.52049 7.28597 7.1864 7.5482 6.92418C7.81042 6.66195 8.14452 6.48338 8.50823 6.41103C8.87194 6.33868 9.24894 6.37581 9.59155 6.51773C9.93417 6.65964 10.227 6.89996 10.433 7.20831C10.6391 7.51665 10.749 7.87916 10.749 8.25C10.749 8.74728 10.5515 9.2242 10.1998 9.57583C9.84822 9.92746 9.3713 10.125 8.87402 10.125Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <div class="label text-caption-1 mb-8">Full Name<span class="text-Red">*</span></div>
+                    <fieldset class="input-icon">
+                        <input type="text" value="Tony Nguyen" placeholder="Full Name" class="form-control" required>
+                    </fieldset>
+                </div>
+                <div class="mb-12">
+                    <div class="label text-caption-1 mb-8">User Name<span class="text-Red">*</span></div>
+                    <fieldset class="input-icon">
+                        <input type="text" value="Tony1234" placeholder="User Name" class="form-control" required>
+                    </fieldset>
+                </div>
+                <div class="mb-12">
+                    <div class="label text-caption-1 mb-8">Date of Birth<span class="text-Red">*</span></div>
+                    <fieldset class="input-icon">
+                        <input type="date" value="" placeholder="" class="form-control" required>
+                    </fieldset>
+                </div>
+                <div class="mb-12">
+                    <div class="label text-caption-1 mb-8">Current Position<span class="text-Red">*</span></div>
+                    <fieldset class="input-icon">
+                        <input type="text" value="UI/UX Designer" placeholder="Current Position" class="form-control" required>
+                    </fieldset>
+                </div>
+                <div class="mb-12">
+                    <div class="label text-caption-1 mb-8">Gender<span class="text-Red">*</span></div>
+                    <div class="nice-select tf-select" tabindex="0">
+                        <span class="current text-body text-OnSurface">Male</span>
+                        <ul class="list">
+                            <li data-value="Male" class="option selected">Male</li>
+                            <li data-value="Female" class="option">Female</li>
+                            <li data-value="Other" class="option">Other</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <div class="label text-caption-1 mb-8">Phone<span class="text-Red">*</span></div>
+                    <fieldset class="input-icon">
+                        <input type="number" value="" placeholder="Phone" class="form-control" required>
+                    </fieldset>
+                </div>
+                <div class="mb-12">
+                    <div class="label text-caption-1 mb-8">Email<span class="text-Red">*</span></div>
+                    <fieldset class="input-icon">
+                        <input type="email" value="" placeholder="Email" class="form-control" required>
+                    </fieldset>
+                </div>
+                <div class="mb-20">
+                    <div class="label text-caption-1 mb-8">Address<span class="text-Red">*</span></div>
+                    <fieldset class="input-icon form-right-icon">
+                        <input type="text" value="New York, United States" placeholder="Address" class="form-control" required>
+                        <a href="#" class="input-right-icon">
+                            <i class="icon-mapTrifold"></i>
+                        </a>
+                    </fieldset>
+                </div>
+                <button type="submit" class="mt-40 tf-btn round-full Login">Done</button>
+            </form>
+        </div>
+
+    </div>
+
+   
+    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lazysize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
