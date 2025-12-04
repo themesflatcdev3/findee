@@ -351,11 +351,6 @@ ol {
   padding: 0;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 b,
 strong {
   font-weight: 700;
@@ -1276,36 +1271,6 @@ select {
 
 .modal-second {
   width: 280px;
-}
-
-.nav-link-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  padding: 0;
-  color: var(--black);
-}
-.nav-link-item::after {
-  position: absolute;
-  font-family: "icomoon";
-  content: "\e917";
-  right: 0;
-  color: var(--black);
-  font-size: 12px;
-  font-weight: 700;
-  transition: 0.2s ease-in-out;
-}
-.nav-link-item span {
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 22px;
-}
-.nav-link-item .icon {
-  font-size: 20px;
-}
-.nav-link-item.no-page::after {
-  display: none;
 }
 
 .sub-menu li {
@@ -2966,6 +2931,12 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   font-size: 14px;
   line-height: 20px;
 }
+.search-box.style-2 input {
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
 
 .select-wrapper {
   position: relative;
@@ -4211,6 +4182,37 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 .tf-btn-radio input:checked ~ label {
   border-color: rgba(39, 72, 219, 0.5);
+}
+.tf-btn-radio.type-square input {
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--White);
+  border: 1px solid var(--Secondary);
+}
+.tf-btn-radio.type-square input::before {
+  position: absolute;
+  font-family: "icomoon";
+  content: "\e976";
+  font-size: 10px;
+  border-radius: 0;
+  color: var(--White);
+  width: unset;
+  height: unset;
+  background-color: unset;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tf-btn-radio.type-square input:checked {
+  background-color: var(--Primary);
+  border-color: var(--Primary);
+}
+.tf-btn-radio.type-square input:checked::before {
+  opacity: 1;
 }
 
 .tf-btn-radio-1 {
@@ -7433,6 +7435,11 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   margin-right: auto;
   margin-bottom: 8px;
 }
+.candidates-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .candidates-item .name {
   margin-bottom: 4px;
 }
@@ -8278,6 +8285,26 @@ ul.list-text {
   padding-bottom: 7px;
   border-bottom: 1px solid var(--line);
   margin-bottom: 8px;
+}
+
+.job-type-item {
+  padding: 31px 9px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--surface);
+  border: 1px solid var(--surface);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.job-type-item .image {
+  margin-bottom: 16px;
+}
+.job-type-item.active {
+  border-color: var(--Primary);
 }
 
 /*# sourceMappingURL=styles.css.map */

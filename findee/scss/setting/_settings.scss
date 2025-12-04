@@ -139,39 +139,6 @@
     width: 280px;
 }
 
-.nav-link-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    padding: 0;
-    color: var(--black);
-    &::after {
-        position: absolute;
-        font-family: $fontIcon;
-        content: "\e917";
-        right: 0;
-        color: var(--black);
-        font-size: 12px;
-        font-weight: 700;
-        transition: 0.2s ease-in-out;
-    }
-
-    span {
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 22px;
-    }
-
-    .icon {
-        font-size: 20px;
-    }
-    &.no-page {
-        &::after {
-            display: none;
-        }
-    }
-}
 .sub-menu {
     li {
         padding-top: 14px;
