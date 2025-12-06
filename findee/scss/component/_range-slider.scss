@@ -1,10 +1,10 @@
 @use "../abstracts/index" as *;
 .noUi-horizontal {
-    height: 4px;
+    height: 6px;
 }
 .noUi-target {
     border: 0;
-    background: rgba(18, 25, 39, 0.2);
+    background: rgba(18, 18, 18, 0.1);
     box-shadow: none;
 }
 
@@ -15,16 +15,16 @@
     }
 }
 .noUi-connect {
-    background-color: var(--blue);
+    background-color: var(--Primary);
 }
 
 .noUi-horizontal .noUi-handle,
 .noUi-vertical .noUi-handle {
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     border-radius: 50%;
-    border: 4px solid var(--yellow);
-    background-color: $white;
+    border: 2px solid var(--Primary);
+    background-color: var(--White);
     box-shadow: unset;
     cursor: pointer;
     top: -9px;
