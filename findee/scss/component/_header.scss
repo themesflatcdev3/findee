@@ -128,9 +128,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 16px;
+    padding: 20px 16px;
     position: relative;
     gap: 12px;
+    >*:nth-child(2) {
+        flex-shrink: 0;
+    }
+    >*:first-child {
+        width: 100%;
+    }
+    >*:last-child {
+        width: 100%;
+        justify-content: end;
+        text-align: end;
+    }
     .box-avt {
         display: flex;
         align-items: center;

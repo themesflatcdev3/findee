@@ -261,11 +261,11 @@
 
       var domMessage =
         '<div class="bubble bubble-me box-buble-me">' +
-        '<div class="content">' +
-        '<span class="time">' +
-        realTime +
+        '<div class="content text-caption-1 text-OnSurface">' +
+        // '<span class="time">' +
+        // realTime +
         "</span>" +
-        '<p class="text-item start">' +
+        '<p class="text-item start ">' +
         messValue +
         "</p>" +
         "</div>" +

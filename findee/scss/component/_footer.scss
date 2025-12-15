@@ -16,9 +16,11 @@
 }
 .menubar-footer {
     display: flex;
+    justify-content: center;
     padding: 12px 16px;
-    box-shadow: 0px 14px 64px -48px #0F0F0F1A;
     height: 82px;
+    box-shadow: 0px 14px 64px 0px rgba(15, 15, 15, 0.1);
+
     .inner-bar {
         width: 100%;
         display: flex;

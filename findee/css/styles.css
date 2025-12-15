@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -50,7 +50,7 @@
 
 /*---------- Reset css styles ----------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -608,16 +608,13 @@ select {
   padding: 70px 0px 82px;
 }
 .app-content.style-2 {
-  padding-top: 40px;
+  padding-top: 67px;
 }
 .app-content.style-3 {
-  padding-bottom: 110px;
+  padding-bottom: 134px;
 }
 .app-content.style-4 {
-  padding-bottom: 30px;
-}
-.app-content.style-5 {
-  padding-bottom: 60px;
+  padding-bottom: 54px;
 }
 
 .link:hover {
@@ -1106,7 +1103,7 @@ select {
 
 /*------------ Settings ----------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -1291,7 +1288,7 @@ select {
 }
 
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -1599,7 +1596,7 @@ select {
 /*------------ Components ---------------- */
 /*------------ header ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -1752,9 +1749,20 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 16px;
+  padding: 20px 16px;
   position: relative;
   gap: 12px;
+}
+.header-avt > *:nth-child(2) {
+  flex-shrink: 0;
+}
+.header-avt > *:first-child {
+  width: 100%;
+}
+.header-avt > *:last-child {
+  width: 100%;
+  justify-content: end;
+  text-align: end;
 }
 .header-avt .box-avt {
   display: flex;
@@ -1924,7 +1932,7 @@ select {
 
 /*------------ tabs ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2008,7 +2016,7 @@ select {
 
 /*------------ button ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2168,7 +2176,7 @@ select {
 
 /*------------ dropdown ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2345,7 +2353,7 @@ select {
 
 /*------------ range slider ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2492,7 +2500,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ form ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -2653,6 +2661,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   position: absolute;
   opacity: 0;
   visibility: hidden;
+  left: 0;
 }
 
 .drop-select {
@@ -3184,7 +3193,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ footer ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -3236,9 +3245,10 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 .menubar-footer {
   display: flex;
+  justify-content: center;
   padding: 12px 16px;
-  box-shadow: 0px 14px 64px -48px rgba(15, 15, 15, 0.1019607843);
   height: 82px;
+  box-shadow: 0px 14px 64px 0px rgba(15, 15, 15, 0.1);
 }
 .menubar-footer .inner-bar {
   width: 100%;
@@ -3287,7 +3297,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ carousel ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -3419,7 +3429,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ alert ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -3580,7 +3590,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ avatar ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -3825,7 +3835,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ switch ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -3864,6 +3874,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   position: relative;
   width: 48px;
   height: 24px;
+  flex-shrink: 0;
   -webkit-appearance: none;
   background-color: var(--line);
   border-radius: 99px;
@@ -3915,7 +3926,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ radio button ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4265,7 +4276,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ card ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4325,7 +4336,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ badge ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4531,7 +4542,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ modal ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4648,7 +4659,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ off canvas ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4844,7 +4855,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ progressbar ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -4947,7 +4958,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 /*------------ stepper ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5075,7 +5086,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ spinner ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5388,7 +5399,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ chart ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5514,7 +5525,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ box icon ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5712,7 +5723,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ nice select ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -5996,7 +6007,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*------------ preloader ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -6119,7 +6130,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 
 /*--------------- widget ---------------- */
 /* ---------------------------------------------------------
-    * Name: Findee - Job Finding App Figma UI Template Avitex
+    * Name: Findee - Job Finding Mobile App HTML Template
     * Version: 1.0.1
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -7793,6 +7804,9 @@ ul.list-text {
   position: relative;
 }
 .portfolio-wrap .portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 4px;
 }
 .portfolio-wrap .portfolio-item .icon {
@@ -7809,7 +7823,7 @@ ul.list-text {
   overflow-x: auto;
 }
 .portfolio-wrap.style-1 .portfolio-item {
-  width: 137px;
+  max-width: 137px;
   height: 137px;
   flex-shrink: 0;
 }
@@ -8073,11 +8087,64 @@ ul.list-text {
 }
 
 .accordion-item {
-  border: 0 !important;
   border-radius: 8px !important;
   border: 1px solid var(--line) !important;
   padding: 15px;
   position: relative;
+}
+.accordion-item .accordion-button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.accordion-item .accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: unset !important;
+}
+.accordion-item.style-1 {
+  padding: 0;
+  border: 0 !important;
+}
+.accordion-item.style-1 .accordion-button {
+  border-radius: 4px 4px 0 0;
+  gap: 8px;
+}
+.accordion-item.style-1 .accordion-button:not(.collapsed) {
+  background: rgba(39, 72, 219, 0.1) !important;
+  border-bottom: 1px solid rgba(39, 72, 219, 0.5) !important;
+}
+.accordion-item.style-1 .accordion-button:not(.collapsed) .icon {
+  background-color: var(--White);
+}
+.accordion-item.style-1 .accordion-button:not(.collapsed) .pluscircle {
+  display: flex;
+}
+.accordion-item.style-1 .accordion-button::after {
+  display: none;
+}
+.accordion-item.style-1 .accordion-button .title {
+  flex-grow: 1;
+}
+.accordion-item.style-1 .accordion-button .icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: var(--surface);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.accordion-item.style-1 .accordion-body {
+  border: 0;
 }
 .accordion-item .faq-accordion-btn {
   position: unset;

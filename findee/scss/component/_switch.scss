@@ -3,6 +3,7 @@
     position: relative;
     width: 48px;
     height: 24px;
+    flex-shrink: 0;
     -webkit-appearance: none;
     background-color: var(--line);
     border-radius: 99px;
