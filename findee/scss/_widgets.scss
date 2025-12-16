@@ -2234,3 +2234,47 @@ ul.list-text {
         border-color: var(--Primary);
     }
 }
+
+.wg-map {
+    height: 100%;
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 20px;
+    right: 20px;
+    max-width: 368px;
+    background-color: var(--dark);
+    z-index: 1000;
+    .overplay {
+        position: fixed;
+        inset: 0;
+        background-color: #00000066;
+    }
+    .content {
+        position: relative;
+        padding: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+        color: var(--white);
+    }
+    .button-group {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .tf-btn {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            width: 100%;
+            padding: 7px 7px;
+        }
+    }
+}

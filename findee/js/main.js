@@ -386,6 +386,70 @@
   });
   };
 
+  /* auto popup
+  ------------------------------------------------------------------------------------- */
+  var autoPopup = function () {
+    if($("body").hasClass("popup-loader")){
+      if ($(".auto-popup").length > 0) {
+        let showPopup = sessionStorage.getItem("showPopup");
+        if (!JSON.parse(showPopup)) {
+          setTimeout(function () {
+            $(".auto-popup").modal('show');
+          }, 3000);
+        }
+      }
+      $(".btn-hide-popup").on("click", function () {
+        sessionStorage.setItem("showPopup", true);
+      });
+    };
+  };
+
+  /* Cookie Setting
+  -------------------------------------------------------------------------------------*/
+  var cookieSetting = function () {
+    $(".cookie-banner .overplay").on("click", function () {
+      $(".cookie-banner").hide();
+    });
+
+    function setCookie(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      const expires = "expires=" + date.toUTCString();
+      document.cookie = `${name}=${value}; ${expires}; path=/`;
+    }
+
+    function getCookie(name) {
+      const nameEQ = name + "=";
+      const cookies = document.cookie.split(";");
+      for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i].trim();
+        if (cookie.indexOf(nameEQ) === 0) {
+          return cookie.substring(nameEQ.length, cookie.length);
+        }
+      }
+      return null;
+    }
+
+    function checkCookie() {
+      const $cookieBanner = $("#cookie-banner");
+      const accepted = getCookie("cookieAccepted");
+
+      if (accepted) {
+        $cookieBanner.hide();
+      } else {
+        $cookieBanner.show();
+      }
+    }
+
+    $(document).ready(function () {
+      $("#accept-cookie").on("click", function () {
+        setCookie("cookieAccepted", "true", 30);
+        $("#cookie-banner").hide();
+      });
+
+      checkCookie();
+    });
+  };
 
   $(function () {
     showPass();
@@ -406,6 +470,8 @@
     read_all_noti();
     clear_noti();
     date();
+    autoPopup();
+    cookieSetting();
     preloader();
   });
 })(jQuery);

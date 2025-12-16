@@ -8374,4 +8374,48 @@ ul.list-text {
   border-color: var(--Primary);
 }
 
+.wg-map {
+  height: 100%;
+}
+.wg-map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 20px;
+  right: 20px;
+  max-width: 368px;
+  background-color: var(--dark);
+  z-index: 1000;
+}
+.cookie-banner .overplay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.cookie-banner .content {
+  position: relative;
+  padding: 20px;
+}
+.cookie-banner p {
+  margin-bottom: 20px;
+  color: var(--white);
+}
+.cookie-banner .button-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.cookie-banner .button-group .tf-btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 100%;
+  padding: 7px 7px;
+}
+
 /*# sourceMappingURL=styles.css.map */
