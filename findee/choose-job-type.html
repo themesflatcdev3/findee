@@ -74,6 +74,23 @@
         </div>
     </div>
 
+    <!-- modal-noti  -->
+    <div class="modal modalCentered modal-noti fade auto-popup" id="modal-noti">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="content text-center">
+                    <div class="text-button text-OnSurface mb-8">"Findee" Would like to send you Notifications</div>
+                    <div class="text-caption-2 mb-15">Notifications may include alerts, sounds, and icon badges. These can be configured in Settings. </div>
+                </div>
+                <div class="btn-bot">
+                    <a href="#" data-bs-dismiss="modal" class="link text-button-small text-OnSurface">Don’t Allow</a>
+                    <a href="#" data-bs-dismiss="modal" class="link text-button-small text-OnSurface">Allow</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal-noti  -->
+
     <!-- auto popup  -->
     <div class="modal modalCentered fade auto-popup">
         <div class="modal-dialog modal-dialog-centered">
@@ -87,21 +104,36 @@
                 <div class="text-caption-1 mb-21">
                     A mobile app privacy policy is a legal statement that must be clear, conspicuous, and consented to by all users. It must disclose how a mobile app gathers, stores, and uses the personally identifiable information it collects from its users.
                 </div>
-
+                <div class="mb-20 d-flex align-items-center gap-8">
+                    <input type="checkbox" class="tf-checkbox" id="agree">
+                    <label for="agree" class="text-caption-2 text-Secondary">
+                        I agree to the 
+                        <a href="terms-of-services.html" class="fw-5 link">Term of sevice</a> 
+                        and 
+                        <a href="privacy-policy.html" class="fw-5 link">Privacy policy</a>
+                    </label>
+                </div>
+                <a href="#" data-bs-dismiss="modal" class="tf-btn round-full d-inline-flex">I Accept</a>
             </div>
         </div>
     </div>
     <!-- /auto popup  -->
+    
     <!-- cookie -->
     <div class="cookie-banner" id="cookie-banner">
         <div class="overplay"></div>
         <div class="content">
-            <p class="text-md">The cookie settings on this website are set to "allow all cookies" to give you the
-                very best experience. Please click Accept Cookies to continue to use the site.</p>
-            <div class="button-group">
-                <a class="btn-out-line-white btn-submit-total tf-btn" href="privacy-policy.html">Privacy Policy</a>
-                <button id="accept-cookie" class="accept-button btn-out-line-white btn-submit-total tf-btn">Accept
-                    Cookies</button>
+            <div class="desc text-center">
+                <div class="text-button text-OnSurface mb-4">Allow "Findee" to use your location?</div>
+                <div class="text-caption-2">To send the car quickly, Park Yourself collects location data from the time you open the app until a trip ends. This improves pickups, support, and more</div>
+            </div>
+            <div class="wg-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97101.88872869895!2d-74.22688511715344!3d40.487336736141906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1689125037376!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="btn-bot">
+                <a href="#" data-bs-dismiss="modal" class="link text-button-small text-OnSurface cookie-close">Allow Once</a>
+                <a href="#" id="accept-cookie" data-bs-dismiss="modal" class="link text-button-small text-OnSurface">Allow While Using App</a>
+                <a href="#" data-bs-dismiss="modal" class="link text-button-small text-OnSurface cookie-close">Deny</a>
             </div>
         </div>
     </div>

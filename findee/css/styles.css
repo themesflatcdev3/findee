@@ -801,6 +801,10 @@ select {
   margin-bottom: 4px !important;
 }
 
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
 .mb-8 {
   margin-bottom: 8px !important;
 }
@@ -817,12 +821,20 @@ select {
   margin-bottom: 12px;
 }
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-21 {
+  margin-bottom: 21px;
 }
 
 .mb-23 {
@@ -4041,39 +4053,48 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 
 .tf-checkbox {
-  position: relative;
-  border: 1.5px solid var(--blue);
-  border-radius: 5px;
   background: none;
   cursor: pointer;
   outline: 0;
-  width: 17px;
-  height: 17px;
-  -webkit-appearance: none;
+  border-radius: 2px;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  background-color: var(--White);
+  border: 1px solid var(--Secondary);
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-appearance: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .tf-checkbox::before {
-  content: "\e946";
   position: absolute;
   font-family: "icomoon";
+  content: "\e976";
   font-size: 10px;
-  color: transparent;
+  border-radius: 0;
+  color: var(--White);
+  width: unset;
+  height: unset;
+  background-color: unset;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .tf-checkbox:checked {
-  background-color: var(--blue);
+  background-color: var(--Primary);
+  border-color: var(--Primary);
 }
 .tf-checkbox:checked::before {
-  color: var(--White);
-}
-.tf-checkbox.sm {
-  width: 16px;
-  height: 16px;
-  border-radius: 3px;
-}
-.tf-checkbox.sm::before {
-  font-size: 6px;
+  opacity: 1;
 }
 
 .cb-rounded {
@@ -4581,10 +4602,9 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   border-color: var(--line);
 }
 .modal .modal-dialog .modal-content {
-  border-radius: 32px;
+  border-radius: 8px;
   border: 0;
   background: var(--White);
-  color: var(--black);
   padding: 24px;
 }
 .modal.modalRight .modal-dialog {
@@ -4649,12 +4669,34 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 
 .modal-backdrop {
-  background-color: var(--backdrop);
+  background-color: var(--On-Surface);
+  opacity: 0.3;
 }
 .modal-backdrop.show {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  opacity: 1;
+  opacity: 0.3;
+}
+
+.modal-noti .modal-dialog .modal-content {
+  padding: 0;
+  width: 270px;
+}
+.modal-noti .modal-dialog .content {
+  padding: 19px 16px 15px;
+}
+.modal-noti .modal-dialog .btn-bot {
+  border-top: 1px solid var(--line);
+  display: flex;
+}
+.modal-noti .modal-dialog .btn-bot a {
+  width: 50%;
+  padding: 11px 0 14px;
+  display: flex;
+  justify-content: center;
+}
+.modal-noti .modal-dialog .btn-bot a:first-child {
+  border-right: 1px solid var(--line);
 }
 
 /*------------ off canvas ---------------- */
@@ -8384,38 +8426,41 @@ ul.list-text {
 
 .cookie-banner {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
-  border-radius: 20px;
-  right: 20px;
-  max-width: 368px;
-  background-color: var(--dark);
+  inset: 0;
   z-index: 1000;
 }
 .cookie-banner .overplay {
-  position: fixed;
+  position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--On-Surface);
+  opacity: 0.3;
+  z-index: 2;
 }
 .cookie-banner .content {
-  position: relative;
-  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  border-radius: 12px;
+  padding: 0px;
+  background-color: var(--White);
+  z-index: 3;
 }
-.cookie-banner p {
-  margin-bottom: 20px;
-  color: var(--white);
+.cookie-banner .desc {
+  padding: 20px 17px 25px;
 }
-.cookie-banner .button-group {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.cookie-banner .button-group .tf-btn {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
+.cookie-banner .wg-map {
   width: 100%;
-  padding: 7px 7px;
+  height: 126px;
+}
+.cookie-banner .btn-bot a {
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+}
+.cookie-banner .btn-bot a:not(:last-child) {
+  border-bottom: 1px solid var(--line);
 }
 
 /*# sourceMappingURL=styles.css.map */

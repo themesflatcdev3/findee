@@ -395,7 +395,7 @@
         if (!JSON.parse(showPopup)) {
           setTimeout(function () {
             $(".auto-popup").modal('show');
-          }, 3000);
+          }, 0);
         }
       }
       $(".btn-hide-popup").on("click", function () {
@@ -408,7 +408,7 @@
   -------------------------------------------------------------------------------------*/
   var cookieSetting = function () {
     $(".cookie-banner .overplay").on("click", function () {
-      $(".cookie-banner").hide();
+      $(".cookie-banner, .cookie-close").hide();
     });
 
     function setCookie(name, value, days) {
