@@ -37,9 +37,14 @@
     </div>
     <!-- /preload -->
     <div class="header-avt fixed-top">
-        <a href="profile.html" class="box-avt w-100">
-            <div class="text-caption-2">Hi, Mahesh</div>
-        </a>
+        <div class="d-flex gap-8">
+            <a data-bs-target="#modalPage" data-bs-toggle="modal" class="text-OnSurface">
+                <i class="icon icon-listBullets"></i>
+            </a>
+            <a href="profile.html" class="box-avt w-100">
+                <div class="text-caption-2">Hi, Mahesh</div>
+            </a>
+        </div>
         <a href="index.html" class="header-logo">
             <img src="images/logo/logo-light.png" alt="">
         </a>
@@ -703,111 +708,280 @@
             <div class="modal-content modal-second">
                 <div class="header line-bt header-st2">
                     <div class="left" data-bs-dismiss="modal">
-                        <a href="javascript:void(0);" class="icon"><i class="icon-arr-left"></i></a>
+                        <a href="javascript:void(0);" class="icon">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.398 19.9524C15.4532 20.0039 15.4976 20.066 15.5283 20.135C15.5591 20.204 15.5756 20.2784 15.5769 20.354C15.5783 20.4295 15.5644 20.5045 15.5361 20.5746C15.5078 20.6446 15.4657 20.7082 15.4123 20.7616C15.3588 20.8151 15.2952 20.8572 15.2252 20.8855C15.1551 20.9137 15.0801 20.9276 15.0046 20.9263C14.9291 20.925 14.8546 20.9084 14.7856 20.8777C14.7166 20.847 14.6545 20.8026 14.603 20.7474L7.10298 13.2474C6.99764 13.1419 6.93848 12.9989 6.93848 12.8499C6.93848 12.7008 6.99764 12.5578 7.10298 12.4524L14.603 4.95236C14.7096 4.853 14.8506 4.79891 14.9964 4.80148C15.1421 4.80405 15.2811 4.86308 15.3842 4.96614C15.4873 5.0692 15.5463 5.20824 15.5489 5.35397C15.5514 5.49969 15.4973 5.64073 15.398 5.74736L8.29642 12.8499L15.398 19.9524Z" fill="#121212"></path>
+                            </svg>
+                        </a>
                     </div>
                     <h4>Pages</h4>
                 </div>
                 <div class="overflow-auto pb-32">
                     <div class="tf-container">
                         <ul>
-                            <li><a href="onboarding.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                            <li>
+                                <a href="onboarding.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Boarding</span>
-                                </a></li>
-                            <li><a href="onboarding-1.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="onboarding-1.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Boarding 01</span>
-                                </a></li>
-                            <li><a href="onboarding-2.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Boarding 02</span>
-                                </a></li>
-                            <li><a href="sign-in.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sign-in.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Sign In</span>
-                                </a></li>
-                            <li><a href="sign-up.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sign-up.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Sign Up</span>
-                                </a></li>
-                            <li><a href="forgot-pass.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forgot-pass.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Forgot Password</span>
-                                </a></li>
-                            <li><a href="otp.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="otp.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Verification</span>
-                                </a></li>
-                            <li><a href="new-password.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="new-password.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Reset Password</span>
-                                </a></li>
-                            <li><a href="index.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="choose-job-type.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Choose Job Type</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="choose-job.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Choose Job</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="your-profile.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Your Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Home</span>
-                                </a></li>
-                            <li><a href="setup-profile.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Set Up Profile</span>
-                                </a></li>
-                            <li><a href="interest.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Interest</span>
-                                </a></li>
-                            <li><a href="confirm-new-account.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Confirm New Account</span>
-                                </a></li>
-                            <li><a href="successfully-created-acount.html"
-                                    class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Success Acount</span>
-                                </a></li>
-                            <li><a href="job-detail.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="jobs-filter.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Jobs Filter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="companies-filter.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Companies Filter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="candidate-freelancer-filter.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Candidate Freelancer Filter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="job-detail.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Job Details</span>
-                                </a></li>
-                            <li><a href="all-job.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>All Job</span>
-                                </a></li>
-                            <li><a href="apply-job.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Apply Job</span>
-                                </a></li>
-                            <li><a href="successfully-applied.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Success Applied</span>
-                                </a></li>
-                            <li><a href="search-job.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Search Job</span>
-                                </a></li>
-                            <li><a href="application.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Your Applications</span>
-                                </a></li>
-                            <li><a href="job-details-tracking.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Job Details Tracking</span>
-                                </a></li>
-                            <li><a href="empty-notification.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Empty Notification</span>
-                                </a></li>
-                            <li><a href="message.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="company-detail.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Company Detail</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="candidates-detail.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Candidates Detail</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="message.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Message</span>
-                                </a></li>
-                            <li><a href="message-inbox.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="message-inbox.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Message Inbox</span>
-                                </a></li>
-                            <li><a href="group-message.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Group Message</span>
-                                </a></li>
-                            <li><a href="profile.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="new-feed.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>New Feed</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="saved.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Saved</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notification.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
                                     <span>Profile</span>
-                                </a></li>
-                            <li><a href="skill-view.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Skill Test</span>
-                                </a></li>
-                            <li><a href="skill-assasment.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Skill Assasment</span>
-                                </a></li>
-                            <li><a href="work-experience.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Work Experience</span>
-                                </a></li>
-                            <li><a href="education.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Education</span>
-                                </a></li>
-                            <li><a href="awards.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Awards</span>
-                                </a></li>
-                            <li><a href="text-success.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
-                                    <span>Success</span>
-                                </a></li>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-edit.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Edit</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-appreciation.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Appreciation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-cv.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile CV</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-education.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Education</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-expected-salary.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Expected Salary</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-language.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Language</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-portfolio.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Portfolio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-skill.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Skill</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-summary.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Summary</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-work-experience.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Profile Work Experience</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-profile.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-add-card.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Add Card</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-bill.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Bill</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-connections.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Connections</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-following.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Following</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-invite-friends.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Invite Friends</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-language.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Language</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-notification.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-otp.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting OTP</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-package-details.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Package Details</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-packages.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Package</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-select-payment.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Select Payment</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-successful.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Successful</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting-timezone.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Setting Timezone</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="employer-profile.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Employer Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="employer-profile-about.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Employer Profile About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="employer-profile-job.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Employer Profile Job</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="employer-profile-portfolio.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Employer Profile Portfolio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="employer-profile-social.html" class="nav-link-item pt-16 pb-16 line-bt no-page">
+                                    <span>Employer Profile Social</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
