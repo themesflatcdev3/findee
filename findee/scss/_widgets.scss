@@ -1283,7 +1283,7 @@
 .candidates-item {
     border-radius: 8px;
     border: 1px solid var(--line);
-    padding: 16px;
+    padding: 15px;
     text-align: center;
     .image {
         width: 40px;
@@ -1612,8 +1612,8 @@ ul.list-text {
 }
 
 .my-profile {
-    padding: 8px;
-    border-radius: 12px;
+    padding: 12px;
+    border-radius: 8px;
     background-color: var(--Primary);
     .my-profile-infor {
         display: flex;
@@ -2127,7 +2127,7 @@ ul.list-text {
     }
     .accordion-button {
         padding: 8px 12px;
-        gap: 12px;
+        gap: 8px;
         color: var(--On-Surface);
         background: none !important;
         border: 0 !important;

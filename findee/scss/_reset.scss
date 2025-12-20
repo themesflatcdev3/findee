@@ -507,7 +507,7 @@ select {
 .app-content {
     padding: 70px 0px 82px;
     &.style-2 {
-        padding-top: 67px;
+        padding-top: 56px;
     }
     &.style-3 {
         padding-bottom: 134px;
@@ -550,6 +550,13 @@ select {
     line-height: 21px;
     font-weight: 600;
 }
+
+.text-title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
 .text-button-small {
     font-size: 14px;
     line-height: 18px;
