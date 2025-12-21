@@ -92,19 +92,18 @@
 .modal-sidebar {
     width: 300px;
     .sidebar-header {
-        background-color: var(--pest-1);
+        background-color: var(--White);
         padding: 15px;
         display: flex;
         gap: 16px;
         align-items: center;
         .sidebar-logo {
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             flex-shrink: 0;
         }
         p {
             font-weight: 600;
-            color: #fff;
         }
     }
     .sidebar-content {
@@ -137,6 +136,41 @@
 }
 .modal-second {
     width: 280px;
+}
+
+.nav-link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    padding: 0;
+    color: var(--black);
+    &::after {
+        position: absolute;
+        font-family: $fontIcon;
+        content: "\e933";
+        right: 0;
+        transform: rotate(180deg);
+        color: var(--black);
+        font-size: 12px;
+        font-weight: 700;
+        transition: 0.2s ease-in-out;
+    }
+
+    span {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+    &.no-page {
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .sub-menu {

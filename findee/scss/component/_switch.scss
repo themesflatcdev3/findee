@@ -22,7 +22,7 @@
         transition: 0.2s;
     }
     &:checked {
-        background-color: var(--Success);
+        background-color: var(--Primary);
         &::before {
             left: 26px;
         }

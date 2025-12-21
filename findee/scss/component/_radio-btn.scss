@@ -90,40 +90,6 @@
     }
 }
 
-// .tf-checkbox {
-//     position: relative;
-//     border: 1.5px solid var(--Secondary);
-//     border-radius: 5px;
-//     background: none;
-//     cursor: pointer;
-//     outline: 0;
-//     width: 17px;
-//     height: 17px;
-//     -webkit-appearance: none;
-//     @include flex(center, center);
-//     flex-shrink: 0;
-//     &::before {
-//         content: "\e976";
-//         position: absolute;
-//         font-family: $fontIcon;
-//         font-size: 10px;
-//         color: transparent;
-//     }
-//     &:checked {
-//         background-color: var(--blue);
-//         &::before{
-//             color: var(--White);
-//         }
-//     }
-//     &.sm {
-//         width: 16px;
-//         height: 16px;
-//         border-radius: 3px;
-//         &::before {
-//             font-size: 6px;
-//         }
-//     }
-// }
 .tf-checkbox {
     background: none;
     cursor: pointer;

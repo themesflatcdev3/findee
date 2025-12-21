@@ -20,8 +20,8 @@
         padding: 4px 10px;
     }
     &.primary {
-        background: var(--blue);
-        border-color: var(--blue);
+        background: var(--Primary);
+        border-color: var(--Primary);
         color: $white;
     }
     &.secondary {
@@ -51,7 +51,7 @@
     }
     &.light-primary {
         background: rgba(40, 105, 254, 0.3);
-        color: var(--blue);
+        color: var(--Primary);
     }
     &.light-secondary{
         background: rgba(165, 95, 255, 0.3);
@@ -92,7 +92,7 @@
         line-height: 30px;
         &.primary {
             background-color: var(--White);
-            color: var(--blue);
+            color: var(--Primary);
         }
         &.success {
             background-color: var(--White);
