@@ -257,4 +257,19 @@
             color: var(--OnSurface);
         }
     }
+    &.style-default {
+        padding: 0;
+        border: 0;
+        .current-icon {
+            @include transition3;
+        }
+        &::after {
+            display: none;
+        }
+        &.open {
+            .current-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
 }

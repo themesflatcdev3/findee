@@ -671,6 +671,7 @@ select {
 
 .app-content {
   padding: 70px 0px 82px;
+  overflow: hidden;
 }
 .app-content.style-2 {
   padding-top: 56px;
@@ -6145,6 +6146,23 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 .tf-select .current.active {
   color: var(--OnSurface);
+}
+.tf-select.style-default {
+  padding: 0;
+  border: 0;
+}
+.tf-select.style-default .current-icon {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tf-select.style-default::after {
+  display: none;
+}
+.tf-select.style-default.open .current-icon {
+  transform: rotate(180deg);
 }
 
 /*------------ preloader ---------------- */
