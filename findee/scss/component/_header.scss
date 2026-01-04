@@ -124,11 +124,15 @@
         }
     }
 }
+.logo-image {
+    width: 81px;
+    height: 24px;
+}
 .header-avt {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 16px 0px 16px;
+    padding: 20px 16px 10px 16px;
     position: relative;
     gap: 12px;
     >*:nth-child(2) {

@@ -18,6 +18,12 @@
     }
 }
 .swiper {
+    .swiper-slide {
+        height: auto;
+        >* {
+            height: 100%;
+        }
+    }
     &.sw-auto {
         .swiper-slide {
             width: auto;
@@ -38,9 +44,6 @@
 .sw-lr {
     margin-right: -24px;
     padding-right: 24px;
-}
-
-.dots-tes {
 }
 
 .sw-box-shadow {

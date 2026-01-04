@@ -1185,6 +1185,10 @@ select {
   padding-left: 21px;
 }
 
+.fs-19 {
+  font-size: 19px;
+}
+
 /*------------ Settings ----------------- */
 /* ---------------------------------------------------------
     * Name: Findee - Job Finding Mobile App HTML Template
@@ -1859,11 +1863,16 @@ select {
   font-size: 14px;
 }
 
+.logo-image {
+  width: 81px;
+  height: 24px;
+}
+
 .header-avt {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 16px 0px 16px;
+  padding: 20px 16px 10px 16px;
   position: relative;
   gap: 12px;
 }
@@ -3461,6 +3470,12 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   background-color: var(--White);
 }
 
+.swiper .swiper-slide {
+  height: auto;
+}
+.swiper .swiper-slide > * {
+  height: 100%;
+}
 .swiper.sw-auto .swiper-slide {
   width: auto;
 }
@@ -7222,7 +7237,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   flex-shrink: 0;
 }
 .message-box .avatar img {
-  border: 1px solid var(--blue);
+  border-radius: 50%;
 }
 .message-box .info {
   display: grid;
@@ -7478,14 +7493,6 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   margin-bottom: 16px;
 }
 
-.boarding-img {
-  max-width: 311px;
-  height: 311px;
-  margin: auto;
-  border-radius: 30px;
-  background-color: var(--blue);
-  padding: 20px;
-}
 .boarding-img .img {
   border-radius: 20px;
   overflow: hidden;
@@ -7682,10 +7689,6 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   display: flex;
   gap: 4px;
 }
-.find-job-item:not(.save-item) .bookmark-save svg path {
-  fill: transparent;
-  stroke: var(--On-Surface);
-}
 .find-job-item.style-1 .job-detail {
   padding-bottom: 0;
   border-bottom: 0;
@@ -7696,6 +7699,11 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   padding: 3px 11px;
   border: 1px solid var(--Primary);
   border-radius: 99px;
+}
+
+.save-item:not(.saved) .bookmark-save-icon svg path {
+  fill: transparent;
+  stroke: var(--On-Surface);
 }
 
 .no-results-found {
@@ -8045,13 +8053,30 @@ ul.list-text {
   position: absolute;
   bottom: 2px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--Primary);
+}
+.edit-profile-wrap .profile-avatar .add-img::after {
+  position: absolute;
+  font-family: "icomoon";
+  content: "\e935";
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Primary);
+  font-size: 17px;
+  color: var(--White);
 }
 .edit-profile-wrap form .input-icon .form-control {
   border-radius: 8px;
@@ -8449,11 +8474,19 @@ ul.list-text {
 .summary-accordion .accordion-button .title {
   flex-grow: 1;
 }
+.summary-accordion .accordion-button .pluscircle {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .summary-accordion .accordion-button::after {
   display: none;
 }
 .summary-accordion .accordion-button:not(.collapsed) .pluscircle {
-  display: none;
+  opacity: 0;
 }
 .summary-accordion .accordion-body {
   padding: 8px 12px 12px !important;
@@ -8471,6 +8504,7 @@ ul.list-text {
   font-size: 24px;
   color: var(--Primary);
   opacity: 0;
+  z-index: 5;
 }
 .summary-accordion .accordion-collapse.show .link-edit-detail {
   opacity: 1;

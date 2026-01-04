@@ -905,7 +905,7 @@
     .avatar {
         flex-shrink: 0;
         img {
-            border: 1px solid var(--blue);
+            border-radius: 50%;
         }
     }
     .info {
@@ -1172,12 +1172,6 @@
     }
 }
 .boarding-img {
-    max-width: 311px;
-    height: 311px;
-    margin: auto;
-    border-radius: 30px;
-    background-color: var(--blue);
-    padding: 20px;
     .img {
         border-radius: 20px;
         overflow: hidden;
@@ -1367,12 +1361,7 @@
             gap: 4px;
         }
     }
-    &:not(.save-item) .bookmark-save {
-        svg path {
-            fill: transparent;
-            stroke: var(--On-Surface);
-        }
-    }
+   
     &.style-1 {
         .job-detail {
             padding-bottom: 0;
@@ -1385,6 +1374,15 @@
         padding: 3px 11px;
         border: 1px solid var(--Primary);
         border-radius: 99px;
+    }
+}
+
+.save-item {
+    &:not(.saved) .bookmark-save-icon {
+        svg path {
+            fill: transparent;
+            stroke: var(--On-Surface);
+        }
     }
 }
 
@@ -1761,13 +1759,30 @@ ul.list-text {
             position: absolute;
             bottom: 2px;
             right: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             width: 24px;
             height: 24px;
             border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: var(--Primary);
+            &::after {
+                position: absolute;
+                font-family: "icomoon";
+                content: '\e935';
+                top: 0;
+                left: 0;
+                width: 24px;
+                height: 24px;
+                z-index: 1;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--Primary);
+                font-size: 17px;
+                color: var(--White);
+            }
         }
     }
     form {
@@ -2147,13 +2162,16 @@ ul.list-text {
         .title {
             flex-grow: 1;
         }
-       
+        .pluscircle {
+            opacity: 1;
+            @include transition3();
+        }
         &::after {
             display: none;
         }
         &:not(.collapsed) {
             .pluscircle {
-                display: none;
+                opacity: 0;
             }
         }
     }
@@ -2168,6 +2186,7 @@ ul.list-text {
             font-size: 24px;
             color: var(--Primary);
             opacity: 0;
+            z-index: 5;
         }
     }
     .accordion-collapse {

@@ -340,11 +340,11 @@
     }, 200);
   };
 
-  /* find-job
+  /* save-item
   ------------------------------------------------------------------------------------- */
-  var find_job = function () {
-    $(".find-job-item .bookmark-save").click(function () {
-      $(this).closest(".find-job-item").toggleClass("save-item");
+  var save_item = function () {
+    $(".save-item .bookmark-save-icon").click(function () {
+      $(this).closest(".save-item").toggleClass("saved");
     });
   };
 
@@ -451,6 +451,27 @@
     });
   };
 
+  var uploadfile = function () {
+    if ($("#myFile").length) {
+      document
+        .getElementById("myFile")
+        .addEventListener("change", function (event) {
+          var file = event.target.files[0];
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            var imgElement = document.getElementById("myFile-input");
+            imgElement.src = e.target.result;
+            imgElement.classList.add("has-img");
+          };
+
+          if (file) {
+            reader.readAsDataURL(file);
+          }
+        });
+      }
+  };
+
   $(function () {
     showPass();
     otpInput();
@@ -466,12 +487,13 @@
     flatCounter();
     inputUpload();
     RTL();
-    find_job();
+    save_item();
     read_all_noti();
     clear_noti();
     date();
     autoPopup();
     cookieSetting();
+    uploadfile();
     preloader();
   });
 })(jQuery);
