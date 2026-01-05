@@ -2225,6 +2225,9 @@ select {
 .tf-btn.type-small {
   padding: 6px 14px;
 }
+.tf-btn.type-lg {
+  padding: 12px 14px;
+}
 .tf-btn.type-red {
   background-color: var(--Red);
   border-color: var(--Red);
@@ -4813,6 +4816,14 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 }
 .modal-noti .modal-dialog .btn-bot a:first-child {
   border-right: 1px solid var(--line);
+}
+
+.modal-profile .modal-dialog-centered {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.modal-profile .modal-dialog-centered .modal-content {
+  padding: 16px;
 }
 
 /*------------ off canvas ---------------- */
@@ -7742,6 +7753,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 .job-detail-wrap .find-job-item .tags {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 .job-detail-wrap .find-job-item .tags .tag-item {
   display: flex;
@@ -7836,8 +7848,48 @@ ul.list-text {
   border-radius: 12px;
   box-shadow: 0px 3px 3px 0px rgba(37, 53, 60, 0.0705882353);
 }
-.new-feed-top .message-box-bottom input {
+.new-feed-top .message-box-bottom > input {
   padding-right: 157px;
+}
+.new-feed-top .image-add {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: unset;
+  cursor: pointer;
+}
+.new-feed-top .image-add::after {
+  position: absolute;
+  content: "\e930";
+  font-family: "icomoon";
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--On-Surface);
+  top: 0;
+  left: 0;
+  background-color: var(--White);
+}
+.new-feed-top .paperclip {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: unset;
+  cursor: pointer;
+}
+.new-feed-top .paperclip::after {
+  position: absolute;
+  content: "\e92e";
+  font-family: "icomoon";
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--On-Surface);
+  top: 0;
+  left: 0;
+  background-color: var(--White);
 }
 
 .new-feed-post {
@@ -8570,10 +8622,35 @@ ul.list-text {
 
 .wg-map {
   height: 100%;
+  position: relative;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 .wg-map iframe {
   height: 100%;
   width: 100%;
+}
+.wg-map .find-job-item {
+  position: absolute;
+  bottom: 40px;
+  left: 26px;
+  right: 26px;
+  z-index: 2;
+  background-color: var(--White);
+  border-radius: 8px;
+}
+.wg-map .find-job-item .job-detail {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 16px;
+}
+.wg-map .find-job-item .tag-item {
+  padding: 4px 16px;
+}
+.wg-map .find-job-item .salary {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 12px;
 }
 
 .cookie-banner {
@@ -8613,6 +8690,83 @@ ul.list-text {
 }
 .cookie-banner .btn-bot a:not(:last-child) {
   border-bottom: 1px solid var(--line);
+}
+
+.list-rating-check {
+  display: flex;
+  gap: 4px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.list-rating-check label {
+  margin-bottom: 0;
+}
+
+.list-rating-check:not(:checked) > input {
+  position: absolute;
+  opacity: 0;
+}
+
+.list-rating-check:not(:checked) > label {
+  font-size: 60px;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 60px;
+  height: 60px;
+  color: var(--line);
+  position: relative;
+}
+
+.list-rating-check:not(:checked) > label:before {
+  font-family: "icomoon";
+  content: "\e941";
+  top: 0;
+  left: 0;
+  font-size: 60px;
+  line-height: 60px;
+  position: absolute;
+}
+
+.list-rating-check > input:checked ~ label {
+  color: var(--Warning);
+}
+
+.list-rating-check:not(:checked) > label:hover,
+.list-rating-check:not(:checked) > label:hover ~ label {
+  color: var(--Warning);
+}
+
+.list-rating-check > input:checked + label:hover,
+.list-rating-check > input:checked + label:hover ~ label,
+.list-rating-check > input:checked ~ label:hover,
+.list-rating-check > input:checked ~ label:hover ~ label,
+.list-rating-check > label:hover ~ input:checked ~ label {
+  color: var(--Warning);
+}
+
+.like-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--line);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.like-box.active {
+  color: var(--Primary);
+}
+
+.box-available {
+  display: flex;
+  border-radius: 99px;
+  background-color: rgba(55, 184, 83, 0.1019607843);
+  padding: 7px 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */

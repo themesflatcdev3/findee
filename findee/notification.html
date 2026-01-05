@@ -247,7 +247,7 @@
                 </a>
             </li>
             <li class="">
-                <a href="profile.html">
+                <a data-bs-target="#profile" data-bs-toggle="modal">
                     <div class="icon">
                         <i class="icon-user-line"></i>
                     </div>
@@ -279,7 +279,29 @@
             </div>
         </div>
     </div>
-
+    <!-- profile  -->
+    <div class="modal modalCentered fade modal-profile" id="profile">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <h3 class="mb-16 text-OnSurface">Choose your job type</h3>
+                <div class="flat-check-list d-flex gap-20 mb-40">
+                    <a href="employer-profile.html" class="job-type-item w-100">
+                        <div class="image">
+                            <img src="images/icon/employer.png" alt="">
+                        </div>
+                        <h4>Employer</h4>
+                    </a>
+                    <a href="profile.html" class="job-type-item w-100">
+                        <div class="image">
+                            <img src="images/icon/candidates.png" alt="">
+                        </div>
+                        <h4>Candidates</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /profile  -->
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>

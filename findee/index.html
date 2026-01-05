@@ -685,7 +685,7 @@
                 </a>
             </li>
             <li class="">
-                <a href="profile.html">
+                <a data-bs-target="#profile" data-bs-toggle="modal">
                     <div class="icon">
                         <i class="icon-user-line"></i>
                     </div>
@@ -704,6 +704,29 @@
 
     </div>
 
+    <!-- profile  -->
+    <div class="modal modalCentered fade modal-profile" id="profile">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <h3 class="mb-16 text-OnSurface">Choose your job type</h3>
+                <div class="flat-check-list d-flex gap-20 mb-40">
+                    <a href="employer-profile.html" class="job-type-item w-100">
+                        <div class="image">
+                            <img src="images/icon/employer.png" alt="">
+                        </div>
+                        <h4>Employer</h4>
+                    </a>
+                    <a href="profile.html" class="job-type-item w-100">
+                        <div class="image">
+                            <img src="images/icon/candidates.png" alt="">
+                        </div>
+                        <h4>Candidates</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /profile  -->
     <!-- sidebar -->
     <div class="modal fade modalLeft" id="sidebar">
         <div class="modal-dialog" role="document">
@@ -2369,7 +2392,7 @@
                         </svg>
                     </div>
                     <input type="text" class="search-field" placeholder="City, Sate, Zip...">
-                    <div class="right-icon" data-bs-target="#filter-map" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                    <div class="right-icon" data-bs-target="#filter" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
                         <i class="icon icon-mapTrifold"></i>
                     </div>
                 </div>
@@ -2388,16 +2411,177 @@
                     <div class="tab-pane fade h-100 active show" id="Jobs-map" role="tabpanel">
                         <div class="wg-map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97101.88872869895!2d-74.22688511715344!3d40.487336736141906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1689125037376!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="find-job-item save-item">
+                                <div class="job-detail">
+                                    <div class="image">
+                                        <img src="images/jobs/job-1.png" alt="">
+                                    </div>
+                                    <div class="infor">
+                                        <div class="text-caption-2 text-Primary sub">Rockstar Games</div>
+                                        <a href="job-detail.html" class="name link text-button-small text-OnSurface mb-4">UI/UX Designer</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="place">
+                                                <svg width="16" height="16" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_4434_5375)">
+                                                    <path d="M10.5 5.84985C10.5 9.34985 6 12.3499 6 12.3499C6 12.3499 1.5 9.34985 1.5 5.84985C1.5 4.65638 1.97411 3.51179 2.81802 2.66787C3.66193 1.82396 4.80653 1.34985 6 1.34985C7.19347 1.34985 8.33807 1.82396 9.18198 2.66787C10.0259 3.51179 10.5 4.65638 10.5 5.84985Z" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M6 7.34985C6.82843 7.34985 7.5 6.67828 7.5 5.84985C7.5 5.02143 6.82843 4.34985 6 4.34985C5.17157 4.34985 4.5 5.02143 4.5 5.84985C4.5 6.67828 5.17157 7.34985 6 7.34985Z" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_4434_5375">
+                                                    <rect width="12" height="12" fill="white" transform="translate(0 0.849854)"></rect>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <div class="text-caption-2">Orlando, FL 32801, USA</div>
+                                            </div>
+                                            <div class="bookmark-save bookmark-save-icon">
+                                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.375 2.84985H5.625C5.29348 2.84985 4.97554 2.98155 4.74112 3.21597C4.5067 3.45039 4.375 3.76833 4.375 4.09985V17.8499C4.37506 17.9614 4.40496 18.0709 4.46161 18.167C4.51826 18.263 4.59959 18.3422 4.69716 18.3963C4.79473 18.4503 4.90498 18.4773 5.01648 18.4743C5.12798 18.4714 5.23666 18.4387 5.33125 18.3795L10 15.4616L14.6695 18.3795C14.7641 18.4385 14.8727 18.471 14.9841 18.4739C15.0955 18.4767 15.2056 18.4497 15.303 18.3957C15.4005 18.3417 15.4817 18.2626 15.5383 18.1666C15.5949 18.0706 15.6249 17.9613 15.625 17.8499V4.09985C15.625 3.76833 15.4933 3.45039 15.2589 3.21597C15.0245 2.98155 14.7065 2.84985 14.375 2.84985Z" fill="#2748DB"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="salary align-items-center">
+                                    <div class="tags d-flex align-items-center gap-8">
+                                        <a href="#" class="text-caption-2 tag-item link">Part-time</a>
+                                        <a href="#" class="text-caption-2 tag-item link">Remote</a>
+                                    </div>
+                                    <div class="rate-list">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4311_23799)">
+                                            <path d="M10 20C7.32891 20 4.81766 18.9598 2.92891 17.0711C1.04016 15.1823 0 12.6711 0 10C0 7.32891 1.0402 4.8177 2.92891 2.92891C4.81762 1.04012 7.32891 0 10 0C12.6711 0 15.1823 1.04016 17.0711 2.92891C18.9598 4.81766 20 7.32891 20 10C20 12.6711 18.9598 15.1823 17.0711 17.0711C15.1824 18.9599 12.6711 20 10 20ZM10 1.25C5.17523 1.25 1.25 5.17523 1.25 10C1.25 14.8248 5.17523 18.75 10 18.75C14.8248 18.75 18.75 14.8248 18.75 10C18.75 5.17523 14.8248 1.25 10 1.25Z" fill="#121212"/>
+                                            <path d="M10 9.375C9.13844 9.375 8.4375 8.67406 8.4375 7.8125C8.4375 6.95094 9.13844 6.25 10 6.25C10.8616 6.25 11.5625 6.95094 11.5625 7.8125C11.5625 8.15766 11.8423 8.4375 12.1875 8.4375C12.5327 8.4375 12.8125 8.15766 12.8125 7.8125C12.8125 6.47652 11.8759 5.35594 10.625 5.07086V4.375C10.625 4.02984 10.3452 3.75 10 3.75C9.6548 3.75 9.375 4.02984 9.375 4.375V5.07086C8.12414 5.35594 7.1875 6.47652 7.1875 7.8125C7.1875 9.36332 8.44918 10.625 10 10.625C10.8616 10.625 11.5625 11.3259 11.5625 12.1875C11.5625 13.0491 10.8616 13.75 10 13.75C9.13844 13.75 8.4375 13.0491 8.4375 12.1875C8.4375 11.8423 8.1577 11.5625 7.8125 11.5625C7.4673 11.5625 7.1875 11.8423 7.1875 12.1875C7.1875 13.5235 8.12414 14.6441 9.375 14.9291V15.625C9.375 15.9702 9.6548 16.25 10 16.25C10.3452 16.25 10.625 15.9702 10.625 15.625V14.9291C11.8759 14.6441 12.8125 13.5235 12.8125 12.1875C12.8125 10.6367 11.5508 9.375 10 9.375Z" fill="#121212"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_4311_23799">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="text-OnSurface text-button-small">
+                                            $110,000 <span class="text-Secondary text-caption-1">/year</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-caption-2 text-Secondary">22 days left to apply</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade h-100" id="Companies-map" role="tabpanel">
                         <div class="wg-map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59587.212341145794!2d105.8338975963342!3d21.024651178495958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2sus!4v1765896141895!5m2!1svi!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="find-job-item save-item">
+                                <div class="job-detail">
+                                    <div class="image">
+                                        <img src="images/jobs/job-1.png" alt="">
+                                    </div>
+                                    <div class="infor">
+                                        <div class="rate-list">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <div class="mb-4 d-flex gap-8 align-items-center">
+                                            <a href="company-detail.html" class="name link text-button-small text-OnSurface">Rockstar</a>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="#2748DB"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9099 3.73218C11.052 3.77687 11.1762 3.86573 11.2643 3.98583C11.3524 4.10593 11.3999 4.25102 11.3999 4.39998V7.89998H14.1999C14.328 7.89992 14.4536 7.93499 14.5631 8.00136C14.6726 8.06773 14.7618 8.16286 14.821 8.2764C14.8801 8.38994 14.9071 8.51754 14.8988 8.64532C14.8905 8.77309 14.8473 8.89614 14.7739 9.00108L9.87392 16.0011C9.78864 16.1233 9.6666 16.215 9.52556 16.2631C9.38452 16.3111 9.23183 16.3129 9.08971 16.2681C8.94759 16.2234 8.82345 16.1344 8.73537 16.0143C8.64728 15.8941 8.59983 15.749 8.59992 15.6V12.1H5.79992C5.67188 12.1 5.54627 12.065 5.43677 11.9986C5.32727 11.9322 5.23808 11.8371 5.17889 11.7236C5.1197 11.61 5.09279 11.4824 5.10108 11.3546C5.10937 11.2269 5.15255 11.1038 5.22592 10.9989L10.1259 3.99888C10.2113 3.87693 10.3334 3.78539 10.4744 3.73755C10.6154 3.68972 10.7679 3.68808 10.9099 3.73288V3.73218Z" fill="white"/>
+                                            </svg>
+                                            <div class="text-caption-1 text-Secondary">(10 jobs)</div>
+                                        </div>
+                                        <div class="place">
+                                            <svg width="16" height="16" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4434_5375)">
+                                                <path d="M10.5 5.84985C10.5 9.34985 6 12.3499 6 12.3499C6 12.3499 1.5 9.34985 1.5 5.84985C1.5 4.65638 1.97411 3.51179 2.81802 2.66787C3.66193 1.82396 4.80653 1.34985 6 1.34985C7.19347 1.34985 8.33807 1.82396 9.18198 2.66787C10.0259 3.51179 10.5 4.65638 10.5 5.84985Z" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M6 7.34985C6.82843 7.34985 7.5 6.67828 7.5 5.84985C7.5 5.02143 6.82843 4.34985 6 4.34985C5.17157 4.34985 4.5 5.02143 4.5 5.84985C4.5 6.67828 5.17157 7.34985 6 7.34985Z" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4434_5375">
+                                                <rect width="12" height="12" fill="white" transform="translate(0 0.849854)"></rect>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div class="text-caption-2">Orlando, FL 32801, USA</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center gap-12">
+                                    <a href="company-detail.html" class="tf-btn style-1 type-lg w-100 text-button round-full">2 job Openings</a>
+                                    <div class="check-icon like-box">
+                                        <i class="icon icon-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade h-100" id="Candidates-map" role="tabpanel">
                         <div class="wg-map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d83996.50781043418!2d2.354377425562462!3d48.86029136702893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2sus!4v1765896172631!5m2!1svi!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="find-job-item save-item">
+                                <div class="job-detail">
+                                    <div class="image">
+                                        <img src="images/jobs/job-1.png" alt="">
+                                    </div>
+                                    <div class="infor">
+                                        <div class="text-caption-2 text-Primary sub">UI/UX Designer</div>
+                                        <div class="mb-8 d-flex gap-8 align-items-center">
+                                            <a href="candidates-detail.html" class="name link text-button-small text-OnSurface">Mahesh Patil</a>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="#2748DB"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9099 3.73218C11.052 3.77687 11.1762 3.86573 11.2643 3.98583C11.3524 4.10593 11.3999 4.25102 11.3999 4.39998V7.89998H14.1999C14.328 7.89992 14.4536 7.93499 14.5631 8.00136C14.6726 8.06773 14.7618 8.16286 14.821 8.2764C14.8801 8.38994 14.9071 8.51754 14.8988 8.64532C14.8905 8.77309 14.8473 8.89614 14.7739 9.00108L9.87392 16.0011C9.78864 16.1233 9.6666 16.215 9.52556 16.2631C9.38452 16.3111 9.23183 16.3129 9.08971 16.2681C8.94759 16.2234 8.82345 16.1344 8.73537 16.0143C8.64728 15.8941 8.59983 15.749 8.59992 15.6V12.1H5.79992C5.67188 12.1 5.54627 12.065 5.43677 11.9986C5.32727 11.9322 5.23808 11.8371 5.17889 11.7236C5.1197 11.61 5.09279 11.4824 5.10108 11.3546C5.10937 11.2269 5.15255 11.1038 5.22592 10.9989L10.1259 3.99888C10.2113 3.87693 10.3334 3.78539 10.4744 3.73755C10.6154 3.68972 10.7679 3.68808 10.9099 3.73288V3.73218Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-12">
+                                            <div class="box-available text-Success text-caption-2">Available</div>
+                                            <div class="place">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 6.66699C14 11.3337 8 15.3337 8 15.3337C8 15.3337 2 11.3337 2 6.66699C2 5.07569 2.63214 3.54957 3.75736 2.42435C4.88258 1.29913 6.4087 0.666992 8 0.666992C9.5913 0.666992 11.1174 1.29913 12.2426 2.42435C13.3679 3.54957 14 5.07569 14 6.66699Z" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8 8.66699C9.10457 8.66699 10 7.77156 10 6.66699C10 5.56242 9.10457 4.66699 8 4.66699C6.89543 4.66699 6 5.56242 6 6.66699C6 7.77156 6.89543 8.66699 8 8.66699Z" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div class="text-caption-2 text-Secondary">Chicago, USA</div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmark-save bookmark-save-icon">
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.375 2.84985H5.625C5.29348 2.84985 4.97554 2.98155 4.74112 3.21597C4.5067 3.45039 4.375 3.76833 4.375 4.09985V17.8499C4.37506 17.9614 4.40496 18.0709 4.46161 18.167C4.51826 18.263 4.59959 18.3422 4.69716 18.3963C4.79473 18.4503 4.90498 18.4773 5.01648 18.4743C5.12798 18.4714 5.23666 18.4387 5.33125 18.3795L10 15.4616L14.6695 18.3795C14.7641 18.4385 14.8727 18.471 14.9841 18.4739C15.0955 18.4767 15.2056 18.4497 15.303 18.3957C15.4005 18.3417 15.4817 18.2626 15.5383 18.1666C15.5949 18.0706 15.6249 17.9613 15.625 17.8499V4.09985C15.625 3.76833 15.4933 3.45039 15.2589 3.21597C15.0245 2.98155 14.7065 2.84985 14.375 2.84985Z" fill="#2748DB"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="salary align-items-center pb-0">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4311_23799)">
+                                            <path d="M10 20C7.32891 20 4.81766 18.9598 2.92891 17.0711C1.04016 15.1823 0 12.6711 0 10C0 7.32891 1.0402 4.8177 2.92891 2.92891C4.81762 1.04012 7.32891 0 10 0C12.6711 0 15.1823 1.04016 17.0711 2.92891C18.9598 4.81766 20 7.32891 20 10C20 12.6711 18.9598 15.1823 17.0711 17.0711C15.1824 18.9599 12.6711 20 10 20ZM10 1.25C5.17523 1.25 1.25 5.17523 1.25 10C1.25 14.8248 5.17523 18.75 10 18.75C14.8248 18.75 18.75 14.8248 18.75 10C18.75 5.17523 14.8248 1.25 10 1.25Z" fill="#121212"/>
+                                            <path d="M10 9.375C9.13844 9.375 8.4375 8.67406 8.4375 7.8125C8.4375 6.95094 9.13844 6.25 10 6.25C10.8616 6.25 11.5625 6.95094 11.5625 7.8125C11.5625 8.15766 11.8423 8.4375 12.1875 8.4375C12.5327 8.4375 12.8125 8.15766 12.8125 7.8125C12.8125 6.47652 11.8759 5.35594 10.625 5.07086V4.375C10.625 4.02984 10.3452 3.75 10 3.75C9.6548 3.75 9.375 4.02984 9.375 4.375V5.07086C8.12414 5.35594 7.1875 6.47652 7.1875 7.8125C7.1875 9.36332 8.44918 10.625 10 10.625C10.8616 10.625 11.5625 11.3259 11.5625 12.1875C11.5625 13.0491 10.8616 13.75 10 13.75C9.13844 13.75 8.4375 13.0491 8.4375 12.1875C8.4375 11.8423 8.1577 11.5625 7.8125 11.5625C7.4673 11.5625 7.1875 11.8423 7.1875 12.1875C7.1875 13.5235 8.12414 14.6441 9.375 14.9291V15.625C9.375 15.9702 9.6548 16.25 10 16.25C10.3452 16.25 10.625 15.9702 10.625 15.625V14.9291C11.8759 14.6441 12.8125 13.5235 12.8125 12.1875C12.8125 10.6367 11.5508 9.375 10 9.375Z" fill="#121212"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_4311_23799">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="text-OnSurface text-caption-1">
+                                            $30/hour
+                                        </div>
+                                    </div>
+                                    <a href="candidates-detail.html" class="tf-btn style-1 text-button-small round-full">View Profile</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
