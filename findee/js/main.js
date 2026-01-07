@@ -140,6 +140,23 @@
   if ($(".nice-select").length > 0) {
     $(".select_js").niceSelect();
   }
+  $(document).on("click", ".nice-select", function () {
+    const $this = $(this);
+    const dropdown = $this.find(".list");
+
+    const dropdownHeight = dropdown.outerHeight();
+    const offsetTop = $this.offset().top;
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+
+    const spaceBelow = windowHeight - (offsetTop - scrollTop + $this.outerHeight());
+
+    if (spaceBelow < dropdownHeight) {
+        $this.addClass("open-up");
+    } else {
+        $this.removeClass("open-up");
+    }
+});
   /* Change Value
   ------------------------------------------------------------------------------------- */
   var changeValue = function () {

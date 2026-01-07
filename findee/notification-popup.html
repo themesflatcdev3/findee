@@ -13,10 +13,11 @@
     <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/168.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
-    <title>Onboarding</title>
+    <title>Choose your job type</title>
     <!-- Apply dark theme early to avoid white flash -->
     <script>
         if (localStorage.toggled === "dark-theme") {
@@ -27,16 +28,24 @@
 </head>
 
 <body>
-
-    <a href="onboarding-1.html" class="boarding-image">
-        <img src="images/logo/logo-dark.png" alt="">
-    </a>
+  
+    <div class="noti-wrap">
+        <div class="inner">
+            <div class="content text-center">
+                <div class="text-button text-OnSurface mb-8">"Findee" Would like to send you Notifications</div>
+                <div class="text-caption-2 mb-15">Notifications may include alerts, sounds, and icon badges. These can be configured in Settings. </div>
+            </div>
+            <div class="btn-bot">
+                <a href="location.html" class="link text-button-small text-OnSurface">Don’t Allow</a>
+                <a href="location.html" class="link text-button-small text-OnSurface">Allow</a>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/lazysize.min.js"></script>
-    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>

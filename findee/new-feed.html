@@ -38,7 +38,7 @@
     <!-- /preload -->
     <div class="header-avt fixed-top">
         <a href="index.html" class="icon">
-            <img src="images/logo/logo-1.png" alt="">
+            <img src="images/logo/logo-1.svg" alt="">
         </a>
         <h4>New Feed</h4>
         <div></div>
@@ -52,8 +52,12 @@
                     </div>
                     <input type="text" class="search-field" placeholder="Comment">
                     <div class="box-left">
-                        <input type="file" class="upload-file image-add" id="image" name="filename">
-                        <input type="file" class="upload-file paperclip" id="paperclip" name="filename">
+                        <label for="image" class="image-add">
+                            <input type="file" class="upload-file" id="image" name="filename">
+                        </label>
+                        <label for="paperclip">
+                            <input type="file" class="upload-file paperclip" id="paperclip" name="filename">
+                        </label>
                         <a href="#" class="calendarblank d-flex">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.25 2.5H14.375V1.875C14.375 1.70924 14.3092 1.55027 14.1919 1.43306C14.0747 1.31585 13.9158 1.25 13.75 1.25C13.5842 1.25 13.4253 1.31585 13.3081 1.43306C13.1908 1.55027 13.125 1.70924 13.125 1.875V2.5H6.875V1.875C6.875 1.70924 6.80915 1.55027 6.69194 1.43306C6.57473 1.31585 6.41576 1.25 6.25 1.25C6.08424 1.25 5.92527 1.31585 5.80806 1.43306C5.69085 1.55027 5.625 1.70924 5.625 1.875V2.5H3.75C3.41848 2.5 3.10054 2.6317 2.86612 2.86612C2.6317 3.10054 2.5 3.41848 2.5 3.75V16.25C2.5 16.5815 2.6317 16.8995 2.86612 17.1339C3.10054 17.3683 3.41848 17.5 3.75 17.5H16.25C16.5815 17.5 16.8995 17.3683 17.1339 17.1339C17.3683 16.8995 17.5 16.5815 17.5 16.25V3.75C17.5 3.41848 17.3683 3.10054 17.1339 2.86612C16.8995 2.6317 16.5815 2.5 16.25 2.5ZM5.625 3.75V4.375C5.625 4.54076 5.69085 4.69973 5.80806 4.81694C5.92527 4.93415 6.08424 5 6.25 5C6.41576 5 6.57473 4.93415 6.69194 4.81694C6.80915 4.69973 6.875 4.54076 6.875 4.375V3.75H13.125V4.375C13.125 4.54076 13.1908 4.69973 13.3081 4.81694C13.4253 4.93415 13.5842 5 13.75 5C13.9158 5 14.0747 4.93415 14.1919 4.81694C14.3092 4.69973 14.375 4.54076 14.375 4.375V3.75H16.25V6.25H3.75V3.75H5.625ZM16.25 16.25H3.75V7.5H16.25V16.25Z" fill="#121212"/>
@@ -186,88 +190,88 @@
                         <div class="image">
                             <img class="round-full" src="images/avt/avt-1.png" alt="">
                         </div>
-                        <div class="text-caption-2 text-Primary sub">Solutions Architect</div>
-                        <div class="text-button-small text-OnSurface name">Mr Ruben Calzoni</div>
-                        <div class="connections">
+                        <a href="#" class="text-caption-2 text-Primary sub">Solutions Architect</a>
+                        <a href="candidates-detail.html" class="link text-button-small text-OnSurface name">Ms Howard</a>
+                        <a href="#" class="connections">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4432_2237)">
-                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0_4432_2237">
-                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             <div class="text-caption-2 text-Secondary">10 connections</div>
-                        </div>
+                        </a>
                         <a href="candidates-detail.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
                     </div>
                     <div class="candidates-item">
                         <div class="image">
                             <img class="round-full" src="images/avt/avt-2.png" alt="">
                         </div>
-                        <div class="text-caption-2 text-Primary sub">Solutions Architect</div>
-                        <div class="text-button-small text-OnSurface name">Ms Rayna Bator</div>
-                        <div class="connections">
+                        <a href="#" class="text-caption-2 text-Primary sub">Cloud Engineer</a>
+                        <a href="candidates-detail.html" class="link text-button-small text-OnSurface name">Ms. Henry</a>
+                        <a href="#" class="connections">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4432_2237)">
-                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0_4432_2237">
-                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"/>
                                 </clipPath>
                                 </defs>
                             </svg>
-                            <div class="text-caption-2 text-Secondary">10 connections</div>
-                        </div>
+                            <div class="text-caption-2 text-Secondary">18 connections</div>
+                        </a>
                         <a href="candidates-detail.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
                     </div>
                     <div class="candidates-item">
                         <div class="image">
                             <img class="round-full" src="images/avt/avt-1.png" alt="">
                         </div>
-                        <div class="text-caption-2 text-Primary sub">Ms Esther Howard</div>
-                        <div class="text-button-small text-OnSurface name">Mr Ruben Calzoni</div>
-                        <div class="connections">
+                        <a href="#" class="text-caption-2 text-Primary sub">Solutions Architect</a>
+                        <a href="candidates-detail.html" class="link text-button-small text-OnSurface name">Ms Howard</a>
+                        <a href="#" class="connections">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4432_2237)">
-                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0_4432_2237">
-                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             <div class="text-caption-2 text-Secondary">10 connections</div>
-                        </div>
+                        </a>
                         <a href="candidates-detail.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
                     </div>
                     <div class="candidates-item">
                         <div class="image">
                             <img class="round-full" src="images/avt/avt-2.png" alt="">
                         </div>
-                        <div class="text-caption-2 text-Primary sub">Solutions Architect</div>
-                        <div class="text-button-small text-OnSurface name">James Siphron</div>
-                        <div class="connections">
+                        <a href="#" class="text-caption-2 text-Primary sub">Cloud Engineer</a>
+                        <a href="candidates-detail.html" class="link text-button-small text-OnSurface name">Ms. Henry</a>
+                        <a href="#" class="connections">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4432_2237)">
-                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0_4432_2237">
-                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"/>
                                 </clipPath>
                                 </defs>
                             </svg>
-                            <div class="text-caption-2 text-Secondary">10 connections</div>
-                        </div>
+                            <div class="text-caption-2 text-Secondary">18 connections</div>
+                        </a>
                         <a href="candidates-detail.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
                     </div>
                 </div>
@@ -382,85 +386,85 @@
                         <div class="image">
                             <img src="images/companies/companies-1.png" alt="">
                         </div>
-                        <div class="text-button-small text-OnSurface name">Findee Company</div>
-                        <div class="connections">
+                        <a href="company-detail.html" class="link text-button-small text-OnSurface name">Findee Company</a>
+                        <a href="#" class="connections">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4432_2237)">
-                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0_4432_2237">
-                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             <div class="text-caption-2 text-Secondary">10k Followers</div>
+                        </a>
+                        <a href="company-detail.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
+                    </div>
+                    <div class="candidates-item">
+                        <div class="image">
+                            <img src="images/companies/companies-2.png" alt="">
                         </div>
-                        <a href="company-detail.html" class="tf-btn style-1 text-button-small round-full">Follow</a>
+                        <a href="company-detail.html" class="link text-button-small text-OnSurface name">Constru Company</a>
+                        <a href="#" class="connections">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4432_2237)">
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4432_2237">
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-caption-2 text-Secondary">10k Followers</div>
+                        </a>
+                        <a href="company-detail.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
                     </div>
                     <div class="candidates-item">
                         <div class="image">
                             <img src="images/companies/companies-1.png" alt="">
                         </div>
-                        <div class="text-button-small text-OnSurface name">Findee Company</div>
-                        <div class="connections">
+                        <a href="company-detail.html" class="link text-button-small text-OnSurface name">Findee Company</a>
+                        <a href="#" class="connections">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4432_2237)">
-                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0_4432_2237">
-                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             <div class="text-caption-2 text-Secondary">10k Followers</div>
-                        </div>
-                        <a href="company-detail.html" class="tf-btn style-1 text-button-small round-full">Follow</a>
+                        </a>
+                        <a href="company-detail.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
                     </div>
                     <div class="candidates-item">
                         <div class="image">
-                            <img src="images/companies/companies-1.png" alt="">
+                            <img src="images/companies/companies-2.png" alt="">
                         </div>
-                        <div class="text-button-small text-OnSurface name">Findee Company</div>
-                        <div class="connections">
+                        <a href="company-detail.html" class="link text-button-small text-OnSurface name">Constru Company</a>
+                        <a href="#" class="connections">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4432_2237)">
-                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0_4432_2237">
-                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
+                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             <div class="text-caption-2 text-Secondary">10k Followers</div>
-                        </div>
-                        <a href="company-detail.html" class="tf-btn style-1 text-button-small round-full">Follow</a>
-                    </div>
-                    <div class="candidates-item">
-                        <div class="image">
-                            <img src="images/companies/companies-1.png" alt="">
-                        </div>
-                        <div class="text-button-small text-OnSurface name">Findee Company</div>
-                        <div class="connections">
-                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_4432_2237)">
-                                <path d="M10.3338 5.31396H12.3338C12.7716 5.31396 13.205 5.40018 13.6094 5.5677C14.0139 5.73522 14.3813 5.98075 14.6908 6.29028C15.0004 6.5998 15.2459 6.96727 15.4134 7.37169C15.5809 7.77611 15.6672 8.20956 15.6672 8.6473C15.6672 9.08504 15.5809 9.51849 15.4134 9.92291C15.2459 10.3273 15.0004 10.6948 14.6908 11.0043C14.3813 11.3138 14.0139 11.5594 13.6094 11.7269C13.205 11.8944 12.7716 11.9806 12.3338 11.9806H10.3338M6.33382 11.9806H4.33382C3.89608 11.9806 3.46263 11.8944 3.05821 11.7269C2.65379 11.5594 2.28633 11.3138 1.9768 11.0043C1.35168 10.3792 1.00049 9.53135 1.00049 8.6473C1.00049 7.76324 1.35168 6.9154 1.9768 6.29028C2.60192 5.66515 3.44977 5.31396 4.33382 5.31396H6.33382" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.6665 8.64746H10.9998" stroke="#64666C" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_4432_2237">
-                                <rect width="16" height="16" fill="white" transform="translate(0.333496 0.647461)"></rect>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            <div class="text-caption-2 text-Secondary">10k Followers</div>
-                        </div>
-                        <a href="company-detail.html" class="tf-btn style-1 text-button-small round-full">Follow</a>
+                        </a>
+                        <a href="company-detail.html" class="tf-btn style-1 text-button-small round-full">Connect</a>
                     </div>
                 </div>
             </div>

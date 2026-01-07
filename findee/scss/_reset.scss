@@ -393,7 +393,6 @@ form {
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
-        color: var(--secondary);
         margin-bottom: 8px;
     }
 }
@@ -507,6 +506,7 @@ select {
 .app-content {
     padding: 70px 0px 82px;
     overflow: hidden;
+    min-height: 100vh;
     &.style-2 {
         padding-top: 56px;
     }
@@ -863,8 +863,11 @@ select {
 }
 
 .grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+        width: 48%;
+    }
 }
 .lr-radius-32 {
     border-bottom-left-radius: 32px;
@@ -946,4 +949,8 @@ select {
 
 .fs-19 {
     font-size: 19px;
+}
+
+.place-content-center {
+    place-content: center;
 }
