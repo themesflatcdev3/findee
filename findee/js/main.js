@@ -489,6 +489,19 @@
       }
   };
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const hash = window.location.hash;
+    if (!hash) return;
+
+    const tabTrigger = document.querySelector(
+        `.menu-tab-job a[href="${hash}"]`
+    );
+
+    if (tabTrigger) {
+        new bootstrap.Tab(tabTrigger).show();
+    }
+});
+
   $(function () {
     showPass();
     otpInput();

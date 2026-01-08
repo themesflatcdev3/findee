@@ -1,5 +1,5 @@
 
-var CACHE_NAME = "enfroApp";
+var CACHE_NAME = "findeeApp";
 var REQUIRED_FILES = ["./", "./index.html", "./css/styles.css", "./js/main.js"];
 
 self.addEventListener('install', function(event) {
