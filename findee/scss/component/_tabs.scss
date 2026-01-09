@@ -3,6 +3,10 @@
     display: flex;
     border-bottom: 1px solid var(--line);
     overflow-x: auto;
+    &::-webkit-scrollbar {
+        height: 2px;
+        
+    }
     .tab-item {
         display: flex;
         justify-content: center;

@@ -290,7 +290,7 @@
                 </a>
             </li>
             <li class="">
-                <a href="saved.html">
+                <a data-bs-target="#saved" data-bs-toggle="modal">
                     <div class="icon">
                         <i class="icon-bookmarks-line"></i>
                     </div>
@@ -317,6 +317,29 @@
 
     </div>
 
+    <!-- saved  -->
+    <div class="modal modalCentered fade modal-profile" id="saved">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <h3 class="mb-16 text-OnSurface">Choose your job type</h3>
+                <div class="flat-check-list d-flex gap-20 mb-40">
+                    <a href="saved.html#Saved-Jobs" class="job-type-item w-100">
+                        <div class="image">
+                            <img src="images/icon/employer.png" alt="">
+                        </div>
+                        <h4>Employer</h4>
+                    </a>
+                    <a href="saved.html#Saved-Candidates" class="job-type-item w-100">
+                        <div class="image">
+                            <img src="images/icon/candidates.png" alt="">
+                        </div>
+                        <h4>Candidates</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /saved  -->
     <!-- profile  -->
     <div class="modal modalCentered fade modal-profile" id="profile">
         <div class="modal-dialog modal-dialog-centered">

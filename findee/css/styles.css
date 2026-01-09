@@ -1192,6 +1192,10 @@ select {
   font-size: 19px;
 }
 
+.fs-23 {
+  font-size: 23px !important;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -2101,6 +2105,9 @@ select {
   display: flex;
   border-bottom: 1px solid var(--line);
   overflow-x: auto;
+}
+.menu-tab-job::-webkit-scrollbar {
+  height: 2px;
 }
 .menu-tab-job .tab-item {
   display: flex;
@@ -7620,6 +7627,7 @@ textarea.textarea-style-2 {
 .candidates-item .connections {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   margin-bottom: 12px;
 }
@@ -8195,7 +8203,7 @@ ul.list-text {
   gap: 8px;
   padding: 12px 16px;
 }
-.more-option-wrap .item:hover {
+.more-option-wrap .item.active, .more-option-wrap .item:hover {
   background-color: rgba(39, 72, 219, 0.1019607843);
 }
 .more-option-wrap .item .icon {
