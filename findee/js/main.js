@@ -204,29 +204,6 @@
     });
   };
 
-  /* Toggle RTL
-  ------------------------------------------------------------------------------------- */
-
-  var RTL = function () {
-    var isRTL = $("body").hasClass("rtl") || localStorage.getItem("dir") === "rtl";
-
-    applyDir(isRTL ? "rtl" : "ltr");
-
-    $(".toggle-rtl")
-      .off("click")
-      .on("click", function () {
-        var nextRTL = !$("body").hasClass("rtl");
-        localStorage.setItem("dir", nextRTL ? "rtl" : "ltr");
-        applyDir(nextRTL ? "rtl" : "ltr");
-      });
-  }
-  function applyDir(dir) {
-    var useRTL = dir === "rtl";
-    $("html").attr("dir", dir);
-    $("body").toggleClass("rtl", useRTL);
-    $("#switchRTLTheme").prop("checked", useRTL);
-  }
-
   /* Header Fixed
  ------------------------------------------------------------------------------------- */
   var headerFixed = function () {
@@ -516,7 +493,6 @@
     clickModalSecond();
     flatCounter();
     inputUpload();
-    RTL();
     save_item();
     read_all_noti();
     clear_noti();
