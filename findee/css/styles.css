@@ -5004,6 +5004,7 @@ textarea.textarea-style-2 {
 
 .popup_job_detail {
   height: calc(100vh - 40px) !important;
+  padding: 56px 0px 30px;
 }
 
 /*------------ progressbar ---------------- */
