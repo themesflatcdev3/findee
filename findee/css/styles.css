@@ -382,7 +382,7 @@ input::-moz-focus-inner {
 }
 
 body {
-  font-family: "Inter", serif;
+  font-family: "DM Sans", serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 0;
@@ -2092,7 +2092,7 @@ select {
 }
 .dropdown.style-2 .dropdown-menu .dropdown-header {
   font-size: 16px;
-  font-weight: "Inter", serif;
+  font-weight: "DM Sans", serif;
   color: var(--black);
   font-weight: 700;
 }
@@ -2274,7 +2274,7 @@ select {
   font-weight: 400;
   line-height: 18px;
   color: var(--black);
-  font-family: "Inter", serif;
+  font-family: "DM Sans", serif;
   top: 100%;
   left: 0;
   margin-top: 2px;
@@ -2647,7 +2647,7 @@ textarea.textarea-style-2 {
 }
 
 .form-select {
-  font-family: "Inter", serif;
+  font-family: "DM Sans", serif;
   color: var(--black);
   font-size: 14px;
   line-height: 19.6px;
